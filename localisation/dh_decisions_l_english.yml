@@ -1,0 +1,7 @@
+﻿l_english:
+ dh_enable_albi_title:0 "Enable Albigensianism"
+ dh_enable_albi_desc:0 "Enable the Albigensian heresy and events related to it."
+ dh_albi_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Albigensian Resurgence."
+ dh_enable_fratelli_title:0 "Enable Fratellianism"
+ dh_enable_fratelli_desc:0 "Enable the Fratellian heresy and events related to it."
+ dh_fratelli_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Fratelli Resurgence."

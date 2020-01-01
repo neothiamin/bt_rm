@@ -1,0 +1,34 @@
+dh_albi_spawn_area = {
+	OR = {
+		area = poitou_area
+		area = guyenne_area
+		area = pyrenees_area
+		area = languedoc_area
+		area = upper_gascony
+		area = upper_guyenne_area
+		area = limousin_area
+		area = west_languedoc_area
+		area = provence_area
+		area = savoy_dauphine_area
+		area = dauphine_area
+		area = massif_central_area
+	}
+}
+
+dh_frat_spawn_area = {
+	OR = {
+		area = lombardy_area
+		area = piedmont_area
+		area = liguria_area
+		area = emilia_romagna_area
+		#area = central_italy_area
+		area = emilia_area
+		area = east_lombardy_area
+		area = north_piedmont_area
+		area = south_piedmont_area
+		#area = north_marche_area
+		area = upper_emilia_area
+		area = tuscany_area
+		area = venetia_area
+	}
+}

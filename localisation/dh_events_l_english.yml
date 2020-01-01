@@ -1,0 +1,8 @@
+﻿l_english:
+ dh_albi.1.t:0 "Albigensian Resurgence"
+ dh_albi.1.desc:0 "It would appear that the Albigensians, also known as Cathars, are back at it again. Despite the Albigensian Crusade waged o so long ago, the general societal disdain towards them, the acknowledgement of their issues with the Church, generous syncretism, slight appeasement....\n\nAnyways, the Albigensians are back, and this time they seem more stubborn than ever."
+ dh_albi.1.a:0 "Not again..."
+
+ dh_fratelli.1.t:0 "The Fratelli"
+ dh_fratelli.1.desc:0 "The Fratelli, or \"Brothers,\" strict followers of the teachings of St. Francis of Assisi, have begun preaching in [Root.GetName]!"
+ dh_fratelli.1.a:0 "Stomp them out!"
