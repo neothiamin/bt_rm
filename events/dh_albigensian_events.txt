@@ -1,7 +1,7 @@
 #################################
 # Events for the Albigensian Heresy
 #
-# made for the Damietta addon "Heresy!"
+# made for the Beyond Typus addon "Heresy!"
 #
 # by neothiamin
 #################################

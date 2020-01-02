@@ -5,7 +5,6 @@ tags={
 }
 dependencies={
 	"Beyond Typus (hopefully temp post 1.29 launcher)"
-	"Damietta"
 }
-name="-Damietta Addon: Heresy!"
+name="-BT Addon: Heresy!"
 supported_version="1.29.3"
