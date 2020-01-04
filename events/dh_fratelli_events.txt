@@ -1,5 +1,5 @@
 #################################
-# Events for the Fratellian Heresy
+# Events for the Fraticellian Heresy
 #
 # made for the Beyond Typus addon "Heresy!"
 #
@@ -8,7 +8,7 @@
 
 namespace = dh_fratelli
 
-#Fratelli Resurgence
+#Fraticelli Resurgence
 
 province_event = {
 	id = dh_fratelli.1

@@ -33,11 +33,78 @@ province_event = {
 	#Not again...
 	option = {
 		name = dh_albi.1.a
+		enable_religion = cathar
 		change_religion = cathar
 		#dd_permanent_province_modifier = {
 		#	name = religious_center
 		#	duration = -1
 		#
+		add_reform_center = cathar
+	}
+}
+
+#Albigensian Center
+
+province_event = {	
+	id = dh_albi.2
+	title = dh_albi.2.t
+	desc = dh_albi.2.desc
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+		had_global_flag = {
+			flag = dh_cathar_religion_enabled
+			days = 730
+		}
+		is_religion_enabled = cathar
+		religion = catholic
+		OR = {
+			area = north_rhine_area
+			area = lower_rhineland_area
+			area = westphalia_area
+			area = muenster_area
+			area = palatinate_area
+			#region = south_german_region
+			region = france_region
+			#region = italy_region
+			region = low_countries_region
+		}
+		development = 20
+		num_of_centers_of_reformation = {
+			religion = cathar
+			count = 1
+		}
+		NOT = {
+			num_of_centers_of_reformation = {
+				religion = cathar
+				count = 3
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 15
+		modifier = {
+			factor = 0.8
+			dh_albi_spawn_area = yes
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+		}
+		modifier = {
+			factor = 1.5
+			region = iberia_region
+		}
+	}
+
+	#Blast!
+	option = {
+		name = dh_albi.2.a
+		change_religion = cathar
 		add_reform_center = cathar
 	}
 }

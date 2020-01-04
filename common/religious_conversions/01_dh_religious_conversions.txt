@@ -112,5 +112,9 @@ cathar_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
+		modifier = {
+			factor = 2.5
+			dh_albi_spawn_area = yes
+		}
 	}
 }

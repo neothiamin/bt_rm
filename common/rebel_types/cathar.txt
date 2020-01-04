@@ -5,7 +5,7 @@ cathar_rebels = {
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = cathar
-	defection = religion			# Defects to countries of their religion
+	defection = none			# Defects to countries of their religion
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
 	unit_transfer = yes
@@ -19,9 +19,9 @@ cathar_rebels = {
 	general = yes
 	smart = yes
 	
-	artillery = 0.0
-	infantry = 0.7
-	cavalry = 0.3
+	artillery = 0.1
+	infantry = 0.8
+	cavalry = 0.1
 	
 	morale = 1.1
 
