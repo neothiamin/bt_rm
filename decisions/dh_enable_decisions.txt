@@ -62,4 +62,26 @@ country_decisions = {
 
 	}
 
+	dh_enable_crazy_mode = {
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = dh_crazy_mode
+			}
+			NOT = {
+				is_year = 1450
+			}
+		}
+		allow = {
+			ai = no
+			NOT = {
+				is_year = 1450
+			}
+		}
+		effect = {
+			custom_tooltip = dh_crazy_mode.tt
+			set_global_flag = dh_crazy_mode
+		}
+	}
+
 }

@@ -1,11 +1,16 @@
 ﻿l_english:
- dh_albi.1.t:0 "Albigensian Resurgence"
- dh_albi.1.desc:0 "It would appear that the Albigensians, also known as Cathars, are back at it again. Despite the Albigensian Crusade waged o so long ago, the general societal disdain towards them, the acknowledgement of their issues with the Church, generous syncretism, slight appeasement....\n\nAnyways, the Albigensians are back, and this time they seem more stubborn than ever."
+ dh_albi.1.t:0 "Cathar Resurgence"
+ dh_albi.1.desc:0 "It would appear that the Cathars, also known as Albigensians, are back at it again. Despite the Albigensian Crusade waged o so long ago, the general societal disdain towards them, the acknowledgement of their issues with the Church, generous syncretism, slight appeasement....\n\nAnyways, the Cathars are back, and this time they seem more stubborn than ever."
  dh_albi.1.a:0 "Not again..."
 
- dh_albi.2.t:0 "Albigensian Center"
- dh_albi.2.desc:0 "A group of devout Albigensians has begun spreading their faith in [Root.GetName]! Their flock grows by the day."
+ dh_albi.2.t:0 "Cathar Center"
+ dh_albi.2.desc:0 "A group of devout Cathars has begun spreading their faith in [Root.GetName]! Their flock grows by the day."
  dh_albi.2.a:0 "Blast!"
+
+ dh_albi.3.t:0 "Mass Conversions in Toulouse"
+ dh_albi.3.desc:0 "REPLACE_ME"
+ dh_albi.3.a:0 "No!"
+ dh_mass_conversions_in_toulouse.tt:0 "Mass conversions take place in and around Toulouse."
 
  dh_fratelli.1.t:0 "The Fraticelli"
  dh_fratelli.1.desc:0 "The Fraticelli, or \"Little Brothers,\" strict followers of the teachings of St. Francis of Assisi, have begun preaching in [Root.GetName]!"

@@ -34,6 +34,7 @@ province_event = {
 	option = {
 		name = dh_fratelli.1.a
 		change_religion = fraticelli
+		enable_religion = fraticelli
 		#dd_permanent_province_modifier = {
 		#	name = religious_center
 		#	duration = -1

@@ -1,7 +1,7 @@
 christian = {
 
 	catholic = {
-		color = { 200 200 250 }
+		color = { 254 230 244 }
 		icon = 1
 		allowed_conversion = {
 			reformed
@@ -450,7 +450,7 @@ christian = {
 			catholic
 		}
 
-		date = 1444.1.1
+		date = 1445.1.1
 	}
 	#messalian = {
 	#	color = { 0.6 0.1 0.4 }

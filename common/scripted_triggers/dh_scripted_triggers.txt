@@ -32,3 +32,34 @@ dh_frat_spawn_area = {
 		area = venetia_area
 	}
 }
+
+dh_toulouse_albi = {
+	OR = {
+		area = west_languedoc_area
+		area = upper_guyenne_area
+		area = upper_gascony
+		area = languedoc_area
+	}
+}
+
+dh_crazy_mode_cor = {	
+	if = {
+		limit = {
+			has_global_flag = dh_crazy_mode
+		}
+		NOT = {
+			num_of_centers_of_reformation = {
+				religion = $RELIGION$
+				count = $COUNT1$
+			}
+		}
+	}
+	else = {
+		NOT = {
+			num_of_centers_of_reformation = {
+				religion = $RELIGION$
+				count = $COUNT2$
+			}
+		}
+	}
+}
