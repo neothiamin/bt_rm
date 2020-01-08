@@ -1,5 +1,5 @@
 #################################
-# Events for the Albigensian Heresy
+# Events for the Cathar Heresy
 #
 # made for the Beyond Typus addon "Heresy!"
 #
@@ -12,7 +12,7 @@ namespace = dh_albi
 # Initial Spawns
 #################################
 
-#Albigensian Resurgence
+#Cathar Resurgence
 
 province_event = {
 	id = dh_albi.1
@@ -395,6 +395,9 @@ province_event = {
 		development = 40
 		NOT = {
 			has_province_flag = dh_cathar_bishopric
+			any_province_in_state = {
+				has_province_flag = dh_cathar_bishopric
+			}
 		}
 	}
 
@@ -413,4 +416,51 @@ province_event = {
 # Country-scope Flavor
 #################################
 
-#
+#Accusations of Greed
+country_event = {
+	id = dh_albi.6
+	title = dh_albi.6.t
+	desc = dh_albi.6.desc
+	picture = ANGRY_MOB_eventPicture
+
+	#is_triggered_only = yes #pulse
+
+	mean_time_to_happen = {
+		years = 25
+	}
+	
+	trigger = {
+		religion = cathar
+		capital_scope = {
+			continent = europe
+		}
+		OR = {
+			years_of_income = 1
+			has_idea_group = economic_ideas
+			ruler_has_personality = greedy_personality
+		}
+		NOT = {
+			has_country_modifier = dh_albi_6_a_mod
+			has_country_modifier = dh_albi_6_b_mod
+		}
+	}
+
+	#That's ridiculous!
+	option = {
+		name = dh_albi.6.a
+		add_country_modifier = {
+			name = dh_albi_6_a_mod
+			duration = 1825
+		}
+	}
+
+	#We must cast away material possessions.
+	option = {
+		name = dh_albi.6.b
+		add_years_of_income = -2
+		add_country_modifier = {
+			name = dh_albi_6_b_mod
+			duration = 3650
+		}
+	}
+}

@@ -1,4 +1,6 @@
 ﻿l_english:
+
+ #Cathar Events
  dh_albi.1.t:0 "Cathar Resurgence"
  dh_albi.1.desc:0 "It would appear that the Cathars, also known as Albigensians, are back at it again. Despite the Albigensian Crusade waged o so long ago, the general societal disdain towards them, the acknowledgement of their issues with the Church, generous syncretism, slight appeasement....\n\nAnyways, the Cathars are back, and this time they seem more stubborn than ever."
  dh_albi.1.a:0 "Not again..."
@@ -30,6 +32,12 @@
 
  cathar_bishopric:0 "Cathar Bishopric"
 
+ dh_albi.6.t:0 "Accusations of Greed"
+ dh_albi.6.desc:0 "One of the key tenets of Cathar belief is the rejection of all things borne of the material world, which is evil. Many Cathars practice devout asceticism as a rule, and believe that those who cling to their possessions are sinful. Unfortunately, it seems that now the lens of criticism has been focused on [Root.Monarch.GetName], and many devotees are accusing [Root.Monarch.GetHerHim] of being greedy."
+ dh_albi.6.a:0 "Preposterous!"
+ dh_albi.6.b:0 "We must cast away material possessions if we are to be saved."
+
+ #Fraticelli Events
  dh_fratelli.1.t:0 "The Fraticelli"
  dh_fratelli.1.desc:0 "The Fraticelli, or \"Little Brothers,\" strict followers of the teachings of St. Francis of Assisi, have begun preaching in [Root.GetName]!"
  dh_fratelli.1.a:0 "Stomp them out!"

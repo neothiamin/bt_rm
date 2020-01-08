@@ -1,0 +1,8 @@
+#Heresy Pulse Events
+#on_four_year_pulse_2 = {
+#	random_events = {
+#		100 = 0
+#
+#		10 = 
+#	}
+#}
