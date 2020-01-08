@@ -1,0 +1,16 @@
+#Den of Heresy
+dh_den_of_heresy_2 = {
+	local_unrest = -4
+	min_local_autonomy = 15
+}
+
+#Conversion Efforts
+dh_den_of_heresy_3 = {
+	local_missionary_maintenance_cost = -0.25
+}
+
+#Inquisition
+dh_den_of_heresy_4 = {
+	local_unrest = 4
+	min_local_autonomy = -15
+}

@@ -350,7 +350,7 @@ christian = {
 
 	##NEW
 	cathar = {
-		color = { 70 200 240 }
+		color = { 64 196 255 } #40C4FF
 		icon = 34
 		allowed_conversion = {
 			reformed
@@ -362,13 +362,16 @@ christian = {
 			#may_recruit_female_generals = yes
 			female_advisor_chance = 0.2
 		}
+		province = {
+			development_cost = 0.05
+		}
 		country_as_secondary = {
 			yearly_corruption = -0.1
 			advisor_pool = 1
 		}
 		hre_heretic_religion = yes
 		
-		heretic = { BOGOMILIST WALDENSIAN FRATICELLI HUSSITE LOLLARD SOCINIAN }
+		heretic = { BOGOMILIST WALDENSIAN HUSSITE SOCINIAN }
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		aspects = {

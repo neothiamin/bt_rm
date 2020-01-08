@@ -8,6 +8,10 @@
 
 namespace = dh_albi
 
+#################################
+# Initial Spawns
+#################################
+
 #Albigensian Resurgence
 
 province_event = {
@@ -52,9 +56,16 @@ province_event = {
 	picture = PRAYING_eventPicture
 	
 	trigger = {
-		had_global_flag = {
-			flag = dh_cathar_religion_enabled
-			days = 730
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = dh_crazy_mode
+				}
+			}
+			had_global_flag = {
+				flag = dh_cathar_religion_enabled
+				days = 730
+			}
 		}
 		is_religion_enabled = cathar
 		religion = catholic
@@ -74,10 +85,11 @@ province_event = {
 			religion = cathar
 			count = 1
 		}
-		dh_crazy_mode_cor = {
-			RELIGION = cathar
-			COUNT1 = 7
-			COUNT2 = 3
+		NOT = {
+			num_of_centers_of_reformation = {
+				religion = cathar
+				count = 3
+			}
 		}
 	}
 	
@@ -172,5 +184,233 @@ country_event = {
 			}
 		}
 	}
-
 }
+
+#################################
+# Province-scope Flavor
+#################################
+
+#Den of Heresy
+
+province_event = {
+	id = dh_albi.4
+	title = dh_albi.4.t
+	desc = dh_albi.4.desc
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		religion = cathar
+		continent = europe
+		owner = {
+			religion = catholic
+			capital_scope = {
+				superregion = europe_superregion
+			}
+		}
+		development = 16
+		#NOT = {
+		#	has_estate = estate_church
+		#}
+	}
+
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 2.5
+			is_year = 1530
+		}
+	}
+
+	#Stamp this out!
+	option = {
+		name = dh_albi.4.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				NOT = {
+					tolerance_to_this = -2
+				}
+			}
+		}
+		owner = {			
+			add_prestige = 5
+		}
+		add_unrest = 6
+		random = {
+			chance = 50
+			spawn_rebels = {
+				size = 1
+				type = cathar_rebels
+			}
+		}
+	}
+
+	#Let the people practice their faith.
+	option = {
+		name = dh_albi.4.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				tolerance_to_this = 0
+			}
+			modifier = {
+				factor = 2
+				tolerance_to_this = 2
+			}
+		}
+		add_province_modifier = {
+			name = dh_den_of_heresy_2
+			duration = 5475
+		}
+	}
+
+	#The Church will handle this.
+	option = {
+		name = dh_albi.4.c
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				owner = {
+					estate_influence = {
+						estate = estate_church
+						influence = 70
+					}
+				}
+			}
+		}
+		trigger = {
+			is_capital = no
+			NOT = {
+				has_estate = estate_church
+			}
+			owner = {
+				has_estate = estate_church
+			}
+		}
+		ROOT = {
+			trigger_switch = {
+				on_trigger = has_estate
+				no = {
+
+				}
+				estate_burghers = {
+					owner = {
+						add_estate_loyalty = {
+							estate = estate_burghers
+							loyalty = -10
+						}
+					}
+				}
+				estate_nobles = {
+					owner = {
+						add_estate_loyalty = {
+							estate = estate_nobles
+							loyalty = -10
+						}
+					}
+				}
+			}
+		}
+		random = {
+			chance = 25
+			spawn_rebels = {
+				size = 1
+				type = cathar_rebels
+			}
+		}
+		remove_province_modifier = religious_zeal_at_conv
+		set_estate = estate_church
+		add_province_modifier = {
+			name = dh_den_of_heresy_3
+			duration = 3650
+		}
+		owner = {
+			add_papal_influence = 5
+		}
+	}	
+
+	#Send in the inquisitors!
+	option = {
+		name = dh_albi.4.d
+		trigger = {
+			owner = {
+				OR = {
+					has_idea_group = religious_ideas
+					ruler_has_personality = zealot_personality
+				}
+			}
+		}
+		highlight = yes
+		change_religion = catholic
+		random_list = {
+			90 = {
+				spawn_rebels = {
+					size = 2
+					type = cathar_rebels
+					win = yes
+				}
+				add_province_modifier = {
+					name = dh_den_of_heresy_4
+					duration = 5475
+				}
+			}
+			10 = {
+				owner = {
+					add_papal_influence = 10
+					add_prestige = 5
+				}
+			}
+		}	
+		remove_province_modifier = religious_zeal_at_conv
+		set_estate = estate_church
+		owner = {
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 15
+			}
+		}	
+	}
+}
+
+#Establishment of new Bishopric in [Root.GetName]
+province_event = {
+	id = dh_albi.5
+	title = dh_albi.5.t
+	desc = dh_albi.5.desc
+	picture = PRAYING_eventPicture
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	trigger = {
+		religion = cathar
+		owner = {
+			religion = cathar
+		}
+		continent = europe
+		development = 40
+		NOT = {
+			has_province_flag = dh_cathar_bishopric
+		}
+	}
+
+	immediate = {
+		set_province_flag = dh_cathar_bishopric
+	}
+
+	#Splendid!
+	option = {
+		name = dh_albi.5.a
+		add_province_triggered_modifier = cathar_bishopric
+	}
+}
+
+#################################
+# Country-scope Flavor
+#################################
+
+#

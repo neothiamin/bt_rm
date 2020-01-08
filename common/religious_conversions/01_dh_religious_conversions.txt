@@ -113,8 +113,26 @@ cathar_center_of_reformation = {
 			religion = fraticelli
 		}
 		modifier = {
-			factor = 2.5
+			factor = 1.5
 			dh_albi_spawn_area = yes
+		}
+		modifier = {
+			factor = 1.25
+			OR = {	
+				area = north_rhine_area
+				area = lower_rhineland_area
+				area = westphalia_area			
+				region = france_region
+				region = low_countries_region
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_port = yes
+		}
+		modifier = {
+			factor = 0
+			is_year = 1530
 		}
 	}
 }

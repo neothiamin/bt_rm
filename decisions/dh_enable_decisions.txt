@@ -64,6 +64,7 @@ country_decisions = {
 
 	dh_enable_crazy_mode = {
 		potential = {
+			always = no
 			ai = no
 			NOT = {
 				has_global_flag = dh_crazy_mode

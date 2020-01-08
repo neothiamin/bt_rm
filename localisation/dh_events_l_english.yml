@@ -8,9 +8,27 @@
  dh_albi.2.a:0 "Blast!"
 
  dh_albi.3.t:0 "Mass Conversions in Toulouse"
- dh_albi.3.desc:0 "REPLACE_ME"
+ dh_albi.3.desc:0 "Toulouse has historically been the epicenter of the Cathar menace. The Albigensian Crusade, waged in the early years of the 13th century, took place almost entirely within the southern part of our realm, and dragged on for years and years. The memories of the Crusade are still fresh in the minds of the Occitan people, who are yet often called \"Cathars\" by others regardless of their actual faith. It is no surprise then that when the Cathar Resurgence began, many Occitans flocked to the banner of Catharism. A wave of mass conversion is taking place currently in Toulouse, and it does not seem like it will end any time soon."
  dh_albi.3.a:0 "No!"
  dh_mass_conversions_in_toulouse.tt:0 "Mass conversions take place in and around Toulouse."
+ 
+ dh_albi.4.t:0 "Den of Heresy"
+ dh_albi.4.desc:0 "Practicers of minority religions tend to gather together in secluded or isolated places. Alleyways, a member's home, places where no one wants to go, etc. However, the Cathars in [Root.GetName] have recently been gathering and performing their rites and rituals in a rather public place - a local inn! Naturally, the faithful in [Root.GetName] are rather upset about this, and are demanding the Crown do something about the heretics in their midst."
+ dh_albi.4.a:0 "Stamp this out!"
+ dh_albi.4.b:0 "Let the people gather where they like."
+ dh_albi.4.c:0 "The Church will handle this."
+ dh_albi.4.d:0 "Send in the Inquisitors!"
+ 
+ dh_den_of_heresy_2:0 "Den of Heresy"
+ dh_den_of_heresy_3:0 "Conversion Efforts"
+ dh_den_of_heresy_4:0 "Inquisition"
+
+ 
+ dh_albi.5.t:0 "New Bishopric in [Root.GetName]"
+ dh_albi.5.desc:0 "My [Owner.Monarch.GetTitle]! Our piety has been recognized and, after the occurrence of a Council in [Owner.Capital.GetName], a new Bishopric has been established in [Root.GetName]!"
+ dh_albi.5.a:0 "Splendid!"
+
+ cathar_bishopric:0 "Cathar Bishopric"
 
  dh_fratelli.1.t:0 "The Fraticelli"
  dh_fratelli.1.desc:0 "The Fraticelli, or \"Little Brothers,\" strict followers of the teachings of St. Francis of Assisi, have begun preaching in [Root.GetName]!"
