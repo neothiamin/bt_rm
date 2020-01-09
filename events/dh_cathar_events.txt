@@ -56,16 +56,8 @@ province_event = {
 	picture = PRAYING_eventPicture
 	
 	trigger = {
-		if = {
-			limit = {
-				NOT = {
-					has_global_flag = dh_crazy_mode
-				}
-			}
-			had_global_flag = {
-				flag = dh_cathar_religion_enabled
-				days = 730
-			}
+		religion_years = {
+			cathar = 2
 		}
 		is_religion_enabled = cathar
 		religion = catholic
@@ -141,9 +133,8 @@ country_event = {
 		tag = FRA
 		religion = catholic
 		is_religion_enabled = cathar
-		had_global_flag = {
-			flag = dh_cathar_religion_enabled
-			days = 1825
+		religion_years = {
+			cathar = 5
 		}
 	}
 
@@ -157,6 +148,7 @@ country_event = {
 	option = {
 		name = dh_albi.3.a
 		custom_tooltip = dh_mass_conversions_in_toulouse.tt
+		set_global_flag = dh_toulouse_conversions
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -185,6 +177,34 @@ country_event = {
 		}
 	}
 }
+
+#################################
+# Unique Events
+#################################
+
+#Pays Cathare
+#country_event = {
+#	id = dh_albi.7
+#	title = dh_albi.7.t
+#	desc = dh_albi.7.desc
+#	picture = RELIGIOUS_TURMOIL_eventPicture
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = FRA
+#		religion = catholic
+#		religion_years = {
+#			cathar = 10
+#		}
+#		calc_true_if = {
+#			amount = 20
+#			all_owned_province = {
+#				dh_albi_spawn_area = yes
+#			}
+#		}
+#	}
+#}
 
 #################################
 # Province-scope Flavor
@@ -436,6 +456,7 @@ country_event = {
 		}
 		OR = {
 			years_of_income = 1
+			monthly_income = 20
 			has_idea_group = economic_ideas
 			ruler_has_personality = greedy_personality
 		}

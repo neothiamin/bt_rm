@@ -9,19 +9,20 @@ dh_albi_spawn_area = {
 		area = limousin_area
 		area = west_languedoc_area
 		area = provence_area
-		area = savoy_dauphine_area
+		#area = savoy_dauphine_area
 		area = dauphine_area
-		area = massif_central_area
+		#area = massif_central_area
+		area = lyonnais_area
 	}
-	NOT = {
-		province_id = 3109
-		province_id = 190
-		province_id = 7917
-		province_id = 7916
-		province_id = 7934
-		province_id = 3077
-		province_id = 180
-	}
+	#NOT = {
+	#	province_id = 3109
+	#	province_id = 190
+	#	province_id = 7917
+	#	province_id = 7916
+	#	province_id = 7934
+	#	province_id = 3077
+	#	province_id = 180
+	#}
 }
 
 dh_frat_spawn_area = {

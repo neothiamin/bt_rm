@@ -1,0 +1,122 @@
+cathar_bishoprics_aspect = {
+	cost = 100
+	modifier = {
+		state_maintenance_modifier = -0.1
+		core_creation = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 3
+			is_at_war = no
+		}
+	}
+}
+cathar_marriage_aspect = {
+	cost = 100
+	modifier = {
+		heir_chance = 0.1
+		legitimacy = 0.25
+		devotion = 0.25
+		republican_tradition = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+cathar_fortresses_aspect = {
+	cost = 100
+	modifier = {
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.05
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_owned_provinces_with = {
+				value = 5
+				fort_level = 1
+			}
+		}
+	}
+}
+cathar_allow_weaving_aspect = {
+	cost = 100
+	modifier = {
+		development_cost = -0.05
+		production_efficiency = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount = 3
+				all_owned_province = {
+					OR = {
+						has_terrain = farmlands
+						has_terrain = grasslands
+					}
+				}
+			}
+		}
+	}
+}
+cathar_disallow_burning_aspect = {
+	cost = 100
+	modifier = {
+		global_unrest = -0.5
+		global_autonomy = -0.02
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			average_unrest = 2
+		}
+	}
+}
+cathar_living_icons_aspect = {
+	cost = 100
+	modifier = {
+		prestige = 0.5
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+cathar_flock_to_the_cross_aspect = {
+	cost = 100
+	modifier = {
+		land_morale = 0.05
+		manpower_recovery_speed = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount = 3
+				all_neighbor_country = {
+					NOT = {
+						religion = cathar
+					}
+					OR = {
+						is_rival = ROOT
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = -50
+							}
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			at_war_with_religious_enemy = yes
+		}
+	}
+}

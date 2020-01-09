@@ -34,6 +34,7 @@ country_decisions = {
 	dh_enable_fratelli = {
 
 		potential = {
+			always = no
 			ai = no
 			NOT = {
 				has_global_flag = dh_fraticelli_religion_enabled

@@ -21,21 +21,30 @@
  dh_albi.4.c:0 "The Church will handle this."
  dh_albi.4.d:0 "Send in the Inquisitors!"
  
- dh_den_of_heresy_2:0 "Den of Heresy"
- dh_den_of_heresy_3:0 "Conversion Efforts"
- dh_den_of_heresy_4:0 "Inquisition"
-
- 
  dh_albi.5.t:0 "New Bishopric in [Root.GetName]"
  dh_albi.5.desc:0 "My [Owner.Monarch.GetTitle]! Our piety has been recognized and, after the occurrence of a Council in [Owner.Capital.GetName], a new Bishopric has been established in [Root.GetName]!"
  dh_albi.5.a:0 "Splendid!"
-
- cathar_bishopric:0 "Cathar Bishopric"
 
  dh_albi.6.t:0 "Accusations of Greed"
  dh_albi.6.desc:0 "One of the key tenets of Cathar belief is the rejection of all things borne of the material world, which is evil. Many Cathars practice devout asceticism as a rule, and believe that those who cling to their possessions are sinful. Unfortunately, it seems that now the lens of criticism has been focused on [Root.Monarch.GetName], and many devotees are accusing [Root.Monarch.GetHerHim] of being greedy."
  dh_albi.6.a:0 "Preposterous!"
  dh_albi.6.b:0 "We must cast away material possessions if we are to be saved."
+
+ #Cathar Modifiers
+ dh_den_of_heresy_2:0 "Den of Heresy"
+ dh_den_of_heresy_3:0 "Conversion Efforts"
+ dh_den_of_heresy_4:0 "Inquisition"
+ desc_dh_den_of_heresy_2:0 "This province is a hotbed for heresy."
+ desc_dh_den_of_heresy_3:0 "Conversion efforts are taking place in this province."
+ desc_dh_den_of_heresy_4:0 "Anti-Cathar Inquisitors have been dispatched to this province."
+
+ cathar_bishopric:0 "Cathar Bishopric"
+ desc_cathar_bishopric:0 "This province has been declared as the headquarters of a Cathar Bishopric."
+ 
+ dh_albi_6_a_mod:0 "Embraced Greed"
+ desc_dh_albi_6_a_mod:0 "We have embraced our love of coin, upsetting the faithful in our lands."
+ dh_albi_6_b_mod:0 "Asceticism"
+ desc_dh_albi_6_b_mod:0 "We have cast away our material possessions, resulting in lower income."
 
  #Fraticelli Events
  dh_fratelli.1.t:0 "The Fraticelli"

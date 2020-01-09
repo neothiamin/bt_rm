@@ -360,7 +360,7 @@ christian = {
 			tolerance_own = 2
 			stability_cost_modifier = -0.1
 			#may_recruit_female_generals = yes
-			female_advisor_chance = 0.2
+			#female_advisor_chance = 0.2
 		}
 		province = {
 			development_cost = 0.05
@@ -375,18 +375,24 @@ christian = {
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		aspects = {
-			organised_through_bishops_aspect
-			priests_may_marry_aspect
-			adult_baptism_aspect
-			holy_sacraments_aspect
-			saints_accept_prayers_aspect
-			icons_images_aspect
-			legalised_divorces_aspect
-			heretics_deported_aspect
-			parish_registers_aspect
-			individual_creeds_aspect
-			allow_usury_aspect
-			translated_bibles_aspect
+			cathar_bishoprics_aspect
+			cathar_marriage_aspect
+			cathar_fortresses_aspect
+			cathar_allow_weaving_aspect
+			cathar_disallow_burning_aspect
+			cathar_living_icons_aspect
+			cathar_flock_to_the_cross_aspect
+			#priests_may_marry_aspect
+			#adult_baptism_aspect
+			#holy_sacraments_aspect
+			#saints_accept_prayers_aspect
+			#icons_images_aspect
+			#legalised_divorces_aspect
+			#heretics_deported_aspect
+			#parish_registers_aspect
+			#individual_creeds_aspect
+			#allow_usury_aspect
+			#translated_bibles_aspect
 		}
 		aspects_name = CATHAR_ASPECTS
 		
