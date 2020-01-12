@@ -461,6 +461,50 @@ christian = {
 
 		date = 1445.1.1
 	}
+	waldensian = {
+		color = { 0.4 0.4 0.7 }
+		icon = 36
+		allowed_conversion = {
+			reformed
+			protestant
+		}
+		country = {
+			tolerance_heretic = 2
+			technology_cost = -0.1
+		}
+		
+		country_as_secondary = {
+			global_unrest = -1
+			technology_cost = -0.1
+		}
+		
+		hre_heretic_religion = yes
+		fervor = yes
+		
+		heretic = { BOGOMILIST FRATICELLI HUSSITE LOLLARD SOCINIAN }
+		
+		on_convert = {
+			change_religion = waldensian
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		
+		allowed_center_conversion = {
+			catholic
+		}
+
+		misguided_heretic = yes		# Other christians hate them less
+
+		date = 1445.1.1
+	}	
 	#messalian = {
 	#	color = { 0.6 0.1 0.4 }
 	#	icon = 33
@@ -482,42 +526,6 @@ christian = {
 	#	fervor = yes
 	#	
 	#	misguided_heretic = yes		# Other christians hate them less
-	#}
-	#waldensian = {
-	#	color = { 0.4 0.4 0.7 }
-	#	icon = 36
-	#	allowed_conversion = {
-	#		reformed
-	#		protestant
-	#	}
-	#	country = {
-	#		tolerance_heretic = 2
-	#		technology_cost = -0.1
-	#	}
-	#	
-	#	country_as_secondary = {
-	#		global_unrest = -1
-	#		technology_cost = -0.1
-	#	}
-	#	
-	#	hre_heretic_religion = yes
-	#	fervor = yes
-	#	
-	#	heretic = { BOGOMILIST FRATICELLI HUSSITE LOLLARD SOCINIAN }
-	#	
-	#	on_convert = {
-	#		change_religion = waldensian
-	#		add_prestige = -100
-	#		
-	#		remove_country_modifier = the_test_act
-	#		remove_country_modifier = superintendent_office
-	#		remove_country_modifier = the_popery_act
-	#		
-	#		add_country_modifier = {
-	#			name = "conversion_zeal"
-	#			duration = 3650
-	#		}			
-	#	}
 	#}
 	#lollard = {
 	#	color = { 0.5 0.8 0.8 }

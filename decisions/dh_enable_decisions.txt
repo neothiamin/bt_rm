@@ -86,4 +86,36 @@ country_decisions = {
 		}
 	}
 
+	dh_enable_waldo = {
+
+		potential = {
+			always = no
+			ai = no
+			NOT = {
+				has_global_flag = dh_waldo_religion_enabled
+			}
+			NOT = {
+				is_year = 1450
+			}
+		}
+
+		allow = {
+			ai = no
+			NOT = {
+				is_year = 1450
+			}
+		}
+
+		provinces_to_highlight = {
+			#dh_albi_spawn_area = yes
+			religion = catholic
+		}
+
+		effect = {
+			#custom_tooltip = dh_albi_spawn_area.tt
+			set_global_flag = dh_waldo_religion_enabled
+		}
+
+	}
+
 }
