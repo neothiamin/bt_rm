@@ -72,7 +72,7 @@ province_event = {
 			#region = italy_region
 			region = low_countries_region
 		}
-		development = 20
+		development = 12
 		num_of_centers_of_reformation = {
 			religion = cathar
 			count = 1
