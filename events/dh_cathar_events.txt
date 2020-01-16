@@ -26,6 +26,13 @@ province_event = {
 		dh_albi_spawn_area = yes
 		religion = catholic
 		has_global_flag = dh_cathar_religion_enabled
+		OR = {
+			had_global_flag = {
+				flag = dh_cathar_religion_enabled
+				days = 5475	#15 years
+			}
+			reform_desire = 0.3
+		}
 	}	
 
 	mean_time_to_happen = {
