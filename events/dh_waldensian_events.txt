@@ -8,31 +8,16 @@
 
 namespace = dh_waldo
 
-#Catholic Policy
+#Initial Spawn
 country_event = {
 	id = dh_waldo.1
 	title = dh_waldo.1.t
 	desc = dh_waldo.1.desc
 	picture = PRAYING_eventPicture
 
-	is_triggered_only = yes #Fires on conversion to Waldensian
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	#Teach them the error of their ways through prayer.
-	option = {
-		name = dh_waldo.1.a
-	}
-
-	#Pursue a policy of tolerance.
-	option = {
-		name = dh_waldo.1.b
-	}
-
-	#Burn the idolaters, as they once did us!
-	option = {
-		name = dh_waldo.1.c
+	trigger = {
+		capital_scope = {
+			
+		}
 	}
 }

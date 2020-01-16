@@ -1,0 +1,65 @@
+Waldensians:
+
+	Events:
+
+		Province:
+
+			Generic:
+
+				1. Spawn
+					- Areas: Romandie, Lyonnais, Savoy
+				2. Waldensian Center
+					- Waldensian CoR can spawn
+					- Areas: Rhineland, Catalonia, Navarra (?)
+
+			Specific:
+
+		Country:
+
+			Generic:
+
+				1. Lay Preaching
+				2. Prominent Lay Preacher
+					- Can spend ducats to get a half-cost Waldensian theologian			
+
+
+			Region/Nation Specific:
+				* Aragon
+					1. Legacy of Durán
+						- Based on the prominent Waldensian-turned-Catholic thinker Durán de Huesca 
+						- In response to Waldensians in the Aragon area
+							1. Accept Waldensians
+								- Higher Tolerance of Heretics
+								- Higher chance of Waldensianism spreading to Aragon
+							2. Burn them at the stake!
+								- If any Wald. provinces, revolt of size 2. Else, revolt modifier in Aragon area
+								- Papal Influence
+				* France
+
+				* Provence		
+
+Cathars:
+
+	Events:
+
+		Province:
+		
+			Generic:
+
+				1. Spawn
+				2. Cathar Center
+				3. Den of Heresy
+				4. New Bishopric
+
+			Specific:
+
+		Country:
+
+			Generic:
+
+				1. Accusations of Greed
+				
+			Specific:
+
+				1. Mass Conversions in Toulouse
+
