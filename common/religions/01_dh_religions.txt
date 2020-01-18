@@ -223,6 +223,7 @@ christian = {
 		allowed_center_conversion = {
 			catholic
 			cathar
+			waldensian
 		}
 		country = {
 			global_tax_modifier = 0.1
@@ -469,7 +470,7 @@ christian = {
 		allowed_conversion = {
 			reformed
 			protestant
-			cathar
+			#cathar
 		}
 		country = {
 			tolerance_heretic = 2
@@ -502,6 +503,7 @@ christian = {
 		
 		allowed_center_conversion = {
 			catholic
+			cathar
 		}
 
 		misguided_heretic = yes		# Other christians hate them less

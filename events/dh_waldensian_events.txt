@@ -8,7 +8,11 @@
 
 namespace = dh_waldo
 
-#Initial Spawn
+#################################
+# Initial Spawns
+#################################
+
+#Waldensian Mission Discovered in [Root.GetName]
 province_event = {
 	id = dh_waldo.1
 	title = dh_waldo.1.t
@@ -39,5 +43,71 @@ province_event = {
 		enable_religion = waldensian
 		change_religion = waldensian
 		add_reform_center = waldensian
+		save_global_event_target_as = dh_waldo_spawn_prov
 	}
 }
+
+#Waldensians from the Woodwork
+province_event = {
+	id = dh_waldo.2
+	title = dh_waldo.2.t
+	desc = dh_waldo.2.desc
+	picture = PRAYING_eventPicture
+
+	trigger = {
+		dh_waldo_spread_area = yes
+		religion = catholic
+		is_religion_enabled = waldensian
+		religion_years = {
+			waldensian = 3
+		}
+		OR = {
+			NOT = {
+				has_global_flag = dh_waldo_timer
+			}
+			had_global_flag = {
+				flag = dh_waldo_timer
+				days = 365
+			}
+		}
+		NOT = {
+			num_of_centers_of_reformation = {
+				religion = waldensian
+				count = 3
+			}
+			religion_years = {
+				waldensian = 50
+			}
+			any_province_in_state = {
+				AND = {
+					religion = waldensian
+					is_reformation_center = yes
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		clr_global_flag = dh_waldo_timer
+	}
+
+	#They're everywhere!
+	option = {
+		name = dh_waldo.2.a
+		change_religion = waldensian
+		add_reform_center = waldensian
+		set_global_flag = dh_waldo_timer
+	}
+
+}
+
+#################################
+# Flavor
+#################################
+
+
+#Popularity Among the Poor

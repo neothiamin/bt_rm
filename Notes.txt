@@ -15,8 +15,19 @@ Waldensians:
 						- Areas: Burgundy, Franche-Comte, Bavaria, Rhineland, Austria
 					- Wave 3:
 						- Areas: Brandenburg, Bohemia, Silesia, Pomerania, Apulia, Calabria
+				3. Popularity Among the Poor
+					- Waldensian province with < 8 development
+					1. Let them practice in peace.
+						- -25% local tax 10yr
+						- -4 local unrest 10yr
+					2. Crack down on this lay preaching!
+						- +10% local tax 10yr
+						- +4 local unrest 10yr
 
 			Specific:
+
+				1. Poor of Lyon
+					- 
 
 		Country:
 

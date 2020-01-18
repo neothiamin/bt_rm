@@ -55,3 +55,7 @@
  dh_waldo.1.t:0 "Waldensian Mission Discovered in [Root.GetName]"
  dh_waldo.1.desc:0 "The Waldensians, also known as the \"Poor of Lyons\" or \"Poor Men,\" have existed in some form or another for centuries. Recently, though, state inquisitors have discovered a sizeable congregation of Waldensians in [Root.GetName]. As part of their faith, Waldensians are dedicated missionaries, and will spread their faith wherever they believe they will find converts."
  dh_waldo.1.a:0 "Surely they will keep to themselves, right?"
+
+ dh_waldo.2.t:0 "Waldensians from the Woodwork"
+ dh_waldo.2.desc:0 "Evidently, the discovery of the Waldensian mission in [dh_waldo_spawn_prov.GetName] has inspired the underground Waldensian community in [Root.GetName] to start preaching in public! Laymen dressed in robes and hoods are stood at every other street corner in [Root.Capital.GetName], preaching about God knows what."
+ dh_waldo.2.a:0 "They're everywhere!"

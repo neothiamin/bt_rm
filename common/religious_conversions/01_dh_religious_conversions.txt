@@ -150,7 +150,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2 	#Waldensian is meant to hand around a bit
+	base_conversion_speed = 1 	#Waldensian is meant to hang around a bit
 
 	target_province_weights = {
 		factor = 2
@@ -253,33 +253,17 @@ waldensian_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
-		#modifier = {
-		#	factor = 1.5
-		#	dh_albi_spawn_area = yes
-		#}
-		#modifier = {
-		#	factor = 1.5
-		#	OR = {	
-		#		area = north_rhine_area
-		#		area = lower_rhineland_area
-		#		area = westphalia_area			
-		#		region = france_region
-		#		#region = low_countries_region
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	region = low_countries_region
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	has_port = yes
-		#}
-		#modifier = {
-		#	factor = 0
-		#	religion_years = {
-		#		protestant = 20
-		#	}
-		#}
+		modifier = {
+			factor = 2
+			dh_waldo_spawn_area = yes
+		}
+		modifier = {
+			factor = 1.5
+			dh_waldo_spread_area = yes
+		}
+		modifier = {
+			factor = 1.25
+			dh_waldo_spread_area_2 = yes
+		}
 	}
 }
