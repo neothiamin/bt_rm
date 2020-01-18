@@ -112,10 +112,10 @@ cathar_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
-		modifier = {
-			factor = 1.5
-			dh_albi_spawn_area = yes
-		}
+		#modifier = {
+		#	factor = 1.5
+		#	dh_albi_spawn_area = yes
+		#}
 		modifier = {
 			factor = 1.25
 			OR = {	

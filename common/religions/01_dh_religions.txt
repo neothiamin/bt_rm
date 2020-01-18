@@ -363,7 +363,7 @@ christian = {
 			#female_advisor_chance = 0.2
 		}
 		province = {
-			development_cost = 0.05
+			local_development_cost = 0.05
 		}
 		country_as_secondary = {
 			yearly_corruption = -0.1

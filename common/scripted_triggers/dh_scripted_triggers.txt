@@ -73,3 +73,14 @@ dh_crazy_mode_cor = {
 		}
 	}
 }
+
+dh_waldo_spawn_area = {
+	OR = {
+		area = savoy_dauphine_area		#Savoy
+		area = dauphine_area			#Dauphine
+		area = lyonnais_area
+		area = romandie_area
+		area = lombardy_area			#Lower Lombardy
+		area = north_piedmont_area
+	}
+}

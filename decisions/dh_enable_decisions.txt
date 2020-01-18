@@ -107,12 +107,12 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			#dh_albi_spawn_area = yes
+			dh_waldo_spawn_area = yes
 			religion = catholic
 		}
 
 		effect = {
-			#custom_tooltip = dh_albi_spawn_area.tt
+			custom_tooltip = dh_waldo_spawn_area.tt
 			set_global_flag = dh_waldo_religion_enabled
 		}
 

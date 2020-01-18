@@ -33,6 +33,7 @@ province_event = {
 			}
 			reform_desire = 0.3
 		}
+		development = 12
 	}	
 
 	mean_time_to_happen = {
@@ -163,7 +164,7 @@ country_event = {
 					religion = catholic
 				}
 				random = {
-					chance = 75
+					chance = 50
 					change_religion = cathar
 				}			
 			}
