@@ -6,13 +6,13 @@ dh_albi_spawn_area = {
 		area = languedoc_area
 		area = upper_gascony
 		area = upper_guyenne_area
-		area = limousin_area
+		#area = limousin_area
 		area = west_languedoc_area
-		area = provence_area
+		#area = provence_area
 		#area = savoy_dauphine_area
-		area = dauphine_area
+		#area = dauphine_area
 		#area = massif_central_area
-		area = lyonnais_area
+		#area = lyonnais_area
 	}
 	#NOT = {
 	#	province_id = 3109
@@ -80,7 +80,7 @@ dh_waldo_spawn_area = {
 		area = dauphine_area			#Dauphine
 		area = lyonnais_area
 		area = romandie_area
-		area = lombardy_area			#Lower Lombardy
-		area = north_piedmont_area
+		#area = lombardy_area			#Lower Lombardy
+		#area = north_piedmont_area
 	}
 }

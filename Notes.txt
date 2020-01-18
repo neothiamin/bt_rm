@@ -9,8 +9,12 @@ Waldensians:
 				1. Spawn
 					- Areas: Romandie, Lyonnais, Savoy
 				2. Waldensian Center
-					- Waldensian CoR can spawn
-					- Areas: Rhineland, Catalonia, Navarra (?)
+					- Wave 1:
+						- Areas: N/C/S Piedmont, southwestern France, Switzerland
+					- Wave 2:
+						- Areas: Burgundy, Franche-Comte, Bavaria, Rhineland, Austria
+					- Wave 3:
+						- Areas: Brandenburg, Bohemia, Silesia, Pomerania, Apulia, Calabria
 
 			Specific:
 

@@ -89,7 +89,7 @@ country_decisions = {
 	dh_enable_waldo = {
 
 		potential = {
-			always = no
+			#always = no
 			ai = no
 			NOT = {
 				has_global_flag = dh_waldo_religion_enabled

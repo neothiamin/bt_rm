@@ -85,6 +85,19 @@ province_event = {
 			religion = cathar
 			count = 1
 		}
+		if = {
+			limit = {
+				region = low_countries_region
+			}
+			NOT = {
+				low_countries_region = {
+					num_of_centers_of_reformation = {
+						religion = cathar
+						count = 2
+					}
+				}
+			}
+		}
 		NOT = {
 			num_of_centers_of_reformation = {
 				religion = cathar
