@@ -150,7 +150,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 1 	#Waldensian is meant to hang around a bit
+	base_conversion_speed = 2 	#Waldensian is meant to hang around a bit
 
 	target_province_weights = {
 		factor = 2
