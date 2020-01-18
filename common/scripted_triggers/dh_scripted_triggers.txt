@@ -79,7 +79,13 @@ dh_waldo_spawn_area = {
 		area = savoy_dauphine_area		#Savoy
 		area = dauphine_area			#Dauphine
 		area = lyonnais_area
-		area = romandie_area
+		AND = {
+			OR = {
+				has_terrain = mountain
+				has_terrain = hills
+			}			
+			area = romandie_area
+		}
 		#area = lombardy_area			#Lower Lombardy
 		#area = north_piedmont_area
 	}

@@ -9,7 +9,7 @@ cathar_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2
+	base_conversion_speed = 4 #Cathar is meant to flare up and then die out - the high-ish conversion speed ensures it will flare up
 
 	target_province_weights = {
 		factor = 2
@@ -140,5 +140,146 @@ cathar_center_of_reformation = {
 				protestant = 20
 			}
 		}
+	}
+}
+
+waldensian_center_of_reformation = {
+	
+	religion = waldensian
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2 	#Waldensian is meant to hand around a bit
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			province_id = 118 # Rome, seat of Papacy
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			religion = reformed
+		}
+		modifier = {
+			factor = 0
+			religion = protestant
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion_group = christian }
+		}
+		modifier = {
+			factor = 0
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 1
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 2
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 3
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 4
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				num_of_cardinals = 5
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				religion = waldensian
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				culture_group = FROM
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = FROM
+		}
+		modifier = {
+			factor = 0.01
+			religion = coptic
+		}		
+		modifier = {
+			factor = 0.01
+			religion = orthodox
+		}
+		modifier = {
+			factor = 0.01
+			religion = fraticelli
+		}
+		#modifier = {
+		#	factor = 1.5
+		#	dh_albi_spawn_area = yes
+		#}
+		#modifier = {
+		#	factor = 1.5
+		#	OR = {	
+		#		area = north_rhine_area
+		#		area = lower_rhineland_area
+		#		area = westphalia_area			
+		#		region = france_region
+		#		#region = low_countries_region
+		#	}
+		#}
+		#modifier = {
+		#	factor = 1.1
+		#	region = low_countries_region
+		#}
+		#modifier = {
+		#	factor = 1.1
+		#	has_port = yes
+		#}
+		#modifier = {
+		#	factor = 0
+		#	religion_years = {
+		#		protestant = 20
+		#	}
+		#}
 	}
 }

@@ -7,7 +7,7 @@ Waldensians:
 			Generic:
 
 				1. Spawn
-					- Areas: Romandie, Lyonnais, Savoy
+					- Areas: Romandie, Lyonnais, Savoy, Dauphine
 				2. Waldensian Center
 					- Wave 1:
 						- Areas: N/C/S Piedmont, southwestern France, Switzerland
