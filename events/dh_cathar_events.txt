@@ -91,6 +91,11 @@ province_event = {
 				count = 3
 			}
 		}
+		NOT = {
+			religion_years = {
+				cathar = 20
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
