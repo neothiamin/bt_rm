@@ -93,31 +93,27 @@ dh_waldo_spawn_area = {
 
 dh_waldo_spread_area = {
 	OR = {
-		#area = lombardy_area			#Lower Lombardy
 		area = north_piedmont_area
 		area = piedmont_area
 		area = north_piedmont_area
 		area = south_piedmont_area
 		area = switzerland_area
-		#area = east_lombardy_area
-		area = bourgogne_area
 		area = provence_area
 		area = franche_comte_area
-		area = lorraine_area
-		area = lower_bavaria_area
-		area = upper_bavaria_area
-		#area = austria_proper_area
-		area = lower_swabia_area
-		area = upper_swabia_area
+		area = upper_rhineland_area
 	}
 }
 
 dh_waldo_spread_area_2 = {
 	OR = {
-		region = france_region
-		region = south_german_region
-		region = north_german_region
-		region = low_countries_region
-		dh_waldo_spread_area = yes
+		area = lombardy_area			#Lower Lombardy
+		area = east_lombardy_area
+		area = bourgogne_area
+		area = lorraine_area
+		area = lower_bavaria_area
+		area = austria_proper_area
+		area = upper_bavaria_area
+		area = lower_swabia_area
+		area = upper_swabia_area
 	}
 }
