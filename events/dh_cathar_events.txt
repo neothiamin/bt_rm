@@ -34,6 +34,7 @@ province_event = {
 			reform_desire = 0.3
 		}
 		development = 12
+		is_reformation_center = no
 	}	
 
 	mean_time_to_happen = {
@@ -109,6 +110,7 @@ province_event = {
 				cathar = 20
 			}
 		}
+		is_reformation_center = no
 	}
 	
 	mean_time_to_happen = {
@@ -186,17 +188,29 @@ country_event = {
 					change_religion = cathar
 				}			
 			}
-			random_list = {
-				50 = {
-					7904 = {
-						change_religion = cathar
-						add_reform_center = cathar
+			if = {
+				limit = {
+					NOT = {
+						7904 = {
+							is_reformation_center = yes
+						}
+						196 = {
+							is_reformation_center = yes
+						}
 					}
-				}
-				50 = {
-					196 = {
-						change_religion = cathar
-						add_reform_center = cathar
+				}				
+				random_list = {
+					50 = {
+						7904 = {
+							change_religion = cathar
+							add_reform_center = cathar
+						}
+					}
+					50 = {
+						196 = {
+							change_religion = cathar
+							add_reform_center = cathar
+						}
 					}
 				}
 			}

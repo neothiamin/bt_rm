@@ -26,3 +26,15 @@ dh_albi_6_b_mod = {
 	global_tax_modifier = -0.1
 	tolerance_own = 1
 }
+
+#Lay Preaching
+dh_waldo_3_a_modifier = {
+	local_tax_modifier = -0.25
+	local_unrest = -4
+}
+
+#Crackdown on Lay Preaching
+dh_waldo_3_b_modifier = {
+	local_unrest = 6
+	local_tax_modifier = 0.1
+}

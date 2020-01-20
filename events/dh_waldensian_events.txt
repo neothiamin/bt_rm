@@ -27,6 +27,7 @@ province_event = {
 			days = 1095
 		}
 		development = 8
+		is_reformation_center = no
 	}
 
 	fire_only_once = yes
@@ -84,6 +85,7 @@ province_event = {
 					is_reformation_center = yes
 				}
 			}
+			is_reformation_center = yes
 		}
 	}
 
@@ -106,8 +108,81 @@ province_event = {
 }
 
 #################################
-# Flavor
+# Province-scope Flavor
 #################################
 
 
 #Popularity Among the Poor
+province_event = {
+	id = dh_waldo.3
+	title = dh_waldo.3.t
+	desc = dh_waldo.3.desc
+	picture = ANGLICAN_SERMON_eventPicture
+
+	trigger = {
+		religion = waldensian
+		owner = {
+			NOT = {
+				religion = waldensian
+			}
+		}
+		continent = europe
+		NOT = {
+			development = 10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 900
+		modifier = {
+			factor = 1.25
+			NOT = {
+				development = 6
+			}
+		}
+	}
+
+	#Let them practice in peace.
+	option = {
+		name = dh_waldo.3.a
+		add_province_modifier = {
+			name = dh_waldo_3_a_modifier
+			duration = 3650
+		}
+	}
+
+	#Crack down on this lay preaching!
+	option = {
+		name = dh_waldo.3.b
+		add_province_modifier = {
+			name = dh_waldo_3_b_modifier
+			duration = 3650
+		}
+	}
+
+	#Allocate resources to eradicate the people's poverty.
+	option = {
+		name = dh_waldo.3.c
+		highlight = yes
+		trigger = {
+			OR = {
+				owner = {
+					ruler_has_personality = kind_hearted_personality
+					ruler_has_personality = tolerant_personality
+				}
+			}
+		}
+		owner = {
+			add_years_of_income = -0.25
+		}
+		add_base_tax = 1
+		add_base_production = 1
+	}
+}
+
+#################################
+# Country-scope Flavor
+#################################
+
+
+#Prominent Waldensian Preacher
