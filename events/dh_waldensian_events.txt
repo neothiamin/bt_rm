@@ -57,7 +57,7 @@ province_event = {
 	trigger = {
 		dh_waldo_spread_area = yes
 		religion = catholic
-		is_religion_enabled = waldensian
+		#is_religion_enabled = waldensian
 		religion_years = {
 			waldensian = 3
 		}

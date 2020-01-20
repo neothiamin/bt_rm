@@ -1,5 +1,7 @@
 v1.1:
++++ Added Waldensians
 
++ Many tweaks to Catharism, including its spawn conditions, spread time, and preferred areas
 
 v1:
 

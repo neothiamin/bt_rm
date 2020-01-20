@@ -106,7 +106,7 @@ dh_waldo_spread_area = {
 		area = lorraine_area
 		area = lower_bavaria_area
 		area = upper_bavaria_area
-		area = austria_proper_area
+		#area = austria_proper_area
 		area = lower_swabia_area
 		area = upper_swabia_area
 	}

@@ -473,13 +473,13 @@ christian = {
 			#cathar
 		}
 		country = {
-			tolerance_heretic = 2
+			tolerance_heretic = 1
 			technology_cost = -0.05
 		}
 		
 		country_as_secondary = {
 			global_unrest = -1
-			technology_cost = -0.1
+			technology_cost = -0.05
 		}
 		
 		hre_heretic_religion = yes
