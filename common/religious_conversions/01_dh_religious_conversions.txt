@@ -9,7 +9,7 @@ cathar_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 4 #Cathar is meant to flare up and then die out - the high-ish conversion speed ensures it will flare up
+	base_conversion_speed = 5 #Cathar is meant to flare up and then die out - the high-ish conversion speed ensures it will flare up
 
 	target_province_weights = {
 		factor = 2
@@ -136,6 +136,14 @@ cathar_center_of_reformation = {
 		}
 		modifier = {
 			factor = 0
+			NOT = {
+				calc_true_if = {
+					amount = 50
+					europe = {
+						religion = cathar
+					}
+				}
+			}
 			religion_years = {
 				protestant = 20
 			}
@@ -150,7 +158,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2 	#Waldensian is meant to hang around a bit
+	base_conversion_speed = 3 	#Waldensian is meant to hang around a bit
 
 	target_province_weights = {
 		factor = 2

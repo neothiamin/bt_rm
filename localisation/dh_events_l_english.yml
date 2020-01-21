@@ -61,7 +61,7 @@
  dh_waldo.2.a:0 "They're everywhere!"
 
  dh_waldo.3.t:0 "Popularity Among the Poor"
- dh_waldo.3.desc:0 "Waldensians are notorious for their advocacy of lay preaching, or the ability for non-clergymen to give sermons and perform ceremonial rites. Waldensians are also notorious for their love of the poor. Naturally, when these two characteristics mix, events undesirable to a pious Catholic nation like ours may occur.\n\nLately, the Waldensian community in [Root.GetName] have been utilizing the... \"humility,\" let's say, of the local populace in regards to their material possessions as fodder for their sermons, and many locals have taken to believing them. If we let this lay preaching continue on unabated, this trend may spread to our other lands.\n\nWhat say you, [Owner.Monarch.GetTitle]?"
+ dh_waldo.3.desc:0 "Waldensians are notorious for their advocacy of lay preaching, or the ability for non-clergymen to give sermons and perform ceremonial rites. Waldensians are also notorious for their love of the poor. Naturally, when these two characteristics mix, events undesirable to a pious Catholic nation like ours may occur.\n\nLately, the Waldensian community in [Root.GetName] have been utilizing the... \"humility,\" let's say, of the local populace in regards to their material possessions as fodder for their sermons, and many locals have taken to believing them. If we let this lay preaching continue on unabated, this trend may spread to our other lands."
  dh_waldo.3.a:0 "Let them practice in peace."
  dh_waldo.3.b:0 "Crack down on it!"
  dh_waldo.3.c:0 "These Waldensians may have a point. Help to alleviate the poverty of these people."
