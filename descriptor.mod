@@ -11,5 +11,5 @@ dependencies={
 }
 name="-BT Addon: Heresy!"
 picture="thumbnail.png"
-supported_version="1.29.3"
+supported_version="1.29.*"
 remote_file_id="1964137886"

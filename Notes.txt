@@ -1,0 +1,93 @@
+Waldensians:
+
+	Events:
+
+		Province:
+
+			Generic:
+
+				1. Spawn
+					- Areas: Romandie, Lyonnais, Savoy, Dauphine
+				2. Waldensian Center
+					- Wave 1:
+						- Areas: N/C/S Piedmont, southwestern France, Switzerland
+					- Wave 2:
+						- Areas: Burgundy, Franche-Comte, Bavaria, Rhineland, Austria
+					- Wave 3:
+						- Areas: Brandenburg, Bohemia, Silesia, Pomerania, Apulia, Calabria
+				3. Popularity Among the Poor
+					- Waldensian province with < 8 development
+					1. Let them practice in peace.
+						- -25% local tax 10yr
+						- -4 local unrest 10yr
+					2. Crack down on this lay preaching!
+						- +10% local tax 10yr
+						- +4 local unrest 10yr
+
+			Specific:
+
+				1. Poor of Lyon
+					- 
+
+		Country:
+
+			Generic:
+
+				1. Lay Preaching
+				2. Prominent Lay Preacher
+					- Can spend ducats to get a half-cost Waldensian theologian			
+
+
+			Region/Nation Specific:
+				* Aragon
+					1. Legacy of Durán
+						- Based on the prominent Waldensian-turned-Catholic thinker Durán de Huesca 
+						- In response to Waldensians in the Aragon area
+							1. Accept Waldensians
+								- Higher Tolerance of Heretics
+								- Higher chance of Waldensianism spreading to Aragon
+							2. Burn them at the stake!
+								- If any Wald. provinces, revolt of size 2. Else, revolt modifier in Aragon area
+								- Papal Influence
+				* France
+
+				* Provence		
+	
+	Misc Flavor:
+
+Cathars:
+
+	Events:
+
+		Province:
+		
+			Generic:
+
+				1. Spawn
+				2. Cathar Center
+				3. Den of Heresy
+				4. New Bishopric
+
+			Specific:
+
+		Country:
+
+			Generic:
+
+				1. Accusations of Greed
+				2. The Protestant Tradition
+					- For Cathar nations with a Cathar center of reformation
+					1. Of course! Let us welcome them as brothers in faith!
+						- Conversion to Protestant
+						- Cathar CoR(s) removed, Protestant CoR added in its place
+							- Even if multiple Cathar CoRs exist, only one Protestant CoR will be spawned	
+					2. Epicureans, the lot of them!
+				
+			Specific:
+
+				1. Mass Conversions in Toulouse
+
+	Misc Flavor:
+
+		- Albigensian Crusade CB?
+
