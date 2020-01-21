@@ -90,4 +90,5 @@ Cathars:
 	Misc Flavor:
 
 		- Albigensian Crusade CB?
+			- Occitan/Gascon culture independent Cathar nation
 

@@ -93,7 +93,6 @@ dh_waldo_spawn_area = {
 
 dh_waldo_spread_area = {
 	OR = {
-		area = north_piedmont_area
 		area = piedmont_area
 		area = north_piedmont_area
 		area = south_piedmont_area
