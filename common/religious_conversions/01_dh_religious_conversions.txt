@@ -81,7 +81,7 @@ cathar_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1,25
 			owner = {
 				religion = cathar
 			}
@@ -230,7 +230,7 @@ waldensian_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				religion = waldensian
 			}
