@@ -98,8 +98,6 @@ dh_waldo_spread_area = {
 		area = south_piedmont_area
 		area = switzerland_area
 		area = provence_area
-		area = franche_comte_area
-		area = upper_rhineland_area
 	}
 }
 
@@ -114,5 +112,7 @@ dh_waldo_spread_area_2 = {
 		area = upper_bavaria_area
 		area = lower_swabia_area
 		area = upper_swabia_area
+		area = franche_comte_area
+		area = upper_rhineland_area
 	}
 }

@@ -81,7 +81,7 @@ cathar_center_of_reformation = {
 			}
 		}
 		modifier = {
-			factor = 1,25
+			factor = 1.25
 			owner = {
 				religion = cathar
 			}
@@ -139,7 +139,7 @@ cathar_center_of_reformation = {
 			NOT = {
 				calc_true_if = {
 					amount = 50
-					europe = {
+					all_province = {
 						religion = cathar
 					}
 				}
