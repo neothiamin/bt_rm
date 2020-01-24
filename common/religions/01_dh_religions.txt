@@ -416,6 +416,7 @@ christian = {
 
 		allowed_center_conversion = {
 			catholic
+			waldensian
 		}
 
 		date = 1445.1.1

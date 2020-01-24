@@ -66,13 +66,13 @@ province_event = {
 			limit = {
 				region = france_region
 			}			
-			development = 8
+			development = 14
 		}
 		else_if = {
 			limit = {
 				region = italy_region
 			}
-			development = 16
+			development = 18
 		}
 		else_if = {
 			limit = {
@@ -146,16 +146,16 @@ province_event = {
 		}
 		continent = europe
 		NOT = {
-			development = 10
+			development = 20
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 900
 		modifier = {
-			factor = 1.25
+			factor = 0.5
 			NOT = {
-				development = 6
+				development = 12
 			}
 		}
 	}
@@ -163,6 +163,22 @@ province_event = {
 	#Let them practice in peace.
 	option = {
 		name = dh_waldo.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				tolerance_to_this = 2
+			}
+			modifier = {
+				factor = 1.5
+				owner = {
+					num_of_religion = {
+						value = 3
+						religion = waldensian
+					}
+				}
+			}
+		}
 		add_province_modifier = {
 			name = dh_waldo_3_a_modifier
 			duration = 3650
@@ -172,6 +188,15 @@ province_event = {
 	#Crack down on this lay preaching!
 	option = {
 		name = dh_waldo.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = {
+					tolerance_to_this = -2
+				}
+			}
+		}
 		add_province_modifier = {
 			name = dh_waldo_3_b_modifier
 			duration = 3650
@@ -181,12 +206,16 @@ province_event = {
 	#Allocate resources to eradicate the people's poverty.
 	option = {
 		name = dh_waldo.3.c
+		ai_chance = {
+			factor = 50
+		}
 		highlight = yes
 		trigger = {
 			OR = {
 				owner = {
 					ruler_has_personality = kind_hearted_personality
 					ruler_has_personality = tolerant_personality
+					has_idea_group = humanist_ideas
 				}
 			}
 		}
