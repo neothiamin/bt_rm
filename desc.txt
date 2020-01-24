@@ -2,7 +2,11 @@ Are you a heretic? Do you long for the good ol' days before the Albigensian Crus
 
 Then this mod is for you!
 
-Heresy! is an addon for Beyond Typus that adds/will add many new heresies, primarily those that went against the Catholic Church. At the moment, it adds only one new religion, Catharism, but others such as Fraticellianism, Waldensianism, and more are planned.
+Heresy! is an addon for Beyond Typus that adds/will add many new heresies, primarily those that went against the Catholic Church. 
+
+Added Heresies:
+- Cathar
+- Waldensian
 
 This mod requires both Beyond Typus and Dub's BT addon, Bugfixing BT 12.0. It probably could work without BT, but I will not provide support for non-BT users.
 
