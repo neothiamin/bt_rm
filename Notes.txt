@@ -6,16 +6,16 @@ Waldensians:
 
 			Generic:
 
-				1. Spawn
+				1. Spawn - D
 					- Areas: Romandie, Lyonnais, Savoy, Dauphine
-				2. Waldensian Center
+				2. Waldensian Center - D
 					- Wave 1:
 						- Areas: N/C/S Piedmont, southwestern France, Switzerland
 					- Wave 2:
 						- Areas: Burgundy, Franche-Comte, Bavaria, Rhineland, Austria
 					- Wave 3:
 						- Areas: Brandenburg, Bohemia, Silesia, Pomerania, Apulia, Calabria
-				3. Popularity Among the Poor
+				3. Popularity Among the Poor - D
 					- Waldensian province with < 8 development
 					1. Let them practice in peace.
 						- -25% local tax 10yr
@@ -33,7 +33,7 @@ Waldensians:
 
 			Generic:
 
-				1. Lay Preaching
+				1. Lay Preaching - D
 				2. Prominent Lay Preacher
 					- Can spend ducats to get a half-cost Waldensian theologian			
 
@@ -63,10 +63,10 @@ Cathars:
 		
 			Generic:
 
-				1. Spawn
-				2. Cathar Center
-				3. Den of Heresy
-				4. New Bishopric
+				1. Spawn - D
+				2. Cathar Center - D
+				3. Den of Heresy - D
+				4. New Bishopric - D
 
 			Specific:
 
@@ -74,7 +74,7 @@ Cathars:
 
 			Generic:
 
-				1. Accusations of Greed
+				1. Accusations of Greed - D
 				2. The Protestant Tradition
 					- For Cathar nations with a Cathar center of reformation
 					1. Of course! Let us welcome them as brothers in faith!
@@ -85,7 +85,7 @@ Cathars:
 				
 			Specific:
 
-				1. Mass Conversions in Toulouse
+				1. Mass Conversions in Toulouse - D
 
 	Misc Flavor:
 
