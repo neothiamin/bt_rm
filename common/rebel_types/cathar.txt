@@ -124,30 +124,42 @@ cathar_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				religion = cathar
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = cathar
+						is_reformation_center = yes
+						owner = { religion = cathar }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
+				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = cathar }
-			}
-			change_religion = cathar
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = cathar }
+					is_reformation_center = no
+					NOT = { owner = { religion = cathar } }
+				}
+				change_religion = cathar
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}
 	
 	# Country scope
 	can_negotiate_trigger = {
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			dominant_religion = cathar
+		}
 	}
 	
 	# Country scope
@@ -159,7 +171,7 @@ cathar_rebels = {
 	demands_description = "generic_rebels_demand"
 	
 	# Country Scope	
-	demands_enforced_effect = {
+	demands_enforced_effect = {		
 		if = {
 			limit = {
 				NOT = { religion_group = christian }
@@ -183,17 +195,50 @@ cathar_rebels = {
 				religion = cathar
 			}
 			add_country_modifier = {
-				name = "religious_intolerance"
+				name = "religious_intolerance_enforced"
 				duration = 3650
 			}
 		}
 		if = {
 			limit = {
-				religion_group = christian
+				religion = cathar
+				has_estate = estate_church
+				NOT = {
+					has_estate_influence_modifier = {
+						estate = estate_church
+						modifier = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+				duration = 3650
+				influence = 15
+			}
+		}
+		if = {
+			limit = {
 				NOT = { religion = cathar }
+				dominant_religion = cathar
+				NOT = { tag = PAP }
 			}
 			change_religion = cathar
 			force_converted = yes
+		}
+		if = {
+			limit = {
+				NOT = { religion = cathar }
+				NOT = { dominant_religion = cathar }
+				NOT = { tag = PAP }
+				NOT = { has_country_modifier = heretic_tolerance }
+				religion_group = christian
+			}
+			add_country_modifier = {
+				name = "heretic_tolerance"
+				duration = 3650
+			}
+			add_stability = -1
 		}
 	}
 }
