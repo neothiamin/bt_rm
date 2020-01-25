@@ -9,4 +9,4 @@
  waldensian_rebels_name:0 "Waldensian Zealots"
  waldensian_rebels_title:0 "Cathar"
  waldensian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- waldensian_rebels_army:0 "Poor of $PROVINCENAME$"
+ waldensian_rebels_army:0 "Poor of $PROVINCE$"
