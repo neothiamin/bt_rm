@@ -1,3 +1,14 @@
+v1.1.1:
+
+!!!MAJOR FIXES TO PROTESTANTISM AND CATHOLICISM!!!
+- These include:
+	- double protestant aspects
+	- double prestige loss on conversion
+	- probably lots of other stuff too
+
+* Fixed Cathar/Waldensian rebels
+* Fixed Waldensian Zealots army name
+
 v1.1 - 1:
 * Updated version number
 
