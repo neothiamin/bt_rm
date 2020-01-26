@@ -108,7 +108,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 10
+		years = 5
 	}
 
 	immediate = {
