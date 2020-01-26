@@ -175,7 +175,7 @@ country_event = {
 	#No!
 	option = {
 		name = dh_albi.3.a
-		add_reform_desire = 0.05
+		add_reform_desire = 0.025
 		custom_tooltip = dh_mass_conversions_in_toulouse.tt
 		set_global_flag = dh_toulouse_conversions
 		hidden_effect = {

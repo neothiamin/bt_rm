@@ -3,6 +3,7 @@ v1.2:
 * Added reform desire to Mass Conversions in Toulouse
 * Reverted dh_waldo.2 MTTH to 5y
 * Reduced "Cathar Resurgence" MTTH from 60m to 45m
+* Buffed "Cathar Fortresses" fort maintenance reduction modifier
 
 v1.1.1:
 
