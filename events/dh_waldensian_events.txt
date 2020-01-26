@@ -147,6 +147,8 @@ province_event = {
 		continent = europe
 		NOT = {
 			development = 20
+			has_province_modifier = dh_waldo_3_a_modifier
+			has_province_modifier = dh_waldo_3_b_modifier
 		}
 	}
 
