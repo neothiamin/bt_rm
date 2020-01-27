@@ -86,6 +86,16 @@ Cathars:
 			Specific:
 
 				1. Mass Conversions in Toulouse - D
+				2. Revivalists in Lombardy (Milan)
+					- Historically, some of the last Cathar communities existed in Lombardy, especially after the Albigensian Crusade
+					- The Autier brothers, instrumental in the Autier Revival in the late 1200s/early 1300s, traveled to Lombardy in 1296 and it was there that they began their network of safehouses
+					1. Cast them out!
+						- Size 2 Cathar revolt in Milan (city)
+						- Size 1 Cathar revolt in two other random provinces
+						- +10 Papal influence if Catholic, otherwise +5 prestige
+					2. Accept them as our own.
+						- Higher chance if Milan is Waldensian
+						- Each owned province in Lower/Upper Lombardy (that is not a CoR) has a 25% chance to become Cathar; also gains +100% CoR resistance
 
 	Misc Flavor:
 

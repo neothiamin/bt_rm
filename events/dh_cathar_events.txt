@@ -247,6 +247,132 @@ country_event = {
 #	}
 #}
 
+#Revivalists in Lombardy (Milan)
+#Check notes for details and reasoning
+country_event = {
+	id = dh_albi.8
+	title = dh_albi.8.t
+	desc = dh_albi.8.desc
+	picture = PRAYING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MLO
+		OR = {
+			religion = catholic
+			religion = waldensian
+		}
+		religion_years = {
+			cathar = 4
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {		
+		hidden_effect = {			
+			random_owned_province = {
+				limit = {
+					OR = {
+						religion = catholic
+						religion = waldensian
+					}
+					OR = {
+						area = lombardy_area
+						area = east_lombardy_area
+					}
+				}
+				set_province_flag = dh_albi_8_target
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						religion = catholic
+						religion = waldensian
+					}
+					OR = {
+						area = lombardy_area
+						area = east_lombardy_area
+					}
+					NOT = {
+						has_province_flag = dh_albi_8_target
+					}
+				}
+				set_province_flag = dh_albi_8_target
+			}
+		}
+	}
+
+	#Cast them out!
+	option = {
+		name = dh_albi.8.a
+		ai_chance = {
+			factor = 50
+		}
+		104 = { #Milan
+			spawn_rebels = {
+				size = 2
+				type = cathar_rebels
+				unrest = 8
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = dh_albi_8_target
+			}
+			spawn_rebels = {
+				size = 1
+				type = cathar_rebels
+				unrest = 4
+			}
+			clr_province_flag = dh_albi_8_target
+		}
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+		}
+		else = {
+			add_prestige = 5
+		}
+	}
+
+	#Accept them as brothers in faith.
+	option = {
+		name = dh_albi.8.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 10
+				religion = waldensian
+			}
+		}
+		custom_tooltip = dh_waldo_8_b_tt
+		hidden_effect = {			
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = lombardy_area
+						area = east_lombardy_area
+					}
+					NOT = {
+						is_reformation_center = yes
+					}
+				}
+				random = {
+					chance = 25
+					change_religion = cathar
+				}
+			}
+		}
+	}
+}
+
+
 #################################
 # Province-scope Flavor
 #################################

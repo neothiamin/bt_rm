@@ -30,6 +30,12 @@
  dh_albi.6.a:0 "Preposterous!"
  dh_albi.6.b:0 "We must cast away material possessions if we are to be saved."
 
+ dh_albi.8.t:0 "Revivalists in Lombardy"
+ dh_albi.8.desc:0 "REPLACE_ME"
+ dh_albi.8.a:0 "Cast them out!"
+ dh_waldo_8_b_tt:0 "Every non-§YCenter of Reformation§! province in §YUpper Lombardy§! and §YLower Lombardy§! owned by §YMilan§! has a §R25%§! chance to become §YCathar.§!"
+ dh_albi.8.b:0 "Accept them as brothers in faith."
+
  #Cathar Modifiers
  dh_den_of_heresy_2:0 "Den of Heresy"
  dh_den_of_heresy_3:0 "Conversion Efforts"
