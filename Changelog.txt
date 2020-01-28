@@ -1,10 +1,15 @@
 v1.2:
 
++ New Events
+	- Revivalists in Lombardy
+	- Traveling Troubadours
+
 * Added reform desire to Mass Conversions in Toulouse
 * Reverted dh_waldo.2 MTTH to 5y
 * Reduced "Cathar Resurgence" MTTH from 60m to 45m
 * Buffed "Cathar Fortresses" fort maintenance reduction modifier
-* Added some descriptions to Cathar aspects
+* Added descriptions to some Cathar Aspects
+* Fixed description for the "New Bishopric in (province)" event
 
 v1.1.1:
 

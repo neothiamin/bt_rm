@@ -82,6 +82,16 @@ Cathars:
 						- Cathar CoR(s) removed, Protestant CoR added in its place
 							- Even if multiple Cathar CoRs exist, only one Protestant CoR will be spawned	
 					2. Epicureans, the lot of them!
+				3. Traveling Troubadour
+					- Troubadours/Trobairitz were traveling Occitan poets/lyricists
+					- This event is centered around the work of a prominent Cathar Troubadour/Trobairitz who the ROOT nation can hire as a court performer
+					- ROOT nation must own at least one Occitan/Gascon/Provencal/Arpitan province
+					1. Ah, the beauty of the langue d'oc...
+						- Discounted Cathar artist appears in royal court
+						- Random province converts to Catharism
+					2. We will have no merryman or merrywoman in our midst!
+						- Lose 10 prestige
+						- If Catholic, +5 papal influence
 				
 			Specific:
 

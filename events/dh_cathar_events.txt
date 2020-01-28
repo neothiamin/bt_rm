@@ -356,15 +356,14 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						area = lombardy_area
-						area = east_lombardy_area
+						region = italy_region
 					}
 					NOT = {
 						is_reformation_center = yes
 					}
 				}
 				random = {
-					chance = 25
+					chance = 40
 					change_religion = cathar
 				}
 			}
@@ -613,7 +612,7 @@ country_event = {
 	#is_triggered_only = yes #pulse
 
 	mean_time_to_happen = {
-		years = 25
+		years = 10
 	}
 	
 	trigger = {
@@ -650,5 +649,87 @@ country_event = {
 			name = dh_albi_6_b_mod
 			duration = 3650
 		}
+	}
+}
+
+#Traveling Troubadour
+country_event = {	
+	id = dh_albi.9
+	title = dh_albi.9.t
+	desc = dh_albi.9.desc
+	picture = CULTURE_eventPicture
+
+	trigger = {
+		religion = catholic
+		capital_scope = {
+			continent = europe
+		}
+		any_owned_province = {
+			religion = cathar
+			OR = {
+				culture = gascon
+				culture = occitain	#Occitan
+				culture = aquitaine	#Provencal
+				culture = arpitan	
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = dh_albi_9_happened
+			}
+			had_country_flag = {
+				flag = dh_albi_9_happened
+				days = 3650 #10 years
+			}
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				religion = cathar
+				OR = {
+					culture = gascon
+					culture = occitain	#Occitan
+					culture = aquitaine	#Provencal
+					culture = arpitan	
+				}
+			}
+			save_event_target_as = dh_albi_9_target
+		}
+		set_country_flag = dh_albi_9_happened
+	}
+
+	mean_time_to_happen = {
+		years = 15
+	}
+
+	#Oh, the beauty of the langue d'oc...
+	option = {
+		name = dh_albi.9.a
+		define_advisor = {
+			type = artist
+			religion = cathar
+			culture = event_target:dh_albi_9_target
+			location = event_target:dh_albi_9_target
+			discount = yes
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+		add_papal_influence = -10
+		add_prestige = -5
+	}
+
+	#We will have no merrymen nor Cathars in our midst!
+	option = {
+		name = dh_albi.9.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_papal_influence = 5
+		add_prestige = 5
 	}
 }
