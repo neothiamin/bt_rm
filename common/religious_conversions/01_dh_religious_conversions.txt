@@ -267,11 +267,10 @@ waldensian_center_of_reformation = {
 		}
 		modifier = {
 			factor = 1.5
-			dh_waldo_spread_area = yes
-		}
-		modifier = {
-			factor = 1.25
-			dh_waldo_spread_area_2 = yes
+			OR = {				
+				dh_waldo_spread_area = yes
+				dh_waldo_spread_area_2 = yes
+			}
 		}
 		modifier = {
 			factor = 1.5

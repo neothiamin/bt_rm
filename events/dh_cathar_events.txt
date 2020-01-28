@@ -264,7 +264,7 @@ country_event = {
 			religion = waldensian
 		}
 		religion_years = {
-			cathar = 4
+			cathar = 10
 		}
 	}
 
@@ -287,22 +287,22 @@ country_event = {
 				}
 				set_province_flag = dh_albi_8_target
 			}
-			random_owned_province = {
-				limit = {
-					OR = {
-						religion = catholic
-						religion = waldensian
-					}
-					OR = {
-						area = lombardy_area
-						area = east_lombardy_area
-					}
-					NOT = {
-						has_province_flag = dh_albi_8_target
-					}
-				}
-				set_province_flag = dh_albi_8_target
-			}
+			#random_owned_province = {
+			#	limit = {
+			#		OR = {
+			#			religion = catholic
+			#			religion = waldensian
+			#		}
+			#		OR = {
+			#			area = lombardy_area
+			#			area = east_lombardy_area
+			#		}
+			#		NOT = {
+			#			has_province_flag = dh_albi_8_target
+			#		}
+			#	}
+			#	set_province_flag = dh_albi_8_target
+			#}
 		}
 	}
 
@@ -314,7 +314,7 @@ country_event = {
 		}
 		104 = { #Milan
 			spawn_rebels = {
-				size = 2
+				size = 1
 				type = cathar_rebels
 				unrest = 8
 			}
