@@ -612,7 +612,7 @@ country_event = {
 	#is_triggered_only = yes #pulse
 
 	mean_time_to_happen = {
-		years = 10
+		years = 25
 	}
 	
 	trigger = {
@@ -701,7 +701,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 15
+		years = 25
 	}
 
 	#Oh, the beauty of the langue d'oc...
