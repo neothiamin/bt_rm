@@ -31,10 +31,15 @@
  dh_albi.6.b:0 "We must cast away material possessions if we are to be saved."
 
  dh_albi.8.t:0 "Revivalists in Lombardy"
- dh_albi.8.desc:0 "REPLACE_ME"
+ dh_albi.8.desc:0 "With the recent Cathar resurgence in Europe, Cathars are popping up in swarms all around Europe. Though most seem to consider southern France to be the ancestral homeland of the Cathars, many seem to forget the role that Lombardy played in the 14th-century Autier Revival of Catharism. Indeed, the legacy of the brothers Autier and their flight from France to Lombardy to seek support for their revival has been forgotten by Catholics, Cathars, and Christians of all creeds and codes.\n\nHowever, now it seems that the Cathar tradition in Lombardy is impossible to ignore, as a prominent network of devout Cathars and safehouses has been discovered all across our lands. If we were to leave them be, the presence of a prominent \"heretical\" sect may prove to be an issue."
  dh_albi.8.a:0 "Cast them out!"
- dh_waldo_8_b_tt:0 "Every non-§YCenter of Reformation§! province in §YUpper Lombardy§! and §YLower Lombardy§! owned by §YMilan§! has a §R25%§! chance to become §YCathar.§!"
+ dh_waldo_8_b_tt:0 "Every non-§YCenter of Reformation§! province in the §YItaly§! region owned by §YMilan§! has a §R40%§! chance to become §YCathar.§!"
  dh_albi.8.b:0 "Accept them as brothers in faith."
+
+ dh_albi.9.t:0 "Traveling Troubadours"
+ dh_albi.9.desc:0 "Integral to the cultures of the south of France is the tradition of the troubadours. Composers, poets, and lyricists all at once, the troubadour tradition spread or inspired similar traditions in Germany, Italy, Iberia, and northern France, and the music made by the troubadours of old are adored by some and loathed by others. This loathing is especially projected by some of the more orthodox Catholics in the many realms of Europe, who see troubadour art as Cathar indoctrination in musical form, and consider troubadours to be clandestine Cathar heretics.\n\nRecently, a troubadour from [dh_albi_9_target.GetName] has become very famous in their home region, and has traveled with a band of their fellows to the royal court at [Root.Capital.GetCapitalName] and are offering their services to us. Naturally, the possibility of them being heretics has some of our clergy worried..."
+ dh_albi.9.a:0 "Oh, the beauty of the langue d'oc..."
+ dh_albi.9.b:0 "We will have no merrymen nor Cathars in our court!"
 
  #Cathar Modifiers
  dh_den_of_heresy_2:0 "Den of Heresy"
