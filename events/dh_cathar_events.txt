@@ -729,6 +729,21 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
+		event_target:dh_albi_9_target = {
+			add_province_modifier = {
+				name = dh_albi_9_b_mod
+				duration = 3650
+			}
+		}
+		random = {
+			chance = 50
+			event_target:dh_albi_9_target = {
+				spawn_rebels = {
+					size = 1
+					type = cathar_rebels
+				}
+			}
+		}
 		add_papal_influence = 5
 		add_prestige = 5
 	}
