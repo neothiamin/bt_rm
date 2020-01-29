@@ -11,10 +11,10 @@
  CATHAR_ASPECTS_LONG:0 "Aspects of Faith"
  CATHAR_ASPECTS_SHORT:0 "aspects"
 
- cathar_bishoprics_aspect:0 "Localized Bishoprics"
- desc_cathar_bishoprics_aspect:0 ""
+ cathar_bishoprics_aspect:0 "Localized Dioceses"
+ desc_cathar_bishoprics_aspect:0 "The Cathar tradition, unlike that of the Catholics, does not have a bureaucracy that reaches to Hell and back in length and complicatedness; rather, Cathars rely more on each other than on any bishop or archbishop or pope etc. However, there is always a need for some small-scale organization in any faith. By establishing localized dioceses we can keep the localized fraternity of good Cathars while at the same time keeping the flock organized."
  cathar_marriage_aspect:0 "Loosen Marriage Restrictions"
- desc_cathar_marriage_aspect:0 ""
+ desc_cathar_marriage_aspect:0 "Integral to the position of Perfect is a vow of chastity. However, many have pointed out that this vow shares possibly too many similarities with the Catholic vows of celibacy. By allowing Perfects to marry, we can ensure that each and every Perfect is both more relatable and has a better instinct of how to care for the Believers which they administer."
  cathar_fortresses_aspect:0 "Cathar Fortresses"
  desc_cathar_fortresses_aspect:0 "For a faith such as ours that is met by opposition on all sides, the importance of strong forts to protect our people and our faith is clear. By establishing state-sanctioned fortress construction operations and making use of local hills or mountains, we can ensure the faithful have a place to seek refuge."
  cathar_allow_weaving_aspect:0 "Promote Weaving"
