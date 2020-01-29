@@ -82,7 +82,7 @@ Cathars:
 						- Cathar CoR(s) removed, Protestant CoR added in its place
 							- Even if multiple Cathar CoRs exist, only one Protestant CoR will be spawned	
 					2. Epicureans, the lot of them!
-				3. Traveling Troubadour
+				3. Traveling Troubadour - D
 					- Troubadours/Trobairitz were traveling Occitan poets/lyricists
 					- This event is centered around the work of a prominent Cathar Troubadour/Trobairitz who the ROOT nation can hire as a court performer
 					- ROOT nation must own at least one Occitan/Gascon/Provencal/Arpitan province
@@ -96,7 +96,7 @@ Cathars:
 			Specific:
 
 				1. Mass Conversions in Toulouse - D
-				2. Revivalists in Lombardy (Milan)
+				2. Revivalists in Lombardy (Milan) - D
 					- Historically, some of the last Cathar communities existed in Lombardy, especially after the Albigensian Crusade
 					- The Autier brothers, instrumental in the Autier Revival in the late 1200s/early 1300s, traveled to Lombardy in 1296 and it was there that they began their network of safehouses
 					1. Cast them out!
