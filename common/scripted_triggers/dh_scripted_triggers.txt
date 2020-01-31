@@ -89,6 +89,9 @@ dh_waldo_spawn_area = {
 		#area = lombardy_area			#Lower Lombardy
 		#area = north_piedmont_area
 	}
+	NOT = {
+		province_id = 202 #Avignon
+	}
 }
 
 dh_waldo_spread_area = {
