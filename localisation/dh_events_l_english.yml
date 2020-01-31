@@ -82,6 +82,6 @@
 
  #Waldensian Modifiers
  dh_waldo_3_a_modifier:0 "Lay Preaching"
- desc_dh_waldo_3_a_modifier:0 "Waldensian lay preachers have been allowed to give their sermons in public in this [Root.Capital.GetName]."
+ desc_dh_waldo_3_a_modifier:0 "Waldensian lay preachers have been allowed to give their sermons in public in [Root.Capital.GetName]."
  dh_waldo_3_b_modifier:0 "Crackdown on Lay Preaching"
  desc_dh_waldo_3_b_modifier:0 "There is an active inquisition against lay preachers in [Root.GetName]."
