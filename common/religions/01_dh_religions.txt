@@ -9,6 +9,8 @@ christian = {
 			cathar
 			waldensian
 		}
+		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }
+
 	}
 	
 	protestant = {

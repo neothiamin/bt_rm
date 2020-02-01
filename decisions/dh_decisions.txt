@@ -1,0 +1,30 @@
+country_decisions = {
+
+	dh_declare_cathar_inquisition = {
+		potential = {
+			always = no
+			capital_scope = {
+				continent = europe
+			}
+			religion = catholic
+			num_of_religion = {
+				value = 0.2
+				religion = cathar
+			}
+			NOT = {
+				has_country_flag = dh_declared_cathar_inquisition
+			}
+		}
+		allow = {
+
+		}
+
+		provinces_to_highlight = {
+			
+		}
+		
+		effect = {
+			set_country_flag = dh_declared_cathar_inquisition
+		}
+	}
+}
