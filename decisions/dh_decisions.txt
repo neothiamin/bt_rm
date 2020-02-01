@@ -39,7 +39,9 @@ country_decisions = {
 	dh_embrace_catharism_historical = {
 		
 		potential = {
-			
+			always = no
+			dh_is_historical_cathar = yes
+			religion = catholic
 		}
 
 		allow = {
@@ -55,7 +57,9 @@ country_decisions = {
 	dh_embrace_waldo_historical = {
 		
 		potential = {
-			
+			always = no
+			dh_is_historical_waldensian = yes
+			religion = catholic
 		}
 
 		allow = {
