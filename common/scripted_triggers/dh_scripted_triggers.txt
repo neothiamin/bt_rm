@@ -119,3 +119,15 @@ dh_waldo_spread_area_2 = {
 		area = upper_rhineland_area
 	}
 }
+
+dh_is_historical_cathar = {
+	OR = {
+		tag = TOU
+		AND = {
+			OR = {
+				culture = occitain
+				culture = provencal
+			}
+		}
+	}
+}

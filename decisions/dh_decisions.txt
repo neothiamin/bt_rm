@@ -1,5 +1,9 @@
 country_decisions = {
 
+	#################################
+	# Inquisition Decisions
+	#################################
+
 	dh_declare_cathar_inquisition = {
 		potential = {
 			always = no
@@ -27,4 +31,41 @@ country_decisions = {
 			set_country_flag = dh_declared_cathar_inquisition
 		}
 	}
+
+	#################################
+	# Conversion Decisions
+	#################################
+
+	dh_embrace_catharism_historical = {
+		
+		potential = {
+			
+		}
+
+		allow = {
+			
+		}
+
+		effect = {
+			
+		}
+
+	}
+
+	dh_embrace_waldo_historical = {
+		
+		potential = {
+			
+		}
+
+		allow = {
+			
+		}
+		
+		effect = {
+			
+		}
+
+	}
+
 }

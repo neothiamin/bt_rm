@@ -30,7 +30,7 @@ christian = {
 		allowed_conversion = {
 			reformed
 			protestant
-			waldensian
+			#waldensian
 		}
 		country = {
 			tolerance_own = 2
@@ -159,7 +159,7 @@ christian = {
 		hre_heretic_religion = yes
 		fervor = yes
 		
-		heretic = { BOGOMILIST FRATICELLI HUSSITE LOLLARD SOCINIAN }
+		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }
 		
 		on_convert = {
 			change_religion = waldensian

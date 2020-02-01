@@ -58,6 +58,12 @@ Waldensians:
 	
 	Misc Flavor:
 
+	Decisions:
+
+		1. Embrace Waldensianism (player)
+
+		2. Call for Waldensian Inquisition (both)
+
 Cathars:
 
 	Events:
@@ -115,3 +121,8 @@ Cathars:
 		- Albigensian Crusade CB?
 			- Occitan/Gascon culture independent Cathar nation
 
+	Decisions:
+
+		1. Embrace Catharism (player)
+
+		2. Call for Cathar Inquisition (both)
