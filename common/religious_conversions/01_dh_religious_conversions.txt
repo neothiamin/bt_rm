@@ -9,7 +9,7 @@ cathar_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 6 #Cathar is meant to flare up and then die out - the high-ish conversion speed ensures it will flare up
+	base_conversion_speed = 2.5 #Cathar is meant to flare up and then die out #lmao nvm
 
 	target_province_weights = {
 		factor = 2
@@ -158,7 +158,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 3 	#Waldensian is meant to hang around a bit
+	base_conversion_speed = 2.5 	#Waldensian is meant to hang around a bit
 
 	target_province_weights = {
 		factor = 2
@@ -261,20 +261,27 @@ waldensian_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
+		#modifier = {
+		#	factor = 2
+		#	dh_waldo_spawn_area = yes
+		#}
 		modifier = {
-			factor = 2
-			dh_waldo_spawn_area = yes
-		}
-		modifier = {
-			factor = 1.5
+			factor = 3
 			OR = {				
+				dh_waldo_spawn_area = yes
 				dh_waldo_spread_area = yes
 				dh_waldo_spread_area_2 = yes
 			}
 		}
+		#modifier = {
+		#	factor = 1.5
+		#	culture_group = germanic
+		#}
 		modifier = {
-			factor = 1.5
-			culture_group = germanic
+			factor = 2
+			NOT = {
+				development = 20
+			}
 		}
 	}
 }

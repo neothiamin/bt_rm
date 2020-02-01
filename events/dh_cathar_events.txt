@@ -38,7 +38,7 @@ province_event = {
 	}	
 
 	mean_time_to_happen = {
-		months = 45
+		months = 60
 	}
 
 	major = yes
@@ -74,31 +74,27 @@ province_event = {
 			area = north_rhine_area
 			area = lower_rhineland_area
 			area = westphalia_area
-			#area = muenster_area
-			#area = palatinate_area
-			#region = south_german_region
 			region = france_region
-			#region = italy_region
-			region = low_countries_region
+			#region = low_countries_region
 		}
 		development = 12
 		num_of_centers_of_reformation = {
 			religion = cathar
 			count = 1
 		}
-		if = {
-			limit = {
-				region = low_countries_region
-			}
-			NOT = {
-				low_countries_region = {
-					num_of_centers_of_reformation = {
-						religion = cathar
-						count = 2
-					}
-				}
-			}
-		}
+		#if = {
+		#	limit = {
+		#		region = low_countries_region
+		#	}
+		#	NOT = {
+		#		low_countries_region = {
+		#			num_of_centers_of_reformation = {
+		#				religion = cathar
+		#				count = 2
+		#			}
+		#		}
+		#	}
+		#}
 		NOT = {
 			num_of_centers_of_reformation = {
 				religion = cathar
@@ -116,14 +112,6 @@ province_event = {
 	mean_time_to_happen = {
 		years = 15
 		modifier = {
-			factor = 0.5
-			has_global_flag = dh_crazy_mode
-		}
-		modifier = {
-			factor = 0.33
-			area = west_languedoc_area
-		}
-		modifier = {
 			factor = 0.8
 			dh_albi_spawn_area = yes
 		}
@@ -133,10 +121,6 @@ province_event = {
 				region = north_german_region
 				region = south_german_region
 			}
-		}
-		modifier = {
-			factor = 1.5
-			region = iberia_region
 		}
 	}
 
