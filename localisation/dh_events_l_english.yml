@@ -91,3 +91,9 @@
  desc_dh_waldo_3_a_modifier:0 "Waldensian lay preachers have been allowed to give their sermons in public in [Root.Capital.GetName]."
  dh_waldo_3_b_modifier:0 "Crackdown on Lay Preaching"
  desc_dh_waldo_3_b_modifier:0 "There is an active inquisition against lay preachers in [Root.GetName]."
+
+ dh_waldo_4_a_modifier:0 "Spurned Lay Preacher"
+ desc_dh_waldo_4_a_modifier:0 "This province is the home of a lay preacher who was scorned by the [Root.Owner.Monarch.GetTitle]."
+ dh_waldo_4_a_modifier_2:0 "Rejected Lay Preacher"
+ dh_waldo_4_b_modifier:0 "Patronized Lay Preacher"
+ desc_dh_waldo_4_b_modifier:0 "The inhabitants of this province are overjoyed that a local lay preacher has been patronized by the [Root.Owner.Monarch.GetTitle]"
