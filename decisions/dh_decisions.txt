@@ -36,9 +36,70 @@ country_decisions = {
 	# Conversion Decisions
 	#################################
 
+	dh_player_conv_cathar = {
+
+		potential = {
+			ai = no
+			has_country_flag = dh_no_player_restrictions
+			religion = catholic
+			is_religion_enabled = cathar
+		}
+
+		allow = {
+			always = yes			
+		}
+
+		effect = {
+			change_religion = cathar
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}				
+		}
+
+	}
+
+	dh_player_conv_waldo = {
+
+		potential = {
+			ai = no
+			has_country_flag = dh_no_player_restrictions
+			religion = catholic
+			is_religion_enabled = waldensian
+		}
+
+		allow = {
+			always = yes			
+		}
+
+		effect = {
+			change_religion = waldensian
+			add_prestige = -100
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		}
+
+	}
+
 	dh_embrace_catharism_historical = {
 		
 		potential = {
+			NOT = {
+				has_country_flag = dh_no_player_restrictions
+			}
 			always = no
 			dh_is_historical_cathar = yes
 			religion = catholic
@@ -57,6 +118,9 @@ country_decisions = {
 	dh_embrace_waldo_historical = {
 		
 		potential = {
+			NOT = {
+				has_country_flag = dh_no_player_restrictions
+			}
 			always = no
 			dh_is_historical_waldensian = yes
 			religion = catholic

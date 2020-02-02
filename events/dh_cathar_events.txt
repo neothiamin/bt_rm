@@ -29,7 +29,7 @@ province_event = {
 		OR = {
 			had_global_flag = {
 				flag = dh_cathar_religion_enabled
-				days = 5475	#15 years
+				days = 2920	#8 years
 			}
 			reform_desire = 0.3
 		}

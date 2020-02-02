@@ -118,4 +118,25 @@ country_decisions = {
 
 	}
 
+	dh_remove_player_conversion_restrictions = {
+		potential = {
+			ai = no
+			NOT = {
+				has_country_flag = dh_no_player_restrictions
+			}
+			NOT = {
+				is_year = 1445
+			}
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			#custom_tooltip = dh_remove_player_conversion_restrictions.tt
+			set_country_flag = dh_no_player_restrictions
+		}
+	}
+
 }
