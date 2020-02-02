@@ -6,8 +6,8 @@ christian = {
 		allowed_conversion = {
 			reformed
 			protestant
-			cathar
-			waldensian
+			#cathar
+			#waldensian
 		}
 		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }
 
