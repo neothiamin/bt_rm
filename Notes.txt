@@ -38,7 +38,21 @@ Waldensians:
 
 				1. Lay Preaching - D
 				2. Prominent Lay Preacher
-					- Can spend ducats to get a half-cost Waldensian theologian			
+					- The premise is that a lay preacher in a decent-sized (10+ dev) Waldo province gains acclaim from his peers and flock and the ruler of ROOT is given the chance to hire him as an advisor
+					- This event may happen for any Catholic/Cathar/Waldensian nation in Europe that owns a Waldensian province
+					- This advisor will always be male, will be a Theologian/Inquisitor, and will be Waldensian
+					1. We ought to burn him at the stake, not invite him to court!
+						- +6 unrest in the advisor's home province (10yr)
+						- +1% missionary strength against Heretics (10yr)
+						- -1 Tolerance of Heretics (10yr)
+					2. Take him in. Perhaps his example may inspire some of us to be more pious.
+						- -4 unrest in the advisor's home province (10yr)
+						- Gain a half-price level 1 Waldensian Theologian
+						- -5 papal influence (if Cath)
+					3. As a holy man, he has no merit. As an inquisitor, though...
+						- Available if ROOT's ruler is zealous, if ROOT has declared a Waldensian inquisition, or if ROOT has religious ideas and is Catholic
+						- Gain a half-price level 1 Waldensian Inquisitor
+						- 50% chance of a size 1 Waldensian Zealot revolt in the advisor's home province
 
 
 			Region/Nation Specific:

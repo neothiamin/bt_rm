@@ -252,3 +252,117 @@ province_event = {
 
 
 #Prominent Waldensian Preacher
+country_event = {	
+	id = dh_waldo.4
+	title = dh_waldo.4.t
+	desc = dh_waldo.4.desc
+	picture = POPE_PREACHING_eventPicture
+
+	trigger = {
+		religion_years = {
+			waldensian = 5
+		}
+		NOT = {
+			OR = {
+				employed_advisor = {
+					religion = waldensian
+					type = theologian
+				}
+				employed_advisor = {
+					religion = waldensian
+					type = inquisitor
+				}
+			}
+		}
+		any_owned_province = {
+			development = 10
+			religion = waldensian
+		}
+		OR = {
+			religion = catholic
+			religion = cathar
+			#religion = waldensian
+		}
+		capital_scope = {
+			continent = europe
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				development = 10
+				religion = waldensian
+			}
+			save_event_target_as = dh_waldo_4_t_target
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 25
+	}
+
+	#We ought to burn him at the stake, not invite him to court!
+	option = {
+		name = dh_waldo.4.a
+		event_target:dh_waldo_4_t_target = {
+			add_province_modifier = {
+				name = dh_waldo_4_a_modifier
+				duration = 3650
+			}
+		}
+		add_country_modifier = {
+			name = dh_waldo_4_a_modifier_2
+			duration = 3650
+		}
+	}
+
+	#Take him in. Perhaps his example may inspire some of us to be more pious.
+	option = {
+		name = dh_waldo.4.b
+		add_papal_influence = -5
+		event_target:dh_waldo_4_t_target = {
+			add_province_modifier = {
+				name = dh_waldo_4_b_modifier
+				duration = 3650
+			}
+		}
+		define_advisor = {
+			type = theologian
+			religion = waldensian
+			discount = yes
+			location = event_target:dh_waldo_4_t_target
+			female = no
+		}
+	}
+
+	#As a holy man, he has no merit. As an inquisitor, though...
+	option = {
+		name = dh_waldo.4.c
+		highlight = yes
+		trigger = {
+			OR = {
+				ruler_has_personality = zealot_personality
+				has_idea_group = religious_ideas
+				#has_country_flag = dh_waldo_inquisition_declared
+			}
+		}
+		define_advisor = {
+			type = inquisitor
+			religion = waldensian
+			discount = yes
+			location = event_target:dh_waldo_4_t_target
+			female = no
+		}
+		event_target:dh_waldo_4_t_target = {
+			random = {
+				chance = 50
+				spawn_rebels = {
+					size = 1
+					type = waldensian_rebels
+				}
+			}
+		}
+	}
+
+}

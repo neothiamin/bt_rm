@@ -250,6 +250,7 @@ country_event = {
 		religion_years = {
 			cathar = 10
 		}
+		owns = 104
 	}
 
 	mean_time_to_happen = {

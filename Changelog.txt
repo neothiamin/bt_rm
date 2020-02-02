@@ -3,6 +3,7 @@ v1.2:
 + New Events
 	- Revivalists in Lombardy
 	- Traveling Troubadours
+	- Prominent Lay Preacher
 
 * Added reform desire to Mass Conversions in Toulouse
 * Reverted dh_waldo.2 MTTH to 5y
