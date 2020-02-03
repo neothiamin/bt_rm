@@ -61,3 +61,8 @@ dh_waldo_4_b_modifier = {
 	local_unrest = -4
 	local_tax_modifier = 0.1
 }
+
+#Conversion Resistance
+dh_conversion_resistance_1 = {
+	religious_conversion_resistance = 0.5
+}

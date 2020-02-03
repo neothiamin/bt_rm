@@ -140,17 +140,20 @@ dh_crazy_mode_cor = {
 #################################
 
 dh_is_historical_cathar = {
-	OR = {
-		tag = TOU					#1229 never forget
-		AND = {
-			OR = {
-				primary_culture = gascon	#Close enough to Occitan, right?
-				primary_culture = occitain	#Occitan #Because duh
-				primary_culture = aquitaine	#Provencal	#There were significant Cathar communities in Provence
-				#culture = arpitan #Not sure about Arpitan
-			}
-			capital_scope = {
-				region = france_region		#Meant to exclude nations that might culture-shift to one of the above cultures but keep their capital in another region (Italy, most likely)
+	custom_trigger_tooltip = {
+		tooltip = dh_historical_cathar_tt		
+		OR = {
+			tag = TOU					#1229 never forget
+			AND = {
+				OR = {
+					primary_culture = gascon	#Close enough to Occitan, right?
+					primary_culture = occitain	#Occitan #Because duh
+					primary_culture = aquitaine	#Provencal	#There were significant Cathar communities in Provence
+					#culture = arpitan #Not sure about Arpitan
+				}
+				capital_scope = {
+					region = france_region		#Meant to exclude nations that might culture-shift to one of the above cultures but keep their capital in another region (Italy, most likely)
+				}
 			}
 		}
 	}
@@ -158,8 +161,10 @@ dh_is_historical_cathar = {
 
 dh_is_historical_waldensian = {
 	OR = {
+		tag = SAV
 		primary_culture = arpitan	#This time I am very sure about Arpitan. Waldensian communities flourished in the lands that are Arpitan at game start - mountains/valleys in the Alps and near the Alps. It's a no-brainer
 		primary_culture = aquitaine #Provencal #There were also significant Waldensian communities in Provence
+		primary_culture = piedmontese
 		capital_scope = {
 			OR = {
 				area = piedmont_area		#As mentioned, Waldensianism flourished in these areas.
@@ -171,17 +176,54 @@ dh_is_historical_waldensian = {
 }
 
 dh_can_convert_to_cathar = {
+	OR = {
+		dh_is_historical_cathar = yes
+		any_owned_province = {
+			religion = cathar
+		}
+	}
 	if = {
 		limit = {
 			capital_scope = {
-				region = italy_region
+				region = france_region
 			}
-
+		}
+		OR = {
+			num_of_religion = {
+				value = 0.25
+				religion = cathar
+			}
+			tag = TOU
+			custom_trigger_tooltip = {
+				tooltip = dh_can_convert_to_cathar_tt_1
+				is_subject = no
+				num_of_religion = {
+					value = 0.15
+					religion = cathar
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = dh_can_convert_to_cathar_tt_2
+				any_owned_province = {
+					religion = cathar
+					is_reformation_center = yes
+				}
+				num_of_religion = {
+					value = 0.1
+					religion = cathar
+				}
+			}
 		}
 	}
 }
 
 dh_can_convert_to_waldensian = {
+	OR = {
+		dh_is_historical_waldensian = yes
+		any_owned_province = {
+			religion = waldensian
+		}
+	}
 	if = {
 		limit = {
 			capital_scope = {

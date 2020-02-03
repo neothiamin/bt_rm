@@ -73,18 +73,7 @@ christian = {
 		aspects_name = CATHAR_ASPECTS
 		
 		on_convert = {
-			change_religion = cathar
-			add_prestige = -100
-			
-			remove_country_modifier = the_test_act
-			remove_country_modifier = superintendent_office
-			remove_country_modifier = the_popery_act
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}			
-		
+			dh_conv_to_cathar = yes		
 		}
 
 		allowed_center_conversion = {
@@ -116,18 +105,7 @@ christian = {
 		
 		
 		on_convert = {
-			change_religion = fraticelli
-			add_prestige = -100
-			
-			remove_country_modifier = the_test_act
-			remove_country_modifier = superintendent_office
-			remove_country_modifier = the_popery_act
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}			
-		
+			dh_conv_to_waldo = yes
 		}
 		
 		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }

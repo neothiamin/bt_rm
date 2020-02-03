@@ -1,0 +1,45 @@
+dh_conv_to_cathar = {	
+	change_religion = cathar
+	add_prestige = -100
+	
+	remove_country_modifier = the_test_act
+	remove_country_modifier = superintendent_office
+	remove_country_modifier = the_popery_act
+	
+	add_country_modifier = {
+		name = "conversion_zeal"
+		duration = 3650
+	}	
+}
+
+dh_conv_to_waldo = {	
+	change_religion = waldensian
+	add_prestige = -100
+	
+	remove_country_modifier = the_test_act
+	remove_country_modifier = superintendent_office
+	remove_country_modifier = the_popery_act
+	
+	add_country_modifier = {
+		name = "conversion_zeal"
+		duration = 3650
+	}	
+}
+
+#dh_on_conv_resistance_effect = {	
+#	custom_tooltip = dh_conv_resistance_effect.tt
+#	hidden_effect = {
+#		every_owned_province = {
+#			limit = {
+#				continent = ROOT
+#				NOT = {
+#					religion = $RELIGION$
+#				}
+#			}
+#			add_province_modifier = {
+#				name = dh_conversion_resistance_1
+#				duration = 3650
+#			}
+#		}
+#	}
+#}

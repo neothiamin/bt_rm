@@ -10,3 +10,8 @@
  waldensian_rebels_title:0 "Cathar"
  waldensian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  waldensian_rebels_army:0 "Poor of $PROVINCE$"
+
+ #Conversion Scripted Effect Localization
+ #dh_conv_resistance_effect.tt:0 "REPLACE_ME"
+ #dh_conversion_resistance_1:0 "REPLACE_ME"
+ #desc_dh_conversion_resistance_1:0 "REPLACE_ME"

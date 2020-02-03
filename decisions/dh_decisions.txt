@@ -50,17 +50,7 @@ country_decisions = {
 		}
 
 		effect = {
-			change_religion = cathar
-			add_prestige = -100
-			
-			remove_country_modifier = the_test_act
-			remove_country_modifier = superintendent_office
-			remove_country_modifier = the_popery_act
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}				
+			dh_conv_to_cathar = yes			
 		}
 
 	}
@@ -79,17 +69,7 @@ country_decisions = {
 		}
 
 		effect = {
-			change_religion = waldensian
-			add_prestige = -100
-			
-			remove_country_modifier = the_test_act
-			remove_country_modifier = superintendent_office
-			remove_country_modifier = the_popery_act
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}			
+			dh_conv_to_waldo = yes		
 		}
 
 	}
@@ -100,17 +80,31 @@ country_decisions = {
 			NOT = {
 				has_country_flag = dh_no_player_restrictions
 			}
-			always = no
+			#always = no
+			is_religion_enabled = cathar
 			dh_is_historical_cathar = yes
 			religion = catholic
 		}
 
 		allow = {
-			
+			dh_can_convert_to_cathar = yes
 		}
 
 		effect = {
-			
+			dh_conv_to_cathar = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_religion = {
+						value = 0.5
+						religion = cathar
+					}
+				}
+			}
 		}
 
 	}
@@ -121,17 +115,31 @@ country_decisions = {
 			NOT = {
 				has_country_flag = dh_no_player_restrictions
 			}
-			always = no
+			#always = no
+			is_religion_enabled = waldensian
 			dh_is_historical_waldensian = yes
 			religion = catholic
 		}
 
 		allow = {
-			
+			dh_can_convert_to_waldensian = yes
 		}
 		
 		effect = {
-			
+			dh_conv_to_waldo = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_religion = {
+						value = 0.5
+						religion = waldensian
+					}
+				}
+			}
 		}
 
 	}

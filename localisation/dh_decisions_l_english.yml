@@ -20,3 +20,13 @@
 
  dh_player_conv_waldo_title:0 "Embrace Waldensianism (Player Only)"
  dh_player_conv_waldo_desc:0 "Embrace the §YWaldensian§! tradition."
+ 
+ dh_embrace_catharism_historical_title:0 "Embrace Catharism"
+ dh_embrace_catharism_historical_desc:0 "After hundreds of years, the Cathar tradition has once again found roots in Europe. Let us embrace the Good Christian tradition, and aspire to be like the good Cathars before us."
+ dh_embrace_waldo_historical_title:0 "Embrace Waldensianism"
+ dh_embrace_waldo_historical_desc:0 "All around Europe, Waldensians preach on street corners and in marketplaces. Let us take up the teaching of Peter Vaudès and convert to Waldensianism."
+ 
+ dh_historical_cathar_tt:0 "§Y[Root.GetName]§! is either §YToulouse§!@TOU or has §YGascon,§! §YOccitan,§! or §YProvençal§! as its primary culture and §Y[Root.Capital.GetName]§! is in the §GFrance§! region."
+
+ dh_can_convert_to_cathar_tt_1:0 "§Y[Root.GetName]§! is both §Yindependent§! and §G15%§! of its provinces are §YCathar.§!"
+ dh_can_convert_to_cathar_tt_2:0 "§Y[Root.GetName]§! owns at least §Y1 Cathar Center of Reformation§! and §G10%§! of its provinces are §YCathar.§!"

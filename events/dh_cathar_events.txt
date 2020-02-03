@@ -386,7 +386,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 900
+		months = 1200
 		modifier = {
 			factor = 2.5
 			is_year = 1530
@@ -484,9 +484,10 @@ province_event = {
 	option = {
 		name = dh_albi.4.d
 		trigger = {
+			always = no
 			owner = {
 				OR = {
-					has_idea_group = religious_ideas
+					has_idea = inquisition
 					ruler_has_personality = zealot_personality
 				}
 			}
