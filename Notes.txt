@@ -29,15 +29,19 @@ Waldensians:
 				1. Poor of Lyon
 					- 
 				2. Waldensian Colony in Apulia
-					- 5 years after initial Waldensian spawn
-					- 
+					- 20 years after initial Waldensian spawn
+					- QUESTIONABLE: a Waldensian nation sponsors a voyage of Waldensians to head to Apulia (maybe Calabria) as well
+					- One province in Apulia is converted to Waldensian, others have a 75% chance to convert
+					- Converted provinces get the Religious Zeal modifier
+
+					
 
 		Country:
 
 			Generic:
 
 				1. Lay Preaching - D
-				2. Prominent Lay Preacher
+				2. Prominent Lay Preacher - D
 					- The premise is that a lay preacher in a decent-sized (10+ dev) Waldo province gains acclaim from his peers and flock and the ruler of ROOT is given the chance to hire him as an advisor
 					- This event may happen for any Catholic/Cathar/Waldensian nation in Europe that owns a Waldensian province
 					- This advisor will always be male, will be a Theologian/Inquisitor, and will be Waldensian
@@ -53,10 +57,11 @@ Waldensians:
 						- Available if ROOT's ruler is zealous, if ROOT has declared a Waldensian inquisition, or if ROOT has religious ideas and is Catholic
 						- Gain a half-price level 1 Waldensian Inquisitor
 						- 50% chance of a size 1 Waldensian Zealot revolt in the advisor's home province
+				3. Prominent Clergyman Found 
 
 
 			Region/Nation Specific:
-				* Aragon
+				1. Aragon
 					1. Legacy of Durán
 						- Based on the prominent Waldensian-turned-Catholic thinker Durán de Huesca 
 						- In response to Waldensians in the Aragon area
@@ -66,9 +71,9 @@ Waldensians:
 							2. Burn them at the stake!
 								- If any Wald. provinces, revolt of size 2. Else, revolt modifier in Aragon area
 								- Papal Influence
-				* France
+				2. France
 
-				* Provence		
+				3. Provence		
 	
 	Misc Flavor:
 
