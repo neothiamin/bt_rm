@@ -350,6 +350,10 @@ country_event = {
 				random = {
 					chance = 40
 					change_religion = cathar
+					add_province_modifier = {
+						name = religious_zeal_at_conv
+						duration = 9125 #25 years
+					}
 				}
 			}
 		}
