@@ -171,6 +171,10 @@ country_event = {
 				random = {
 					chance = 50
 					change_religion = cathar
+					add_province_modifier = {
+						name = religious_zeal_at_conv
+						duration = 9125
+					}
 				}			
 			}
 			if = {

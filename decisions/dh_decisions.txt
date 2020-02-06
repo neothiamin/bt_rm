@@ -77,9 +77,9 @@ country_decisions = {
 	dh_embrace_catharism_historical = {
 		
 		potential = {
-			NOT = {
-				has_country_flag = dh_no_player_restrictions
-			}
+			#NOT = {
+			#	has_country_flag = dh_no_player_restrictions
+			#}
 			#always = no
 			is_religion_enabled = cathar
 			dh_is_historical_cathar = yes
@@ -100,7 +100,7 @@ country_decisions = {
 				factor = 0
 				NOT = {
 					num_of_religion = {
-						value = 0.5
+						value = 0.65
 						religion = cathar
 					}
 				}
@@ -112,9 +112,9 @@ country_decisions = {
 	dh_embrace_waldo_historical = {
 		
 		potential = {
-			NOT = {
-				has_country_flag = dh_no_player_restrictions
-			}
+			#NOT = {
+			#	has_country_flag = dh_no_player_restrictions
+			#}
 			#always = no
 			is_religion_enabled = waldensian
 			dh_is_historical_waldensian = yes
@@ -135,7 +135,7 @@ country_decisions = {
 				factor = 0
 				NOT = {
 					num_of_religion = {
-						value = 0.5
+						value = 0.65
 						religion = waldensian
 					}
 				}
