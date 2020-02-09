@@ -39,6 +39,7 @@ country_decisions = {
 	dh_player_conv_cathar = {
 
 		potential = {
+			always = no
 			ai = no
 			has_country_flag = dh_no_player_restrictions
 			religion = catholic
@@ -58,6 +59,7 @@ country_decisions = {
 	dh_player_conv_waldo = {
 
 		potential = {
+			always = no
 			ai = no
 			has_country_flag = dh_no_player_restrictions
 			religion = catholic
@@ -80,7 +82,7 @@ country_decisions = {
 			#NOT = {
 			#	has_country_flag = dh_no_player_restrictions
 			#}
-			#always = no
+			always = no
 			is_religion_enabled = cathar
 			dh_is_historical_cathar = yes
 			religion = catholic
@@ -115,7 +117,7 @@ country_decisions = {
 			#NOT = {
 			#	has_country_flag = dh_no_player_restrictions
 			#}
-			#always = no
+			always = no
 			is_religion_enabled = waldensian
 			dh_is_historical_waldensian = yes
 			religion = catholic
@@ -149,11 +151,9 @@ country_decisions = {
 						culture_group = latin
 					}
 					NOT = {
-						AND = {
-							num_of_religion = {
-								value = 0.4
-								religion = waldensian
-							}
+						num_of_religion = {
+							value = 0.4
+							religion = waldensian
 						}
 						AND = {
 							num_of_religion = {
@@ -162,12 +162,12 @@ country_decisions = {
 							}
 							OR = {								
 								NOT = {
-									has_opinion = {
-										who = PAP
-										value = 0
-									}
+									is_rival = PAP
 								}
-								is_rival = PAP
+								has_opinion = {
+									who = PAP
+									value = 0
+								}
 							}
 						}
 					}
