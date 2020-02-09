@@ -120,6 +120,7 @@ country_decisions = {
 
 	dh_remove_player_conversion_restrictions = {
 		potential = {
+			always = no
 			ai = no
 			NOT = {
 				has_country_flag = dh_no_player_restrictions
