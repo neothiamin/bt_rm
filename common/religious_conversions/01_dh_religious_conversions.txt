@@ -270,7 +270,6 @@ waldensian_center_of_reformation = {
 			OR = {				
 				dh_waldo_spawn_area = yes
 				dh_waldo_spread_area = yes
-				dh_waldo_spread_area_2 = yes
 			}
 		}
 		#modifier = {

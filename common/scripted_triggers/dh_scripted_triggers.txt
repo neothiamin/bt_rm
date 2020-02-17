@@ -79,11 +79,6 @@ dh_waldo_spread_area = {
 		area = provence_area
 		area = lombardy_area			#Lower Lombardy
 		area = east_lombardy_area
-	}
-}
-
-dh_waldo_spread_area_2 = {
-	OR = {
 		area = bourgogne_area
 		area = lorraine_area
 		area = lower_bavaria_area

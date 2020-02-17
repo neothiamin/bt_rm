@@ -263,15 +263,22 @@ country_event = {
 			waldensian = 5
 		}
 		NOT = {
-			OR = {
-				employed_advisor = {
-					religion = waldensian
-					type = theologian
-				}
-				employed_advisor = {
-					religion = waldensian
-					type = inquisitor
-				}
+			employed_advisor = {
+				religion = waldensian
+				type = theologian
+			}
+			employed_advisor = {
+				religion = waldensian
+				type = inquisitor
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = dh_waldo_4_flag
+			}
+			had_country_flag = {
+				flag = dh_waldo_4_flag
+				days = 5475
 			}
 		}
 		any_owned_province = {
@@ -296,6 +303,7 @@ country_event = {
 			}
 			save_event_target_as = dh_waldo_4_t_target
 		}
+		set_country_flag = dh_waldo_4_flag
 	}
 
 	mean_time_to_happen = {

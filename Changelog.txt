@@ -11,6 +11,7 @@ v1.2:
 * Buffed "Cathar Fortresses" fort maintenance reduction modifier
 * Added descriptions to some Cathar Aspects
 * Fixed description for the "New Bishopric in (province)" event
+* Removed Cathar and Waldensian as HRE Heretic religions (not sure what this even does)
 
 v1.1.1:
 
