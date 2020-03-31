@@ -46,7 +46,7 @@ cathar_fortresses_aspect = {
 cathar_allow_weaving_aspect = {
 	cost = 100
 	modifier = {
-		development_cost = -0.05
+		development_cost = -0.1
 		production_efficiency = 0.05
 	}
 	ai_will_do = {
@@ -68,7 +68,7 @@ cathar_allow_weaving_aspect = {
 cathar_disallow_burning_aspect = {
 	cost = 100
 	modifier = {
-		global_unrest = -0.5
+		global_unrest = -1
 		global_autonomy = -0.02
 	}
 	ai_will_do = {

@@ -601,6 +601,19 @@ country_event = {
 			has_country_modifier = dh_albi_6_a_mod
 			has_country_modifier = dh_albi_6_b_mod
 		}
+		OR = {
+			NOT = {
+				has_country_flag = had_dh_albi_6
+			}
+			had_country_flag = {
+				flag = had_dh_albi_6
+				days = 3650
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = had_dh_albi_6
 	}
 
 	#That's ridiculous!
@@ -615,7 +628,7 @@ country_event = {
 	#We must cast away material possessions.
 	option = {
 		name = dh_albi.6.b
-		add_years_of_income = -2
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = dh_albi_6_b_mod
 			duration = 3650
