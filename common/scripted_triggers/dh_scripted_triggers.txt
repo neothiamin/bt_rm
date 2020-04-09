@@ -238,3 +238,23 @@ dh_can_convert_to_waldensian = {
 		}	
 	}
 }
+
+#Province scope
+dh_can_have_heresy_cor_trigger = {
+	continent = europe
+	OR = {
+		religion = catholic
+		religion = $RELIGION$
+	}
+	NOT = { province_id = 118 }
+	is_in_capital_area = yes
+	is_reformation_center = no
+	is_island = no
+	expelling_minorities = no
+	development = 8
+	NOT = {
+		any_neighbor_province = {
+			is_reformation_center = yes
+		}
+	}
+}

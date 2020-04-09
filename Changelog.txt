@@ -5,6 +5,8 @@ v1.2:
 	- Traveling Troubadours
 	- Prominent Lay Preacher
 
+* Added on-conversion Center of Reformation spawning to the heresies
+
 * Added reform desire to Mass Conversions in Toulouse
 * Reverted dh_waldo.2 MTTH to 5y
 * Reduced time buffer for Cathar Resurgence

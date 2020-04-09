@@ -73,7 +73,37 @@ christian = {
 		aspects_name = CATHAR_ASPECTS
 		
 		on_convert = {
-			dh_conv_to_cathar = yes		
+			dh_conv_to_cathar = yes
+			if = {
+				limit = {
+					any_owned_province = {
+						dh_can_have_heresy_cor_trigger = {
+							RELIGION = cathar
+						}
+					}
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = cathar
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
+				}				
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							dh_can_have_heresy_cor_trigger = {
+								RELIGION = cathar
+							}
+						}
+						change_religion = cathar
+						add_reform_center = cathar
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}		
 		}
 
 		allowed_center_conversion = {
@@ -150,6 +180,36 @@ christian = {
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						dh_can_have_heresy_cor_trigger = {
+							RELIGION = waldensian
+						}
+					}
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = waldensian
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
+				}				
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							dh_can_have_heresy_cor_trigger = {
+								RELIGION = waldensian
+							}
+						}
+						change_religion = waldensian
+						add_reform_center = waldensian
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}
 		}
 		
