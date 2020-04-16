@@ -106,9 +106,14 @@ province_event = {
 			}
 		}
 		NOT = {
-			num_of_centers_of_reformation = {
-				religion = waldensian
-				count = 3
+			owner = {
+				calc_true_if = {
+					all_province = {
+						religion = waldensian
+						is_reformation_center = yes
+					}
+					amount = 3
+				}
 			}
 			religion_years = {
 				waldensian = 50
@@ -124,7 +129,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 5
+		years = 6
 	}
 
 	immediate = {

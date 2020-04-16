@@ -1,7 +1,7 @@
 ﻿l_english:
  dh_enable_albi_title:0 "Enable Catharism"
  dh_enable_albi_desc:0 "Enable the Cathar heresy and events related to it."
- dh_albi_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Cathar Resurgence.\nCatharism will be able to spawn after a) the Catholic faith has at least §G30%§! reform desire or b) §G8§! years have passed since taking this decision, whichever comes first.\nDisclaimer: Despite what the conversion screen says, a Center of Reformation will not spawn when converting to §YCatharism§!. I cannot remove this message, and I apologize on behalf of Paradox for their idiocy."
+ dh_albi_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Cathar Resurgence.\nCatharism will be able to spawn after a) the Catholic faith has at least §G30%§! reform desire or b) §G8§! years have passed since taking this decision, whichever comes first."
 
  dh_enable_fratelli_title:0 "Enable Fraticellianism"
  dh_enable_fratelli_desc:0 "Enable the Fraticellian heresy and events related to it."
@@ -9,7 +9,7 @@
 
  dh_enable_waldo_title:0 "Enable Waldensianism"
  dh_enable_waldo_desc:0 "Enable the Waldensian heresy and events related to it."
- dh_waldo_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Waldensian Resurgence.\nDisclaimer: Despite what the conversion screen says, a Center of Reformation will not spawn when converting to §YWaldensianism§!. I cannot remove this message, and I apologize on behalf of Paradox for their idiocy."
+ dh_waldo_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Waldensian Resurgence."
  
  dh_remove_player_conversion_restrictions_title:0 "Remove Player Conversion Restrictions"
  dh_remove_player_conversion_restrictions_desc:0 "Remove geographical/cultural restrictions for conversion for the player only."
