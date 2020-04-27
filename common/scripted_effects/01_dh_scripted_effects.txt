@@ -26,6 +26,20 @@ dh_conv_to_waldo = {
 	}	
 }
 
+dh_conv_to_lollard = {	
+	change_religion = lollard
+	add_prestige = -100
+	
+	remove_country_modifier = the_test_act
+	remove_country_modifier = superintendent_office
+	remove_country_modifier = the_popery_act
+	
+	add_country_modifier = {
+		name = "conversion_zeal"
+		duration = 3650
+	}	
+}
+
 #dh_on_conv_resistance_effect = {	
 #	custom_tooltip = dh_conv_resistance_effect.tt
 #	hidden_effect = {
