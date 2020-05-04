@@ -30,3 +30,7 @@
 
  dh_can_convert_to_cathar_tt_1:0 "§Y[Root.GetName]§! is both §Yindependent§! and §G15%§! of its provinces are §YCathar.§!"
  dh_can_convert_to_cathar_tt_2:0 "§Y[Root.GetName]§! owns at least §Y1 Cathar Center of Reformation§! and §G10%§! of its provinces are §YCathar.§!"
+
+ dh_enable_lollard_title:0 "Enable Lollardy"
+ dh_enable_lollard_desc:0 "Enable the Lollard heresy and events related to it."
+ dh_enable_lollard.tt:0 "When the \"The Lollard Heresy\" event occurs for England, five of the highlighted provinces will convert to Lollardy, and one of them will spawn a Lollard Center of Reformation."

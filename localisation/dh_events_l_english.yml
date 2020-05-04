@@ -97,3 +97,6 @@
  dh_waldo_4_a_modifier_2:0 "Rejected Lay Preacher"
  dh_waldo_4_b_modifier:0 "Patronized Lay Preacher"
  desc_dh_waldo_4_b_modifier:0 "The inhabitants of this province are overjoyed that a local lay preacher has been patronized by the [Root.Owner.Monarch.GetTitle]"
+
+ #Lollard Events
+ dh_flavor_eng.9100c:0 "Take up the Lollard cross! Down with the papists!"

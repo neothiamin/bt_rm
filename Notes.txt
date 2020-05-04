@@ -145,3 +145,19 @@ Cathars:
 		1. Embrace Catharism (player)
 
 		2. Call for Cathar Inquisition (both)
+
+Lollards:
+
+	Events:
+
+		Province:
+		
+			Generic:
+
+		Country:
+
+			Generic:
+
+	Misc Flavor:
+
+	Decisions:

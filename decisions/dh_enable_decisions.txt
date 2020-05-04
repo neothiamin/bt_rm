@@ -140,4 +140,36 @@ country_decisions = {
 		}
 	}
 
+	dh_enable_lollard = {
+
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = dh_lollard_religion_enabled
+				has_global_flag = lollard_heresy
+			}
+			NOT = {
+				is_year = 1450
+			}
+		}
+
+		allow = {
+			ai = no
+			NOT = {
+				is_year = 1450
+			}
+		}
+
+		provinces_to_highlight = {
+			owned_by = ENG
+			region = british_isles_region
+			religion = catholic
+		}
+
+		effect = {
+			custom_tooltip = dh_enable_lollard.tt
+			set_global_flag = dh_lollard_religion_enabled
+		}
+	}
+
 }

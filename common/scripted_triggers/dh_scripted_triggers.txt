@@ -256,5 +256,8 @@ dh_can_have_heresy_cor_trigger = {
 		any_neighbor_province = {
 			is_reformation_center = yes
 		}
+		owner = {
+			is_subject = yes
+		}
 	}
 }
