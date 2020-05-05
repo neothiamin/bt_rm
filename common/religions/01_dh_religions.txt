@@ -32,6 +32,7 @@ christian = {
 			reformed
 			protestant
 			#waldensian
+			catholic
 		}
 		country = {
 			tolerance_own = 2
@@ -171,6 +172,7 @@ christian = {
 			reformed
 			protestant
 			#cathar
+			catholic
 		}
 		country = {
 			tolerance_heretic = 1
@@ -306,6 +308,7 @@ christian = {
 		allowed_center_conversion = {
 			catholic
 			cathar
+			waldensian
 		}
 		
 		heretic = { PAPIST }
