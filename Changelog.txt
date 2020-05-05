@@ -1,3 +1,8 @@
+v1.3:
+
++++ Added Lollards!
+	- Lollards spawn when the vanilla "The Lollard Heresy" event fires for England, and will only appear if Lollardy is enabled via decision.
+
 v1.2:
 
 + New Events

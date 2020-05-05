@@ -20,6 +20,8 @@ country_event = {
 		num_of_cities = 5
 		religion = catholic
 	}
+
+	major = yes
 	
 	mean_time_to_happen = {
 		months = 60
