@@ -55,6 +55,7 @@ province_event = {
 		#	name = religious_center
 		#	duration = -1
 		#}
+		dh_add_cor_resistance_to_theocracies = yes
 		add_reform_center = cathar
 	}
 }

@@ -57,3 +57,30 @@ dh_conv_to_lollard = {
 #		}
 #	}
 #}
+
+dh_add_cor_resistance_to_theocracies = {
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = dh_theocracies_have_cor_resist
+			}
+		}
+		custom_tooltip = dh_theocracies_have_cor_resist.tt
+		hidden_effect = {			
+			every_province = {
+				limit = {
+					is_capital = yes
+					owner = {
+						government = theocracy
+					}
+					continent = europe
+				}
+				add_province_modifier = {
+					name = dh_conversion_resistance_1
+					duration = 9125
+				}
+			}
+			set_global_flag = dh_theocracies_have_cor_resist
+		}
+	}
+}

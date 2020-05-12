@@ -11,6 +11,9 @@
  waldensian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  waldensian_rebels_army:0 "Poor of $PROVINCE$"
 
+ dh_theocracies_have_cor_resist.tt:0 "The capital province of every Theocracy in §YEurope§! gains §G+50%§! §YResistance to Reformation.§!"
+ dh_conversion_resistance_1:0 "REPLACE_ME":0 "Resistance to Heresy"
+
  #Conversion Scripted Effect Localization
  #dh_conv_resistance_effect.tt:0 "REPLACE_ME"
  #dh_conversion_resistance_1:0 "REPLACE_ME"

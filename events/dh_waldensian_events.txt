@@ -64,6 +64,7 @@ province_event = {
 		change_religion = waldensian
 		add_reform_center = waldensian
 		save_global_event_target_as = dh_waldo_spawn_prov
+		dh_add_cor_resistance_to_theocracies = yes
 	}
 }
 
