@@ -259,11 +259,20 @@ dh_can_have_heresy_cor_trigger = {
 		owner = {
 			is_subject = yes
 		}
-		AND = {
+	}
+	if = {
+		limit = {			
 			owner = {
-				government = theocracy
+				ai = yes
 			}
-			is_capital = yes
+		}		
+		NOT = {
+			AND = {
+				owner = {
+					government = theocracy
+				}
+				is_capital = yes
+			}
 		}
 	}
 }
