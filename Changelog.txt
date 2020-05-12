@@ -4,6 +4,7 @@ v1.3:
 	- Lollards spawn when the vanilla "The Lollard Heresy" event fires for England, and will only appear if Lollardy is enabled via decision.
 
 + Added the ability for Heresies to convert back to Catholic, if they're filthy Papists.
++ Added a decision for Lollards to commission a translation of the Bible.
 
 v1.2:
 

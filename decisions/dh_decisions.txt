@@ -184,4 +184,65 @@ country_decisions = {
 		}
 		ai_importance = 60
 	}	
+
+	#################################
+	# Flavor Decisions
+	#################################
+
+	#Lollard
+
+	dh_commission_new_bible_translation = {
+		potential = {
+			religion = lollard
+			OR = {
+				NOT = {
+					has_country_flag = dh_lollard_commissioned_bible
+					had_country_flag = {
+						flag = dh_lollard_commissioned_bible
+						days = 9125
+					}
+				}
+			}
+		}
+
+		allow = {
+			religion = lollard
+			custom_trigger_tooltip = {
+				tooltip = dh_commission_new_bible_translation_allow.tt
+				OR = {
+					NOT = {
+						has_country_flag = dh_lollard_commissioned_bible
+						had_country_flag = {
+							flag = dh_lollard_commissioned_bible
+							days = 9125
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_years_of_income = -1
+			add_adm_power = -50
+			add_country_modifier = {
+				name = dh_lollard_commissioned_bible_mod
+				duration = 3650
+			}
+			hidden_effect = {
+				set_country_flag = dh_lollard_commissioned_bible
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					years_of_income = 2
+				}
+			}
+		}
+
+		ai_importance = 40
+	}
 }

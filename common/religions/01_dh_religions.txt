@@ -1,7 +1,7 @@
 christian = {
 
 	catholic = {
-		color = { 254 230 244 }
+		color = { 248 206 229 }
 		icon = 1
 		allowed_conversion = {
 			reformed
@@ -23,6 +23,17 @@ christian = {
 			waldensian
 		}
 	}
+
+	orthodox = {
+		color = { 127 23 52 }
+	}
+	#sunni = {
+	#	color = { 0 87 63 }
+	#}
+
+	#shiite = {
+	#	color = { 0 144 0 }
+	#}
 
 	##NEW
 	cathar = {
@@ -304,6 +315,12 @@ christian = {
 		hre_heretic_religion = yes
 		
 		#fervor = yes
+
+		will_get_center = {
+			any_owned_province = {
+				region = british_isles_region
+			}
+		}
 
 		allowed_center_conversion = {
 			catholic

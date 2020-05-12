@@ -34,3 +34,9 @@
  dh_enable_lollard_title:0 "Enable Lollardy"
  dh_enable_lollard_desc:0 "Enable the Lollard heresy and events related to it."
  dh_enable_lollard.tt:0 "When the \"The Lollard Heresy\" event occurs for England, five of the highlighted provinces will convert to Lollardy, and one of them will spawn a Lollard Center of Reformation."
+
+ dh_commission_new_bible_translation_title:0 "Commission Bible Translation"
+ dh_commission_new_bible_translation_desc:0 "One of the key offenses committed by John Wycliffe, in the eyes of the Catholic Church, was his work towards the production of a translation of the Holy Bible into the vernacular, in his case English. The benefits of a translated Bible are many, though, and by commissioning a translation of the Bible into [Root.Culture.GetName], we can promote conversion efforts and ensure that our people have a better understanding of the True Faith."
+ dh_commission_new_bible_translation_allow.tt:0 "Has not commissioned a translation of the Bible in the past 25 years."
+
+ dh_lollard_commissioned_bible_mod:0 "Translated Bible"

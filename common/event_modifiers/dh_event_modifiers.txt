@@ -66,3 +66,9 @@ dh_waldo_4_b_modifier = {
 dh_conversion_resistance_1 = {
 	religious_conversion_resistance = 0.5
 }
+
+#Commissioned Bible Translation
+dh_lollard_commissioned_bible_mod = {
+	global_heretic_missionary_strength = 0.02
+	prestige = 0.5
+}
