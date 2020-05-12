@@ -31,6 +31,9 @@ province_event = {
 			development = 20
 		}
 		is_reformation_center = no
+		dh_can_have_heresy_cor_trigger = {
+			RELIGION = waldensian
+		}
 	}
 
 	fire_only_once = yes
@@ -77,6 +80,9 @@ province_event = {
 		#is_religion_enabled = waldensian
 		religion_years = {
 			waldensian = 3
+		}
+		dh_can_have_heresy_cor_trigger = {
+			RELIGION = waldensian
 		}
 		if = {
 			limit = {

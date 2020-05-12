@@ -35,6 +35,9 @@ province_event = {
 		}
 		development = 12
 		is_reformation_center = no
+		dh_can_have_heresy_cor_trigger = {
+			RELIGION = cathar
+		}
 	}	
 
 	mean_time_to_happen = {
@@ -107,6 +110,9 @@ province_event = {
 			}
 		}
 		is_reformation_center = no
+		dh_can_have_heresy_cor_trigger = {
+			RELIGION = cathar
+		}
 	}
 	
 	mean_time_to_happen = {
