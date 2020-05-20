@@ -76,6 +76,7 @@ Waldensians:
 				3. Provence		
 	
 	Misc Flavor:
+		- Government Reform: Kingdom of the Poor
 
 	Decisions:
 
@@ -136,12 +137,17 @@ Cathars:
 						- Each owned province in Lower/Upper Lombardy (that is not a CoR) has a 25% chance to become Cathar; also gains +100% CoR resistance
 
 	Misc Flavor:
-
 		- Albigensian Crusade CB?
 			- Occitan/Gascon culture independent Cathar nation
 
 	Decisions:
+	
 
 		1. Embrace Catharism (player)
 
 		2. Call for Cathar Inquisition (both)
+Lollards:
+
+	Decisions:
+
+		1. Commission Bible Translation
