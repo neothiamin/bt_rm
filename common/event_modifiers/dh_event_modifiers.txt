@@ -1,7 +1,7 @@
 #Den of Heresy
 dh_den_of_heresy_2 = {
 	local_unrest = -4
-	min_local_autonomy = 15
+	local_autonomy = 0.05
 }
 
 #Conversion Efforts
@@ -12,7 +12,7 @@ dh_den_of_heresy_3 = {
 #Inquisition
 dh_den_of_heresy_4 = {
 	local_unrest = 4
-	min_local_autonomy = -15
+	local_autonomy = -0.05
 }
 
 #Embraced Greed

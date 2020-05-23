@@ -105,7 +105,12 @@ christian = {
 		on_convert = {
 			dh_conv_to_cathar = yes
 			if = {
-				limit = {
+				limit = {					
+					NOT = {
+						religion_years = {
+							cathar = 20
+						}
+					}
 					any_owned_province = {
 						dh_can_have_heresy_cor_trigger = {
 							RELIGION = cathar
@@ -303,11 +308,11 @@ christian = {
 			waldensian
 		}
 		country = {
-			tolerance_own = 2
-			stability_cost_modifier = -0.2
+			global_institution_spread = 0.1 #Lollards were some of the first to translate the Bible into the vernacular
+			stability_cost_modifier = -0.1
 		}
 		province = {
-			local_tax_modifier = -0.1
+			local_tax_modifier = -0.05
 		}
 		country_as_secondary = {
 			stability_cost_modifier = -0.2
