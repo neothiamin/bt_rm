@@ -6,8 +6,10 @@ v1.3:
 + Added the ability for Heresies to convert back to Catholic, if they're filthy Papists.
 + Added a decision for Lollards to commission a translation of the Bible.
 + Capital provinces of European theocracies now get resistance to reformation when the first Heresy spawns
++ Added some rudimentary Idea Groups Expanded compatibility
 
 * Heresy Centers of Reformation can no longer spawn in capital provinces of theocracies
+* General consistency fixes regarding Cathar and Waldensian CoR spawning 
 
 v1.2:
 

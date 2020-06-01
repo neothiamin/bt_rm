@@ -312,7 +312,7 @@ christian = {
 			stability_cost_modifier = -0.1
 		}
 		province = {
-			local_tax_modifier = -0.05
+			local_tax_modifier = -0.1
 		}
 		country_as_secondary = {
 			stability_cost_modifier = -0.2
@@ -337,6 +337,23 @@ christian = {
 		
 		on_convert = {		
 			dh_conv_to_lollard = yes
+			if = {
+				limit = {
+					any_owned_province = {
+						region = british_isles_region
+					}
+				}				
+				random_owned_province = {
+					limit = {
+						region = british_isles_region
+						dh_can_have_heresy_cor_trigger = {
+							RELIGION = lollard
+						}
+					}
+					change_religion = lollard
+					add_reform_center = lollard
+				}
+			}
 		}
 		
 		date = 1445.1.1

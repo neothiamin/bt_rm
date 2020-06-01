@@ -364,6 +364,7 @@ country_event = {
 			OR = {
 				ruler_has_personality = zealot_personality
 				has_idea_group = religious_ideas
+				has_idea_group = christian_idea_groups_expanded
 				#has_country_flag = dh_waldo_inquisition_declared
 			}
 		}
