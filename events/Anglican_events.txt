@@ -918,6 +918,21 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				any_owned_province = {
+					religion = lollard
+					is_reformation_center = yes
+				}
+			}
+			every_owned_province = {
+				limit = {					
+					religion = lollard
+					is_reformation_center = yes
+				}
+				remove_reform_center = lollard
+			}
+		}
 		random_owned_province = {
 			limit = {
 				religion = catholic
@@ -950,6 +965,21 @@ country_event = {
 		}
 		enable_religion = anglican
 		change_religion = anglican
+		if = {
+			limit = {
+				any_owned_province = {
+					religion = lollard
+					is_reformation_center = yes
+				}
+			}
+			every_owned_province = {
+				limit = {					
+					religion = lollard
+					is_reformation_center = yes
+				}
+				remove_reform_center = lollard
+			}
+		}
 		if = {
 			limit = {
 				capital_scope = {

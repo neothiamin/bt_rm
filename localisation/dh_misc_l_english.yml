@@ -13,6 +13,7 @@
 
  dh_theocracies_have_cor_resist.tt:0 "The capital province of every Theocracy in §YEurope§! gains §G+50%§! §YResistance to Reformation.§!"
  dh_conversion_resistance_1:0 "Resistance to Heresy"
+ desc_dh_conversion_resistance_1:0 "This province's proximity to the seat of our [Owner.GovernmentName] means that the locals are less likely to be swayed by heretical thoughts."
 
  #Conversion Scripted Effect Localization
  #dh_conv_resistance_effect.tt:0 "REPLACE_ME"

@@ -40,3 +40,4 @@
  dh_commission_new_bible_translation_allow.tt:0 "Has not commissioned a translation of the Bible in the past 25 years."
 
  dh_lollard_commissioned_bible_mod:0 "Translated Bible"
+ desc_dh_lollard_commissioned_bible_mod:0 "Our recently-commissioned Bible translation has given our missionaries a new tool to use to convert the heretics in our realm."

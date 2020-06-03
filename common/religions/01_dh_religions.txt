@@ -27,6 +27,13 @@ christian = {
 	orthodox = {
 		color = { 127 23 52 }
 	}
+
+	anglican = {
+		allowed_center_conversion = {
+			catholic
+			lollard
+		}
+	}
 	#sunni = {
 	#	color = { 0 87 63 }
 	#}
