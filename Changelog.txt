@@ -10,6 +10,7 @@ v1.3:
 
 * Heresy Centers of Reformation can no longer spawn in capital provinces of theocracies
 * General consistency fixes regarding Cathar and Waldensian CoR spawning 
+* Reduced Imperial Authority loss for heretic princes
 
 v1.2:
 
