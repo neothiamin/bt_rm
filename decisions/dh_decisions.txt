@@ -197,10 +197,10 @@ country_decisions = {
 			OR = {
 				NOT = {
 					has_country_flag = dh_lollard_commissioned_bible
-					had_country_flag = {
-						flag = dh_lollard_commissioned_bible
-						days = 9125
-					}
+				}				
+				had_country_flag = {
+					flag = dh_lollard_commissioned_bible
+					days = 9125
 				}
 			}
 		}
@@ -212,10 +212,10 @@ country_decisions = {
 				OR = {
 					NOT = {
 						has_country_flag = dh_lollard_commissioned_bible
-						had_country_flag = {
-							flag = dh_lollard_commissioned_bible
-							days = 9125
-						}
+					}					
+					had_country_flag = {
+						flag = dh_lollard_commissioned_bible
+						days = 9125
 					}
 				}
 			}
