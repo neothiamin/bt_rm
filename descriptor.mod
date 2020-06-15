@@ -1,4 +1,4 @@
-version="1.2"
+version="1.3.1"
 tags={
 	"Religion"
 	"Alternative History"
@@ -6,10 +6,9 @@ tags={
 	"Bt"
 }
 dependencies={
-	"Beyond Typus (hopefully temp post 1.29 launcher)"
-	"BT Addon: Bugfixing BT 12.0"
+	"BT 13 Beta"
 }
 name="-BT Addon: Heresy!"
 picture="thumbnail.png"
-supported_version="1.29.*"
+supported_version="1.30.*"
 remote_file_id="1964137886"
