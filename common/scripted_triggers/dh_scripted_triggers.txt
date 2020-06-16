@@ -31,19 +31,19 @@ dh_albi_spawn_area = {
 
 dh_frat_spawn_area = {
 	OR = {
-		area = lombardy_area
-		area = piedmont_area
-		area = liguria_area
-		area = emilia_romagna_area
+		area = lombardy_area			#West/Lower Lombardy
+		area = piedmont_area			#C Piedmont
+		area = liguria_area				#Liguria
+		area = emilia_romagna_area		#Romagna
 		#area = central_italy_area
-		area = emilia_area
-		area = east_lombardy_area
-		area = north_piedmont_area
-		area = south_piedmont_area
+		area = emilia_area				#Lower Emilia
+		area = po_valley_area			#East/Upper Lombardy
+		area = north_piedmont_area		#N Piedmont
+		area = south_piedmont_area		#S Piedmont
 		#area = north_marche_area
-		area = upper_emilia_area
-		area = tuscany_area
-		area = venetia_area
+		area = upper_emilia_area		#Upper Emilia
+		area = tuscany_area				#N Tuscany
+		area = venetia_area				#Veneto
 	}
 }
 
@@ -51,19 +51,19 @@ dh_waldo_spawn_area = {
 	OR = {
 		area = savoy_dauphine_area		#Savoy
 		area = dauphine_area			#Dauphine
-		area = lyonnais_area
+		area = lyonnais_area			#Lyonnais
 		AND = {
 			OR = {
 				has_terrain = mountain
 				has_terrain = hills
 			}			
-			area = romandie_area
+			area = romandie_area		#Romandie
 		}
 		#area = lombardy_area			#Lower Lombardy
 		#area = north_piedmont_area		
-		area = piedmont_area
-		area = north_piedmont_area
-		area = south_piedmont_area
+		area = piedmont_area			#C Piedmont
+		area = north_piedmont_area		#N Piedmont
+		area = south_piedmont_area		#S Piedmont
 	}
 	NOT = {
 		province_id = 202 #Avignon
@@ -77,8 +77,8 @@ dh_waldo_spread_area = {
 		area = south_piedmont_area
 		area = switzerland_area
 		area = provence_area
-		area = lombardy_area			#Lower Lombardy
-		area = east_lombardy_area
+		area = lombardy_area			#Lower/West Lombardy
+		area = po_valley_area			#East/Upper Lombardy
 		area = bourgogne_area
 		area = lorraine_area
 		area = lower_bavaria_area
@@ -86,7 +86,7 @@ dh_waldo_spread_area = {
 		area = upper_bavaria_area
 		area = lower_swabia_area
 		area = upper_swabia_area
-		area = franche_comte_area
+		area = west_burgundy_area 		#Franche-Comté
 		area = upper_rhineland_area
 	}
 }
