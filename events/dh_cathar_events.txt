@@ -19,6 +19,7 @@ province_event = {
 	title = dh_albi.1.t
 	desc = dh_albi.1.desc
 	picture = PRAYING_eventPicture
+	goto = root
 
 	fire_only_once = yes
 
@@ -67,6 +68,7 @@ province_event = {
 	title = dh_albi.2.t
 	desc = dh_albi.2.desc
 	picture = PRAYING_eventPicture
+	goto = root
 	
 	trigger = {
 		religion_years = {
@@ -145,6 +147,7 @@ country_event = {
 	title = dh_albi.3.t
 	desc = dh_albi.3.desc
 	picture = ANGRY_MOB_eventPicture
+	goto = 196
 
 	fire_only_once = yes
 	
@@ -249,6 +252,7 @@ country_event = {
 	title = dh_albi.8.t
 	desc = dh_albi.8.desc
 	picture = PRAYING_eventPicture
+	goto = 104
 
 	fire_only_once = yes
 
@@ -382,6 +386,7 @@ province_event = {
 	title = dh_albi.5.t
 	desc = dh_albi.5.desc
 	picture = PRAYING_eventPicture
+	goto = root
 
 	mean_time_to_happen = {
 		months = 300

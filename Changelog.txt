@@ -2,6 +2,8 @@
 
 * Updated to BT 13 for EU4 1.30
 * Fixed a bug with the Commission Bible Translation decision
+* Migrated many events from province_events to country_events triggered by on_actions
+* Added "goto" lines for many events
 
 v1.3:
 

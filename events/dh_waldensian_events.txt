@@ -18,6 +18,7 @@ province_event = {
 	title = dh_waldo.1.t
 	desc = dh_waldo.1.desc
 	picture = PRAYING_eventPicture
+	goto = root
 
 	trigger = {
 		dh_waldo_spawn_area = yes
@@ -74,6 +75,7 @@ province_event = {
 	title = dh_waldo.2.t
 	desc = dh_waldo.2.desc
 	picture = PRAYING_eventPicture
+	goto = root
 
 	trigger = {
 		dh_waldo_spread_area = yes
