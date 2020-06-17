@@ -157,38 +157,64 @@ province_event = {
 # Province-scope Flavor
 #################################
 
+#################################
+# Country-scope Flavor
+#################################
 
 #Popularity Among the Poor
-province_event = {
+country_event = {
 	id = dh_waldo.3
 	title = dh_waldo.3.t
 	desc = dh_waldo.3.desc
 	picture = ANGLICAN_SERMON_eventPicture
+	goto = dh_waldo_3_target
 
 	trigger = {
-		religion = waldensian
-		owner = {
-			NOT = {
-				religion = waldensian
-			}
+		capital_scope = {
+			continent = europe
 		}
-		continent = europe
 		NOT = {
-			development = 20
-			has_province_modifier = dh_waldo_3_a_modifier
-			has_province_modifier = dh_waldo_3_b_modifier
+			religion = waldensian
+		}
+		any_owned_province = {
+			religion = waldensian			
+			continent = europe
+			NOT = {
+				development = 20
+				has_province_modifier = dh_waldo_3_a_modifier
+				has_province_modifier = dh_waldo_3_b_modifier
+			}
 		}
 	}
 
-	mean_time_to_happen = {
-		months = 1200
-		modifier = {
-			factor = 0.5
-			NOT = {
-				development = 12
+	immediate = {
+		random_owned_province = {
+			limit = {				
+				religion = waldensian			
+				continent = europe
+				NOT = {
+					development = 20
+					has_province_modifier = dh_waldo_3_a_modifier
+					has_province_modifier = dh_waldo_3_b_modifier
+				}
 			}
+			save_event_target_as = dh_waldo_3_target
 		}
 	}
+
+	is_triggered_only = yes #on_bi_yearly_pulse_4
+
+	#Changed to on_action
+
+	#mean_time_to_happen = {
+	#	months = 1200
+	#	modifier = {
+	#		factor = 0.5
+	#		NOT = {
+	#			development = 12
+	#		}
+	#	}
+	#}
 
 	#Let them practice in peace.
 	option = {
@@ -197,21 +223,23 @@ province_event = {
 			factor = 50
 			modifier = {
 				factor = 2
-				tolerance_to_this = 2
+				event_target:dh_waldo_3_target = {					
+					tolerance_to_this = 2
+				}
 			}
 			modifier = {
 				factor = 1.5
-				owner = {
-					num_of_religion = {
-						value = 3
-						religion = waldensian
-					}
+				num_of_religion = {
+					value = 3
+					religion = waldensian
 				}
 			}
 		}
-		add_province_modifier = {
-			name = dh_waldo_3_a_modifier
-			duration = 3650
+		event_target:dh_waldo_3_target = {			
+			add_province_modifier = {
+				name = dh_waldo_3_a_modifier
+				duration = 3650
+			}
 		}
 	}
 
@@ -222,14 +250,18 @@ province_event = {
 			factor = 50
 			modifier = {
 				factor = 2
-				NOT = {
-					tolerance_to_this = -2
+				event_target:dh_waldo_3_target = {		
+					NOT = {									
+						tolerance_to_this = 2
+					}
 				}
 			}
 		}
-		add_province_modifier = {
-			name = dh_waldo_3_b_modifier
-			duration = 3650
+		event_target:dh_waldo_3_target = {			
+			add_province_modifier = {
+				name = dh_waldo_3_b_modifier
+				duration = 3650
+			}
 		}
 	}
 
@@ -242,26 +274,19 @@ province_event = {
 		highlight = yes
 		trigger = {
 			OR = {
-				owner = {
-					ruler_has_personality = kind_hearted_personality
-					ruler_has_personality = tolerant_personality
-					has_idea_group = humanist_ideas
-				}
+				ruler_has_personality = kind_hearted_personality
+				ruler_has_personality = tolerant_personality
+				has_idea_group = humanist_ideas
 			}
 		}
-		owner = {
-			add_years_of_income = -0.25
-			add_adm_power = -25
+		add_years_of_income = -0.25
+		add_adm_power = -25
+		event_target:dh_waldo_3_target = {			
+			add_base_tax = 1
+			add_base_production = 1
 		}
-		add_base_tax = 1
-		add_base_production = 1
 	}
 }
-
-#################################
-# Country-scope Flavor
-#################################
-
 
 #Prominent Waldensian Preacher
 country_event = {	
@@ -318,9 +343,13 @@ country_event = {
 		set_country_flag = dh_waldo_4_flag
 	}
 
-	mean_time_to_happen = {
-		years = 25
-	}
+	is_triggered_only = yes #on_bi_yearly_pulse_4
+
+	#Changed to on_action
+
+	#mean_time_to_happen = {
+	#	years = 25
+	#}
 
 	#We ought to burn him at the stake, not invite him to court!
 	option = {
@@ -385,5 +414,4 @@ country_event = {
 			}
 		}
 	}
-
 }
