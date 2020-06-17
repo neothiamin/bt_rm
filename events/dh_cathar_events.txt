@@ -425,6 +425,7 @@ country_event = {
 	title = dh_albi.4.t
 	desc = dh_albi.4.desc
 	picture = RELIGIOUS_TURMOIL_eventPicture
+	goto = dh_albi_4_target
 
 	trigger = {
 		any_owned_province = {			
@@ -626,16 +627,17 @@ country_event = {
 		NOT = {
 			has_country_modifier = dh_albi_6_a_mod
 			has_country_modifier = dh_albi_6_b_mod
-		}
-		OR = {
-			NOT = {
-				has_country_flag = had_dh_albi_6
-			}
-			had_country_flag = {
-				flag = had_dh_albi_6
-				days = 3650
-			}
-		}
+		}		
+		#Probably don't need this, since the event is now fire by an on_action
+		#OR = {
+		#	NOT = {
+		#		has_country_flag = had_dh_albi_6
+		#	}
+		#	had_country_flag = {
+		#		flag = had_dh_albi_6
+		#		days = 3650
+		#	}
+		#}
 	}
 
 	immediate = {
@@ -668,6 +670,7 @@ country_event = {
 	title = dh_albi.9.t
 	desc = dh_albi.9.desc
 	picture = CULTURE_eventPicture
+	goto = dh_albi_9_target
 
 	trigger = {
 		religion = catholic
@@ -683,15 +686,16 @@ country_event = {
 				culture = arpitan	
 			}
 		}
-		OR = {
-			NOT = {
-				has_country_flag = dh_albi_9_happened
-			}
-			had_country_flag = {
-				flag = dh_albi_9_happened
-				days = 3650 #10 years
-			}
-		}
+		#Probably don't need this, since the event is now fire by an on_action
+		#OR = {
+		#	NOT = {
+		#		has_country_flag = dh_albi_9_happened
+		#	}
+		#	had_country_flag = {
+		#		flag = dh_albi_9_happened
+		#		days = 3650 #10 years
+		#	}
+		#}
 	}
 
 	immediate = {

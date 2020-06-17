@@ -294,6 +294,7 @@ country_event = {
 	title = dh_waldo.4.t
 	desc = dh_waldo.4.desc
 	picture = POPE_PREACHING_eventPicture
+	goto = dh_waldo_4_t_target
 
 	trigger = {
 		religion_years = {
@@ -308,16 +309,17 @@ country_event = {
 				religion = waldensian
 				type = inquisitor
 			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = dh_waldo_4_flag
-			}
-			had_country_flag = {
-				flag = dh_waldo_4_flag
-				days = 5475
-			}
-		}
+		}		
+		#Probably don't need this, since the event is now fire by an on_action
+		#OR = {
+		#	NOT = {
+		#		has_country_flag = dh_waldo_4_flag
+		#	}
+		#	had_country_flag = {
+		#		flag = dh_waldo_4_flag
+		#		days = 5475
+		#	}
+		#}
 		any_owned_province = {
 			development = 10
 			religion = waldensian
