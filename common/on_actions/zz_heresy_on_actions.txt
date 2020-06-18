@@ -194,13 +194,13 @@ on_bi_yearly_pulse_4 = {
 		#Heresy Events
 
 		#Cathar
-		100 = dh_albi.4
-		100 = dh_albi.6
-		100 = dh_albi.9
+		150 = dh_albi.4
+		150 = dh_albi.6
+		150 = dh_albi.9
 
 		#Waldensian
-		100 = dh_waldo.3
-		100 = dh_waldo.4
+		150 = dh_waldo.3
+		150 = dh_waldo.4
 
 		2000 = 0
 	}

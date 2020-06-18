@@ -64,7 +64,7 @@ dh_waldo_4_b_modifier = {
 
 #Conversion Resistance
 dh_conversion_resistance_1 = {
-	religious_conversion_resistance = 0.5
+	local_religious_conversion_resistance = 0.5
 }
 
 #Commissioned Bible Translation
