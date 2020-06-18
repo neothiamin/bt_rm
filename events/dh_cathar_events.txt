@@ -39,6 +39,11 @@ province_event = {
 		dh_can_have_heresy_cor_trigger = {
 			RELIGION = cathar
 		}
+		NOT = {
+			religion_years = {
+				cathar = 25
+			}
+		}
 	}	
 
 	mean_time_to_happen = {

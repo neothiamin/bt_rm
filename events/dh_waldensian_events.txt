@@ -34,6 +34,11 @@ province_event = {
 		is_reformation_center = no
 		dh_can_have_heresy_cor_trigger = {
 			RELIGION = waldensian
+		}		
+		NOT = {
+			religion_years = {
+				waldensian = 75
+			}
 		}
 	}
 
