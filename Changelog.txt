@@ -4,6 +4,12 @@
 * Fixed a bug with the Commission Bible Translation decision
 * Migrated many events from province_events to country_events triggered by on_actions
 * Added "goto" lines for many events
+* Removed "Hussite" and "Lollard" from Catholic rebel heresy names, since those actually exist now
+* Refined Center of Reformation province weighting (basically the game's logic for which provinces to choose to convert), maximum distance for converted provinces, and conversion speed
+	- Cathar Center of Reformation conversion speed dropped from 2.5%/month base to 1.5%/month base, and Cathar Centers of Reformation now only convert provinces within 100 distance units
+	- Waldensian Centers of Reformation conversion speed stayed the same, 2.5%/month base, but many province weighting bonuses were removed, such as bonus weight for Waldensian countries' provinces, provinces of the same culture as the Center's province, and provinces in the same culture group as the Center's province
+	- Lollard Center/s of Reformation now convert at 2.5%/month base, but Lollard nations' provinces no longer get bonus weight for Center of Reformation targeting
+* More English provinces will get converted to Lollard if England either lets the Lollards exist or decides to take up the Lollard cross, to facilitate easier conversion and to account for the added English provinces in BT 13
 
 v1.3:
 

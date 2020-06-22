@@ -10,7 +10,7 @@ christian = {
 			waldensian
 			lollard
 		}
-		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }
+		heretic = { BOGOMILIST SOCINIAN }
 
 	}
 	
@@ -310,7 +310,6 @@ christian = {
 		allowed_conversion = {
 			reformed
 			protestant
-			catholic
 			cathar
 			waldensian
 		}

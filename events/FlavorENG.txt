@@ -23,6 +23,8 @@ country_event = {
 	picture = RELIGION_eventPicture
 	}
 
+	major = yes
+	
 	fire_only_once = yes	
 
 	trigger = {
@@ -188,6 +190,23 @@ country_event = {
 				}
 			}
 		}
+		#Extra Lollard Provinces
+		hidden_effect = {						
+			random_owned_province = {
+				limit = {
+					region = british_isles_region
+					NOT = { has_province_flag = lollards }
+				}
+				set_province_flag = lollards
+			}			
+			random_owned_province = {
+				limit = {
+					region = british_isles_region
+					NOT = { has_province_flag = lollards }
+				}
+				set_province_flag = lollards
+			}
+		}
 		if = {
 			limit = {
 				has_global_flag = dh_lollard_religion_enabled
@@ -203,6 +222,18 @@ country_event = {
 					has_province_flag = lollards
 				}
 				change_religion = lollard	
+			}
+			random_owned_province = {
+				limit = {
+					has_province_flag = lollards
+				}
+				change_religion = lollard
+			}
+			random_owned_province = {
+				limit = {
+					has_province_flag = lollards
+				}
+				change_religion = lollard
 			}
 			random_owned_province = {
 				limit = {
@@ -233,6 +264,23 @@ country_event = {
 			has_global_flag = dh_lollard_religion_enabled
 		}
 		dh_conv_to_lollard = yes
+		#Extra Lollard provinces		
+		hidden_effect = {						
+			random_owned_province = {
+				limit = {
+					region = british_isles_region
+					NOT = { has_province_flag = lollards }
+				}
+				set_province_flag = lollards
+			}			
+			random_owned_province = {
+				limit = {
+					region = british_isles_region
+					NOT = { has_province_flag = lollards }
+				}
+				set_province_flag = lollards
+			}
+		}
 		if = {
 			limit = {
 				any_owned_province = {

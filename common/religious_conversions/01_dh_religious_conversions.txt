@@ -8,8 +8,9 @@ cathar_center_of_reformation = {
 
 	map_icon = GFX_religious_conversion_center_protestant
 
-	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2 #In line with vanilla
+	max_distance = 100.0 #Distance from CoR province. Vanilla CoRs are all 150, but Cathar CoRs are pretty much all in/near France, so the lower distance seems ok.
+
+	base_conversion_speed = 1.5 #3/4 of vanilla. I don't want Cathar spreading like wildfire, especially because with the centrality of its CoRs it can dominate the France region quickly. Plus Cathar gets events to spread it, like the Mass Conversions in Toulouse event and the Revivalists in Lombardy event. Note: in-game, this value rounds down to 1 visually.
 
 	target_province_weights = {
 		factor = 2
@@ -80,16 +81,18 @@ cathar_center_of_reformation = {
 				num_of_cardinals = 5
 			}
 		}
-		modifier = {
-			factor = 1.25
-			owner = {
-				religion = cathar
-			}
-		}
-		modifier = {
-			factor = 2
-			culture_group = FROM
-		}
+		#Whyyy!? Converted nations get bonuses anyways, and this effectively discourages spreading outside of Cathar nations, which is, you know, the opposite of what should happen.
+		#modifier = {
+		#	factor = 1.25
+		#	owner = {
+		#		religion = cathar
+		#	}
+		#}
+		#Giving a 0.5x factor to different culture group provinces means that this is unnecessary.
+		#modifier = {
+		#	factor = 2
+		#	culture_group = FROM
+		#}
 		modifier = {
 			factor = 0.5
 			NOT = {
@@ -112,16 +115,14 @@ cathar_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
-		#modifier = {
-		#	factor = 1.5
-		#	dh_albi_spawn_area = yes
-		#}
+		#This makes sense, I think. Of course France, especially Toulouse, was famous for its Cathars, but Cathar theology (according to some sources) may have started in the Rhineland.
 		modifier = {
 			factor = 1.5
 			OR = {	
 				area = north_rhine_area
 				area = lower_rhineland_area
 				area = westphalia_area			
+				area = north_westphalia_area #Added in BT 13
 				region = france_region
 				#region = low_countries_region
 			}
@@ -158,7 +159,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2 	#In line with vanilla
+	base_conversion_speed = 1 	#Half of vanilla. Waldensian is meant to be more of a slow burn, so a lower speed seems okay to me.
 
 	target_province_weights = {
 		factor = 2
@@ -229,22 +230,25 @@ waldensian_center_of_reformation = {
 				num_of_cardinals = 5
 			}
 		}
-		modifier = {
-			factor = 1.25
-			owner = {
-				religion = waldensian
-			}
-		}
-		modifier = {
-			factor = 2
-			culture_group = FROM
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				culture_group = FROM
-			}
-		}
+		#This seems like a counter-intuitive bonus. Waldensian nations already get big buffs to conversion speed on conversion, so they probably don't need the help of the CoR.
+		#modifier = {
+		#	factor = 1.25
+		#	owner = {
+		#		religion = waldensian
+		#	}
+		#}
+		#Not sure if this is necessary.
+		#modifier = {
+		#	factor = 2
+		#	culture_group = FROM
+		#}
+		#Or this.
+		#modifier = {
+		#	factor = 0.5
+		#	NOT = {
+		#		culture_group = FROM
+		#	}
+		#}
 		modifier = {
 			factor = 2
 			culture = FROM
@@ -261,21 +265,15 @@ waldensian_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
+		#Commenting out for now for testing.
 		#modifier = {
-		#	factor = 2
-		#	dh_waldo_spawn_area = yes
+		#	factor = 3
+		#	OR = {				
+		#		dh_waldo_spawn_area = yes
+		#		dh_waldo_spread_area = yes
+		#	}
 		#}
-		modifier = {
-			factor = 3
-			OR = {				
-				dh_waldo_spawn_area = yes
-				dh_waldo_spread_area = yes
-			}
-		}
-		#modifier = {
-		#	factor = 1.5
-		#	culture_group = germanic
-		#}
+		#Waldensians are really big on their vows of poverty.
 		modifier = {
 			factor = 2
 			NOT = {
@@ -292,7 +290,7 @@ lollard_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2 	#In line with vanilla
+	base_conversion_speed = 2.5	#A bit faster than vanilla. Lollard only gets one CoR (save for conversions) so I think giving it slightly faster conversion speed makes sense, especially with BT 13's new Britain/Ireland.
 
 	target_province_weights = {
 		factor = 2
@@ -363,26 +361,30 @@ lollard_center_of_reformation = {
 				num_of_cardinals = 5
 			}
 		}
-		modifier = {
-			factor = 1.25
-			owner = {
-				religion = lollard
-			}
-		}
+		#Like Waldensians, Lollard nations (mostly just England) get big buffs to conversion speed on conversion.
+		#modifier = {
+		#	factor = 1.25
+		#	owner = {
+		#		religion = lollard
+		#	}
+		#}
+		#I don't really like this one, but I'll leave it in for now.
 		modifier = {
 			factor = 2
 			culture_group = FROM
 		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				culture_group = FROM
-			}
-		}
-		modifier = {
-			factor = 2
-			culture = FROM
-		}
+		#Redundant.
+		#modifier = {
+		#	factor = 0.5
+		#	NOT = {
+		#		culture_group = FROM
+		#	}
+		#}
+		#Unnecessary.
+		#modifier = {
+		#	factor = 2
+		#	culture = FROM
+		#}
 		modifier = {
 			factor = 0.01
 			religion = coptic
