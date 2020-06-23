@@ -7,13 +7,15 @@
  generic_rebels_demand:0 "Convert $COUNTRYNAME$"
 
  waldensian_rebels_name:0 "Waldensian Zealots"
- waldensian_rebels_title:0 "Cathar"
+ waldensian_rebels_title:0 "Waldensian"
  waldensian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  waldensian_rebels_army:0 "Poor of $PROVINCE$"
 
  dh_theocracies_have_cor_resist.tt:0 "The capital province of every Theocracy in §YEurope§! gains §G+50%§! §YResistance to Reformation.§!"
  dh_conversion_resistance_1:0 "Resistance to Heresy"
- desc_dh_conversion_resistance_1:0 "This province's proximity to the seat of our [Owner.GovernmentName] means that the locals are less likely to be swayed by heretical thoughts."
+ desc_dh_conversion_resistance_1:0 "This province's proximity to the seat of our state means that the locals are less likely to be swayed by heretical thoughts."
+
+ dh_add_conv_weakness.tt:0 "All provinces neighboring [This.GetName] will receive §R-50%§! local Resistance to Reformation."
 
  #Conversion Scripted Effect Localization
  #dh_conv_resistance_effect.tt:0 "REPLACE_ME"

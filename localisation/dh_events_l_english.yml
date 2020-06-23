@@ -12,7 +12,7 @@
  dh_albi.3.t:0 "Mass Conversions in Toulouse"
  dh_albi.3.desc:0 "Toulouse has historically been the epicenter of the Cathar menace. The Albigensian Crusade, waged in the early years of the 13th century, took place almost entirely within the southern part of our realm, and dragged on for years and years. The memories of the Crusade are still fresh in the minds of the Occitan people, who are yet often called \"Cathars\" by others regardless of their actual faith. It is no surprise then that when the Cathar Resurgence began, many Occitans flocked to the banner of Catharism. A wave of mass conversion is taking place currently in Toulouse, and it does not seem like it will end any time soon."
  dh_albi.3.a:0 "No!"
- dh_mass_conversions_in_toulouse.tt:0 "Mass conversions take place in and around Toulouse."
+ dh_mass_conversions_in_toulouse.tt:0 "Mass conversions take place in and around §YToulouse§!."
  
  dh_albi.4.t:0 "Den of Heresy"
  dh_albi.4.desc:0 "Practicers of minority religions tend to gather together in secluded or isolated places. Alleyways, a member's home, places where no one wants to go, etc. However, the Cathars in [Root.GetName] have recently been gathering and performing their rites and rituals in a rather public place - a local inn! Naturally, the faithful in [Root.GetName] are rather upset about this, and are demanding the Crown do something about the heretics in their midst."
@@ -51,6 +51,9 @@
 
  cathar_bishopric:0 "Cathar Bishopric"
  desc_cathar_bishopric:0 "This province has been declared as the headquarters of a Cathar Bishopric."
+
+ heresy_neg_50_conv_resist:0 "Heretical Susceptibility"
+ desc_heresy_neg_50_conv_resist:0 "The populace of this province is particularly sentimental to heresy, and will more eagerly convert to heretical sects."
  
  dh_albi_6_a_mod:0 "Embraced Greed"
  desc_dh_albi_6_a_mod:0 "We have embraced our love of coin, upsetting the faithful in our lands."

@@ -72,3 +72,8 @@ dh_lollard_commissioned_bible_mod = {
 	global_heretic_missionary_strength = 0.02
 	prestige = 0.5
 }
+
+#Heretical Susceptibility
+heresy_neg_50_conv_resist = {
+	local_religious_conversion_resistance = -0.5
+}

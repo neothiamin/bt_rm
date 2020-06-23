@@ -84,3 +84,16 @@ dh_add_cor_resistance_to_theocracies = {
 		}
 	}
 }
+
+#Province scope
+dh_add_neighbor_conv_weakness = {	
+	custom_tooltip = dh_add_conv_weakness.tt				
+	hidden_effect = {
+		every_neighbor_province = {
+			add_province_modifier = {
+				name = heresy_neg_50_conv_resist
+				duration = 3650
+			}
+		}
+	}
+}
