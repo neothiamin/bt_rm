@@ -1,4 +1,4 @@
-version="1.3.1"
+version="1.3.1.1"
 tags={
 	"Religion"
 	"Alternative History"
@@ -6,7 +6,7 @@ tags={
 	"Bt"
 }
 dependencies={
-	"BT 13 Beta"
+	"Beyond Typus"
 }
 name="-BT Addon: Heresy!"
 picture="thumbnail.png"

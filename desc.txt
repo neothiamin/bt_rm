@@ -9,6 +9,6 @@ Added Heresies:
 - Waldensian
 - Lollard
 
-This mod requires both Beyond Typus and Dub's BT addon, Bugfixing BT 12.0. It probably could work without BT, but I will not provide support for non-BT users.
+This mod requires Beyond Typus to work properly. It will work without Beyond Typus, but I will not provide support for anyone who does not use it.
 
 Enjoy!
