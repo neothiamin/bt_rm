@@ -137,6 +137,15 @@ christian = {
 						limit = {
 							dh_can_have_heresy_cor_trigger = {
 								RELIGION = cathar
+							}							
+							NOT = {
+								calc_true_if = {
+									all_province = {
+										religion = cathar
+										is_reformation_center = yes
+									}
+									amount = 3
+								}
 							}
 						}
 						change_religion = cathar
@@ -263,6 +272,15 @@ christian = {
 						limit = {
 							dh_can_have_heresy_cor_trigger = {
 								RELIGION = waldensian
+							}														
+							NOT = {
+								calc_true_if = {
+									all_province = {
+										religion = waldensian
+										is_reformation_center = yes
+									}
+									amount = 3
+								}
 							}
 						}
 						change_religion = waldensian
@@ -355,6 +373,15 @@ christian = {
 						region = british_isles_region
 						dh_can_have_heresy_cor_trigger = {
 							RELIGION = lollard
+						}																				
+						NOT = {
+							calc_true_if = {
+								all_province = {
+									religion = lollard
+									is_reformation_center = yes
+								}
+								amount = 3
+							}
 						}
 					}
 					change_religion = lollard
