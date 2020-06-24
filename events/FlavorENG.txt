@@ -87,6 +87,7 @@ country_event = {
 				}
 				change_religion = lollard
 				add_reform_center = lollard
+				dh_add_neighbor_conv_weakness = yes
 
 			}
 		}
@@ -297,6 +298,7 @@ country_event = {
 				change_religion = lollard
 				add_reform_center = lollard
 				clr_province_flag = lollards
+				dh_add_neighbor_conv_weakness = yes
 			}
 		}
 		else = {

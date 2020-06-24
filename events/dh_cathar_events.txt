@@ -63,6 +63,7 @@ province_event = {
 		#}
 		dh_add_cor_resistance_to_theocracies = yes
 		add_reform_center = cathar
+		dh_add_neighbor_conv_weakness = yes
 	}
 }
 
@@ -143,6 +144,7 @@ province_event = {
 		name = dh_albi.2.a
 		change_religion = cathar
 		add_reform_center = cathar
+		dh_add_neighbor_conv_weakness = yes
 	}
 }
 
@@ -208,12 +210,14 @@ country_event = {
 						7904 = {
 							change_religion = cathar
 							add_reform_center = cathar
+							dh_add_neighbor_conv_weakness = yes
 						}
 					}
 					50 = {
 						196 = {
 							change_religion = cathar
 							add_reform_center = cathar
+							dh_add_neighbor_conv_weakness = yes
 						}
 					}
 				}

@@ -34,13 +34,12 @@ christian = {
 			lollard
 		}
 	}
-	#sunni = {
-	#	color = { 0 87 63 }
-	#}
 
-	#shiite = {
-	#	color = { 0 144 0 }
-	#}
+	coptic = {
+		color = {
+			108 52 131 #6C3483
+		}
+	}
 
 	##NEW
 	cathar = {
@@ -142,6 +141,7 @@ christian = {
 						}
 						change_religion = cathar
 						add_reform_center = cathar
+						dh_add_neighbor_conv_weakness = yes
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
@@ -267,6 +267,7 @@ christian = {
 						}
 						change_religion = waldensian
 						add_reform_center = waldensian
+						dh_add_neighbor_conv_weakness = yes
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
@@ -358,6 +359,7 @@ christian = {
 					}
 					change_religion = lollard
 					add_reform_center = lollard
+					dh_add_neighbor_conv_weakness = yes
 				}
 			}
 		}
