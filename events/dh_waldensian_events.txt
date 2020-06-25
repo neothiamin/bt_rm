@@ -211,19 +211,20 @@ country_event = {
 		}
 	}
 
-	is_triggered_only = yes #on_bi_yearly_pulse_4
+	#is_triggered_only = yes #on_bi_yearly_pulse_4
 
 	#Changed to on_action
+	#Changed back to MTTH
 
-	#mean_time_to_happen = {
-	#	months = 1200
-	#	modifier = {
-	#		factor = 0.5
-	#		NOT = {
-	#			development = 12
-	#		}
-	#	}
-	#}
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.5
+			NOT = {
+				development = 12
+			}
+		}
+	}
 
 	#Let them practice in peace.
 	option = {
@@ -354,13 +355,14 @@ country_event = {
 		set_country_flag = dh_waldo_4_flag
 	}
 
-	is_triggered_only = yes #on_bi_yearly_pulse_4
+	#is_triggered_only = yes #on_bi_yearly_pulse_4
 
 	#Changed to on_action
+	#Changed back to MTTH
 
-	#mean_time_to_happen = {
-	#	years = 25
-	#}
+	mean_time_to_happen = {
+		years = 25
+	}
 
 	#We ought to burn him at the stake, not invite him to court!
 	option = {
