@@ -149,6 +149,10 @@ cathar_center_of_reformation = {
 				protestant = 20
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_province_modifier = heresy_neg_50_conv_resist
+		}
 	}
 }
 
@@ -280,6 +284,10 @@ waldensian_center_of_reformation = {
 				development = 20
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_province_modifier = heresy_neg_50_conv_resist
+		}
 	}
 }
 
@@ -396,6 +404,10 @@ lollard_center_of_reformation = {
 		modifier = {
 			factor = 0.01
 			religion = fraticelli
+		}
+		modifier = {
+			factor = 1.5
+			has_province_modifier = heresy_neg_50_conv_resist
 		}
 	}
 }

@@ -21,3 +21,7 @@
  #dh_conv_resistance_effect.tt:0 "REPLACE_ME"
  #dh_conversion_resistance_1:0 "REPLACE_ME"
  #desc_dh_conversion_resistance_1:0 "REPLACE_ME"
+
+ heresy_cathar_perfect:0 "Perfect"
+ 
+ HERESY_WALDENSIAN_CLERGY_INFLUENCE:0 "Lay Preaching: §Y$VAL$%§!"

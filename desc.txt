@@ -25,7 +25,6 @@ Heresy is incompatible with any mods that do the following
 [*]Add new religions (with one exception, again, explained later)
 [*]Change the colors of the Catholic, Protestant, Orthodox, or Coptic religions
 [*]Changes, adds to, or removes the allowed_conversion sections of the Catholic, Protestant, or Anglican religions
-[*]Adds events to the on_bi_yearly_pulse_4 on_action without a compatibility patch
 [*]Changes either the Anglican_events.txt file or the FlavorENG.txt file in the /events folder
 [/olist]
 
