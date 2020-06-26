@@ -10,7 +10,7 @@ cathar_center_of_reformation = {
 
 	max_distance = 100.0 #Distance from CoR province. Vanilla CoRs are all 150, but Cathar CoRs are pretty much all in/near France, so the lower distance seems ok.
 
-	base_conversion_speed = 1.5 #3/4 of vanilla. I don't want Cathar spreading like wildfire, especially because with the centrality of its CoRs it can dominate the France region quickly. Plus Cathar gets events to spread it, like the Mass Conversions in Toulouse event and the Revivalists in Lombardy event. Note: in-game, this value rounds down to 1 visually.
+	base_conversion_speed = 2 #Same as vanilla. Tested at 1.5 for a while and it was still very slow. Plus it rounded down to 1 visually. Blech.
 
 	target_province_weights = {
 		factor = 2
@@ -163,7 +163,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 1 	#Half of vanilla. Waldensian is meant to be more of a slow burn, so a lower speed seems okay to me.
+	base_conversion_speed = 2 	#Identical to vanilla. I tested it at 1 for a while and conversion was sooo sloowwww
 
 	target_province_weights = {
 		factor = 2
@@ -298,7 +298,7 @@ lollard_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2.5	#A bit faster than vanilla. Lollard only gets one CoR (save for conversions) so I think giving it slightly faster conversion speed makes sense, especially with BT 13's new Britain/Ireland.
+	base_conversion_speed = 3	#A bit faster than vanilla. Lollard only gets one CoR (save for conversions) so I think giving it faster conversion speed makes sense, especially with BT 13's new Britain/Ireland.
 
 	target_province_weights = {
 		factor = 2
