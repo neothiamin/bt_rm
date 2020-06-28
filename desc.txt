@@ -19,15 +19,17 @@ Heresies can be enabled one by one at the start of the game. In addition, each H
 This mod requires Beyond Typus to work properly. It will technically work without Beyond Typus, but I will not provide support for anyone who does not use Beyond Typus with Heresy. This mod is made with Beyond Typus in mind, and the "intended" experience is to play it alongside Beyond Typus.
 
 [b]Compatibility[/b]
-Heresy is incompatible with any mods that do the following
+Heresy is incompatible with any mods that do the following:
 [olist]
 [*]Change religion icons (with one exception, explained later)
 [*]Add new religions (with one exception, again, explained later)
 [*]Change the colors of the Catholic, Protestant, Orthodox, or Coptic religions
-[*]Changes, adds to, or removes the allowed_conversion sections of the Catholic, Protestant, or Anglican religions
-[*]Changes either the Anglican_events.txt file or the FlavorENG.txt file in the /events folder
+[*]Change, adds to, or removes the allowed_conversion sections of the Catholic, Protestant, or Anglican religions
+[*]Change either the Anglican_events.txt file or the FlavorENG.txt file in the /events folder
+[*]Change the 01_church.txt files in /common/estates, with one exception.
 [/olist]
 
 The exception to items 1 and 2 is the mod Pagan Wrath, which was made to be compatible with Heresy out-of-the-proverbial-box. Compatibility with other mods that do any of the items listed above is not guaranteed.
+The exception to item 6 is Dub's Byzantine Resurgence, which I have added compatibility for.
 
 Enjoy!

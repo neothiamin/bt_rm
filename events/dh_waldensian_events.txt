@@ -217,13 +217,7 @@ country_event = {
 	#Changed back to MTTH
 
 	mean_time_to_happen = {
-		months = 1200
-		modifier = {
-			factor = 0.5
-			NOT = {
-				development = 12
-			}
-		}
+		months = 180
 	}
 
 	#Let them practice in peace.
@@ -361,7 +355,7 @@ country_event = {
 	#Changed back to MTTH
 
 	mean_time_to_happen = {
-		years = 25
+		months = 180
 	}
 
 	#We ought to burn him at the stake, not invite him to court!

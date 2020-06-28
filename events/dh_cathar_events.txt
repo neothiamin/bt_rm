@@ -398,7 +398,7 @@ province_event = {
 	goto = root
 
 	mean_time_to_happen = {
-		months = 300
+		months = 18
 	}
 
 	trigger = {
@@ -476,7 +476,7 @@ country_event = {
 
 
 	mean_time_to_happen = {
-		months = 1200
+		months = 150
 		modifier = {
 			factor = 2.5
 			is_year = 1530
@@ -627,7 +627,7 @@ country_event = {
 	#Changed back to MTTH
 
 	mean_time_to_happen = {
-		years = 25
+		years = 10
 	}
 	
 	trigger = {
@@ -738,7 +738,7 @@ country_event = {
 
 
 	mean_time_to_happen = {
-		years = 25
+		years = 10
 	}
 
 	#Oh, the beauty of the langue d'oc...

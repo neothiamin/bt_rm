@@ -37,7 +37,7 @@ christian = {
 
 	coptic = {
 		color = {
-			108 52 131 #6C3483
+			160 143 168 #A08FA8
 		}
 	}
 

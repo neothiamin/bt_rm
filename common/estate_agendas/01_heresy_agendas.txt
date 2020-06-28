@@ -1,0 +1,92 @@
+heresy_heretic_relations_agenda = {
+	can_select = {
+		OR = {
+			religion = cathar			
+			religion = waldensian
+		}
+		any_known_country = {
+			religion = ROOT
+			has_opinion = {
+				who = ROOT
+				value = 0
+			}
+			NOT = {
+				is_rival = ROOT
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1.0
+		#modifier = {
+		#	factor = 1000000
+		#	always = yes
+		#}
+		modifier = {
+			factor = 3
+			NOT = {
+				num_of_allies = 1
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				num_of_allies = 2
+			}
+		}
+	}
+	pre_effect = {
+		random_known_country = {
+			limit = {				
+				religion = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 0
+				}
+				NOT = {
+					is_rival = ROOT
+				}
+			}
+			save_event_target_as = heresy_agenda_country
+		}
+	}
+	provinces_to_highlight = {
+		owned_by = event_target:heresy_agenda_country
+	}
+	task_requirements = {
+		event_target:heresy_agenda_country = {
+			has_opinion = {
+				who = ROOT
+				value = 125
+			}
+			alliance_with = ROOT
+		}
+	}
+	task_completed_effect = {
+		add_prestige = 5
+		add_country_modifier = {
+			name = heresy_heretic_relations_agenda_complete_mod
+			duration = 3650
+		}
+	}
+	failing_effect = {
+		add_prestige = -10
+		add_country_modifier = {
+			name = heresy_heretic_relations_agenda_fail_mod
+			duration = 3650
+		}
+	}
+	fail_if = {
+		event_target:heresy_agenda_country = {
+			war_with = ROOT
+		}
+	}
+	invalid_trigger = {
+		NOT = {
+			event_target:heresy_agenda_country = {
+				religion = ROOT
+			}
+			religion = cathar
+			religion = waldensian
+		}
+	}
+}

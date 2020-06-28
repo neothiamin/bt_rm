@@ -1,0 +1,9 @@
+﻿l_english:
+ heresy_heretic_relations_agenda: "Seek Alliance with Spiritual Brethren"
+ heresy_heretic_relations_agenda_desc: "It is no secret that papists and malicious heathens wish to quash us and stamp out our faith. The [Root.GetClergyName] in our state say that if we [Root.Religion.GetName]s are to survive, we must stand together."
+
+ heresy_heretic_relations_agenda_complete_mod: "United in Faith"
+ desc_heresy_heretic_relations_agenda_complete_mod: "Through faith and diplomacy we have fostered good relations with a fellow [Root.Religion.GetName] nation."
+
+ heresy_heretic_relations_agenda_fail_mod: "Petty Squabbling"
+ desc_heresy_heretic_relations_agenda_fail_mod: "We have failed to foster better relations with one of our friends in faith, and as such our diplomatic corps is displeased with us."

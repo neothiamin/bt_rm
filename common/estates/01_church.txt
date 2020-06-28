@@ -284,6 +284,8 @@ estate_church =
 		estate_church_relations_with_dotf
 		estate_church_hire_advisor
 		estate_church_fire_advisor
+		#Heresy
+		heresy_heretic_relations_agenda
 	}
 	influence_from_dev_modifier = 1.0
 }

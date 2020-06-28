@@ -77,3 +77,13 @@ dh_lollard_commissioned_bible_mod = {
 heresy_neg_50_conv_resist = {
 	local_religious_conversion_resistance = -0.5
 }
+
+#Unity in Faith
+heresy_heretic_relations_agenda_complete_mod = {
+	diplomatic_reputation = 1
+}
+
+#Squabbling
+heresy_heretic_relations_agenda_fail_mod = {
+	diplomatic_reputation = -2
+}
