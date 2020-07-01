@@ -179,6 +179,10 @@ province_event = {
 			religion = catholic
 		}
 		has_construction = missionary
+		NOT = {
+			has_province_modifier = heresy_waldo_6a_modifier
+			has_province_modifier = heresy_waldo_6d_modifier
+		}
 	}
 
 	mean_time_to_happen = {
@@ -295,14 +299,17 @@ province_event = {
 				province_trade_power = 5
 			}
 			modifier = {
-				factor = 3
+				factor = 5
 				province_with_special_goods_produced_trigger = yes
 			}
+		}
+		add_province_modifier = {
+			name = heresy_waldo_6d_modifier
+			duration = 3650
 		}
 		owner = {
 			add_prestige = 5
 		}
-		add_unrest = -10
 	}
 
 }
