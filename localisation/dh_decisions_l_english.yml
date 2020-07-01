@@ -1,4 +1,6 @@
 ﻿l_english:
+
+ #Enable Decisions
  dh_enable_albi_title:0 "Enable Catharism"
  dh_enable_albi_desc:0 "Enable the Cathar heresy and events related to it."
  dh_albi_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Cathar Resurgence.\nCatharism will be able to spawn after a) the Catholic faith has at least §G30%§! reform desire or b) §G8§! years have passed since taking this decision, whichever comes first."
@@ -10,7 +12,13 @@
  dh_enable_waldo_title:0 "Enable Waldensianism"
  dh_enable_waldo_desc:0 "Enable the Waldensian heresy and events related to it."
  dh_waldo_spawn_area.tt:0 "One of the highlighted provinces may become the epicenter of the Waldensian Resurgence."
+
+ dh_enable_lollard_title:0 "Enable Lollardy"
+ dh_enable_lollard_desc:0 "Enable the Lollard heresy and events related to it."
+ dh_enable_lollard.tt:0 "When the \"The Lollard Heresy\" event occurs for England, five to seven of the highlighted provinces will convert to Lollardy, and one of them will spawn a Lollard Center of Reformation."
  
+ #Deprecated shit
+
  dh_remove_player_conversion_restrictions_title:0 "Remove Player Conversion Restrictions"
  dh_remove_player_conversion_restrictions_desc:0 "Remove geographical/cultural restrictions for conversion for the player only."
  dh_remove_player_conversion_restrictions.tt:0 "REPLACE_ME"
@@ -28,12 +36,10 @@
  
  dh_historical_cathar_tt:0 "§Y[Root.GetName]§! is either §YToulouse§!@TOU or has §YGascon,§! §YOccitan,§! or §YProvençal§! as its primary culture and §Y[Root.Capital.GetName]§! is in the §GFrance§! region."
 
- dh_can_convert_to_cathar_tt_1:0 "§Y[Root.GetName]§! is both §Yindependent§! and §G15%§! of its provinces are §YCathar.§!"
- dh_can_convert_to_cathar_tt_2:0 "§Y[Root.GetName]§! owns at least §Y1 Cathar Center of Reformation§! and §G10%§! of its provinces are §YCathar.§!"
+ dh_can_convert_to_cathar_tt_1:0 "§Y[Root.GetName]§! is both §Yindependent§! and §G15%§! of its provinces are §YCathar§!."
+ dh_can_convert_to_cathar_tt_2:0 "§Y[Root.GetName]§! owns at least §Y1 Cathar Center of Reformation§! and §G10%§! of its provinces are §YCathar§!."
 
- dh_enable_lollard_title:0 "Enable Lollardy"
- dh_enable_lollard_desc:0 "Enable the Lollard heresy and events related to it."
- dh_enable_lollard.tt:0 "When the \"The Lollard Heresy\" event occurs for England, five of the highlighted provinces will convert to Lollardy, and one of them will spawn a Lollard Center of Reformation."
+ #Flavor
 
  dh_commission_new_bible_translation_title:0 "Commission Bible Translation"
  dh_commission_new_bible_translation_desc:0 "One of the key offenses committed by John Wycliffe, in the eyes of the Catholic Church, was his work towards the production of a translation of the Holy Bible into the vernacular, in his case English. The benefits of a translated Bible are many, though, and by commissioning a translation of the Bible into [Root.Culture.GetName], we can promote conversion efforts and ensure that our people have a better understanding of the True Faith."
@@ -41,3 +47,8 @@
 
  dh_lollard_commissioned_bible_mod:0 "Translated Bible"
  desc_dh_lollard_commissioned_bible_mod:0 "Our recently-commissioned Bible translation has given our missionaries a new tool to use to convert the heretics in our realm."
+
+ heresy_send_waldensian_colonies_to_apulia_title: "Send Waldensian Colonists to Apulia"
+ heresy_send_waldensian_colonies_to_apulia_desc: "As good Waldensians, we must always endeavor to spread out faith whenever we can. Here in [Root.Capital.GetRegionName], our people are not safe. All around us, papists and other hostile actors wish to see our faith demolished and our followers burnt at the pyre. However, in southern Italy, there are lands that are rich people who would be receptive to the true teachings of the Lord. By sending some of our most faithful to these lands, we can spread the teaching of Peter of Vaudes and ensure a safe haven for we pious folk."
+ heresy_send_waldensian_colonies_to_apulia_allow.tt: "Any province in the §YApulia§! or §YCalabria§! areas is §YCatholic§!."
+ heresy_waldo_colonists_embark_to_apulia.tt: "Begin collecting funds and finding colonists for the voyage to southern Italy."

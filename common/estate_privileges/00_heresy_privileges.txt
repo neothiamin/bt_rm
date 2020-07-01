@@ -1,0 +1,50 @@
+#Testing an overwrite from vanilla
+#It works!
+estate_church_enforced_one_faith = {
+	icon = privilege_recruit_inouisitor
+	max_absolutism = -5
+	loyalty = 0.1
+	is_valid = {
+		any_owned_province = {
+			NOT = { religion = root }
+		}
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
+		NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+	}
+	penalties = {
+		tolerance_heathen = -2
+		tolerance_heretic = -2
+	}
+	benefits = {
+		global_missionary_strength = 0.01
+		tolerance_own = 1
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_enforced_one_faith
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 5
+			religion = catholic
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					religion = waldensian
+					religion = cathar
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				any_owned_province = {
+					tolerance_to_this = 0
+				}
+			}
+		}
+	}
+}

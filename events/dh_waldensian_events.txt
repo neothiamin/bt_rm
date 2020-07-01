@@ -166,6 +166,147 @@ province_event = {
 # Province-scope Flavor
 #################################
 
+#Conversion Troubles in [Root.GetName]
+province_event = {
+	id = dh_waldo.6
+	title = dh_waldo.6.t
+	desc = dh_waldo.6.desc
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	trigger = {
+		religion = waldensian
+		owner = {
+			religion = catholic
+		}
+		has_construction = missionary
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = {
+				has_estate_privilege = estate_church_enforced_one_faith
+			}
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+	#And what should we care? They're heretics!
+	option = {
+		name = dh_waldo.6.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 40
+			}
+		}
+		spawn_rebels = {
+			size = 2
+			type = waldensian_rebels
+			unrest = 4
+		}
+		add_province_modifier = {
+			name = heresy_waldo_6a_modifier
+			duration = 3650
+		}
+		owner = {			
+			every_neighbor_country = {
+				limit = {
+					religion = waldensian
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = heresy_waldo_6a_opinion_modifier
+				}
+			}
+		}
+	}
+
+	#Perhaps we ought to let them be for a while, at least.
+	option = {
+		name = dh_waldo.6.b
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.25
+				development = 30 
+			}
+		}
+		owner = {
+			add_prestige = -5
+		}
+		add_province_modifier = {
+			name = heresy_waldo_6b_modifier
+			duration = 3650
+		}
+		cancel_construction = yes
+	}
+
+	#Their heresy is against the laws of this realm. They have no defense.
+	option = {
+		name = dh_waldo.6.c
+		trigger = {
+			owner = {
+				has_estate_privilege = estate_church_enforced_one_faith
+			}
+		}
+		highlight = yes
+		ai_chance = {
+			factor = 100
+		}
+		owner = {
+			add_prestige = 15
+		}
+		spawn_rebels = {
+			size = 1
+			type = waldensian_rebels
+			unrest = 2
+		}
+		add_province_modifier = {
+			name = heresy_waldo_6a_modifier
+			duration = 3650
+		}
+	}
+
+	#Surely we can come to some sort of agreement over tea! Do... do Waldensians drink tea?
+	option = {
+		name = dh_waldo.6.d
+		trigger = {
+			OR = {
+				tolerance_to_this = 1
+				owner = {
+					has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+				}
+			}
+		}		
+		highlight = yes
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				development = 30
+			}
+			modifier = {
+				factor = 1.5
+				province_trade_power = 5
+			}
+			modifier = {
+				factor = 3
+				province_with_special_goods_produced_trigger = yes
+			}
+		}
+		owner = {
+			add_prestige = 5
+		}
+		add_unrest = -10
+	}
+
+}
+
 #################################
 # Country-scope Flavor
 #################################
@@ -420,5 +561,51 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+#################################
+# Apulia Colonists
+#################################
+
+#Selection Process
+country_event = {
+	id = dh_waldo.5
+	title = dh_waldo.5.t
+	desc = dh_waldo.5.desc
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		had_country_flag = {
+			flag = heresy_colonists_to_apulia_in_progress
+			days = 180
+		}
+		NOT = {
+			has_country_flag = heresy_colonists_to_apulia_selected
+		}
+	}
+
+	#The best and brightest shall make the colony world-renowned!
+	option = {
+		name = dh_waldo.5.a
+		set_country_flag = heresy_colonists_to_apulia_selected
+	}
+
+	#Hard-working peasants will ensure the prosperity of the colony.
+	option = {
+		name = dh_waldo.5.b
+		set_country_flag = heresy_colonists_to_apulia_selected
+	}
+
+	#Experienced preachers will spread the faith.
+	option = {
+		name = dh_waldo.5.c
+		set_country_flag = heresy_colonists_to_apulia_selected
+	}
+
+	#Perhaps this is not the best idea...
+	option = {
+		name = dh_waldo.5.d
+		clr_country_flag = heresy_colonists_to_apulia_in_progress
 	}
 }

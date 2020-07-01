@@ -104,6 +104,14 @@ dh_toulouse_albi = {
 	}
 }
 
+heresy_southern_italy_waldo_provinces = {
+	OR = {
+		area = calabria_area
+		area = apulia_area
+	}
+	religion = catholic
+}
+
 #################################
 # Misc triggers
 #################################

@@ -27,6 +27,10 @@ Heresy is incompatible with any mods that do the following:
 [*]Change, adds to, or removes the allowed_conversion sections of the Catholic, Protestant, or Anglican religions
 [*]Change either the Anglican_events.txt file or the FlavorENG.txt file in the /events folder
 [*]Change the 01_church.txt files in /common/estates, with one exception.
+[*]Changes any of the following estate privileges:
+[list]
+[*]"Enforced Unity of Faith" (estate_church_enforced_one_faith)
+[/list]
 [/olist]
 
 The exception to items 1 and 2 is the mod Pagan Wrath, which was made to be compatible with Heresy out-of-the-proverbial-box. Compatibility with other mods that do any of the items listed above is not guaranteed.

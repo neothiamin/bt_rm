@@ -1,0 +1,5 @@
+#Oppressed Spiritual Brethren
+heresy_waldo_6a_opinion_modifier = {
+	opinion = -25
+	yearly_decay = 5
+}

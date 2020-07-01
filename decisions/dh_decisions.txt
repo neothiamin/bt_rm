@@ -189,7 +189,11 @@ country_decisions = {
 	# Flavor Decisions
 	#################################
 
+	#####
 	#Lollard
+	#####
+
+	#Commission Bible Translation
 
 	dh_commission_new_bible_translation = {
 		potential = {
@@ -244,5 +248,78 @@ country_decisions = {
 		}
 
 		ai_importance = 40
+	}
+
+	#####
+	#Waldensian
+	#####
+
+	#Send Expedition to Apulia
+
+	heresy_send_waldensian_colonies_to_apulia = {
+		potential = {
+			always = no
+			religion = waldensian
+			capital_scope = {
+				superregion = europe_superregion
+			}
+			OR = {
+				had_country_flag = {
+					flag = heresy_colonists_to_apulia_in_progress
+					days = 9125
+				}
+				NOT = {
+					has_country_flag = heresy_colonists_to_apulia_in_progress
+				}
+			}
+		}
+
+		allow = {
+			any_owned_province = {
+				development = 30
+			}
+			custom_trigger_tooltip = {
+				tooltip = heresy_send_waldensian_colonies_to_apulia_allow.tt				
+				any_province = {
+					heresy_southern_italy_waldo_provinces = yes
+				}
+			}
+		}
+
+		provinces_to_highlight = {
+			heresy_southern_italy_waldo_provinces = yes
+		}
+
+		effect = {
+			add_treasury = -50
+			custom_tooltip = heresy_waldo_colonists_embark_to_apulia.tt
+			set_country_flag = heresy_colonists_to_apulia_in_progress
+			hidden_effect = {
+				random_province = {
+					limit = {
+						heresy_southern_italy_waldo_provinces = yes
+					}
+					set_province_flag = waldensian_colonist_destination@ROOT
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_known_country = {
+						has_country_flag = heresy_colonists_to_apulia_in_progress
+					}
+					treasury = 50
+					num_of_owned_provinces_with = {
+						value = 2
+						development = 20
+					}
+					total_development = 50
+				}
+			}
+		}
 	}
 }

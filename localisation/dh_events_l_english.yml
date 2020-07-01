@@ -89,6 +89,14 @@
  dh_waldo.4.b:0 "Perhaps his unabashed heresy will inspire us righteous Christians to be more pious."
  dh_waldo.4.c:0 "As a preacher, he has no merit. As an inquisitor, though..."
 
+ dh_waldo.6.t: "Conversion Troubles in [Root.GetName]"
+ dh_waldo.6.desc: "The existence of the Waldensian community in [Root.GetName] is no secret. For some time we have turned a blind eye to their congregations, allowing them to do... whatever it is they do... in peace. However, as any good Catholic nation would do, we have recently begun efforts to shepherd them back to the light and grant them salvation in the eyes of God.\n\nThat said, conversion is often a task easier said than done. The Waldensian community in [Root.GetName] has gotten wise to the inquisitors' presence, and they're starting to get upset at our repeated attempts to save their souls from damnation."
+ dh_waldo.6.a: "And why should we care? They're heretics!"
+ dh_waldo.6.b: "Perhaps we ought to let them be, for a while at least."
+ dh_waldo.6.c: "Their heresy is against the rules of this realm. They have no defense."
+ dh_waldo.6.d: "Surely we can come to an agreement over a nice drink! Do... do Waldensians drink?"
+
+
  #Waldensian Modifiers
  dh_waldo_3_a_modifier:0 "Lay Preaching"
  desc_dh_waldo_3_a_modifier:0 "Waldensian lay preachers have been allowed to give their sermons in public in [Root.Capital.GetName]."
@@ -101,6 +109,12 @@
  desc_dh_waldo_4_a_modifier_2:0 "Our rejection of a Waldensian preacher gives our missionaries' a new sense of fervor!"
  dh_waldo_4_b_modifier:0 "Patronized Lay Preacher"
  desc_dh_waldo_4_b_modifier:0 "The inhabitants of this province are overjoyed that a local lay preacher has been patronized by the [Root.Owner.Monarch.GetTitle]"
+
+ heresy_waldo_6a_modifier: "Waldensian Rebellion"
+ desc_heresy_waldo_6a_modifier: "The Waldensians in this province have risen in rebellion against us!"
+ heresy_waldo_6a_opinion_modifier: "Oppressed Spiritual Brethren"
+ heresy_waldo_6b_modifier: "Missionary Efforts Ceased"
+ desc_heresy_waldo_6b_modifier: "The Waldensian inhabitants of this province have been granted the right to practice in peace."
 
  #Lollard Events
  dh_flavor_eng.9100c:0 "Take up the Lollard cross! Down with the papists!"
