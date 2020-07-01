@@ -1,12 +1,14 @@
 1.3.1.2:
 
 + Added a new event for Catholic nations converting Waldensian provinces - "Conversion Troubles in (province)"
++ Added a new Clergy Agenda for Cathar and Waldensians - Seek Alliance with Spiritual Brethren
 
 * Removed Heresy events from on_actions and returned them to their mean-time-to-happen roots
 * New color for Coptic
 * Added Heretical Susceptibility, a modifier that gives -50% Resistance to Reformation on a province level and increases the likelihood that the province will be targeted by a Center of Reformation
 	* This modifier is applied when Centers of Reformation spawn and is applied to all provinces neighboring the new Center of Reformation
 * Raised Center of Reformation conversion rates
+* Fixed some potential issues with Lollard province conversions
 
 - Lollard nations cannot convert back to Catholic, since England was often converting via event and then converting right back
 
