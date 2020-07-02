@@ -118,6 +118,7 @@
  desc_heresy_waldo_6b_modifier: "The Waldensian inhabitants of this province have been granted the right to practice in peace."
  heresy_waldo_6d_modifier: "Conversion Compromise"
  desc_heresy_waldo_6d_modifier: "Negotiations between the [Owner.Monarch.GetTitle] and the Waldensians of [Root.GetName] have improved the relationship between heretic and state in this province."
+ heresy_waldo_rebellion_unrest_mod: "Waldensian Dissent"
 
  #Lollard Events
  dh_flavor_eng.9100c:0 "Take up the Lollard cross! Down with the papists!"

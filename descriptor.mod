@@ -7,6 +7,7 @@ tags={
 }
 dependencies={
 	"Beyond Typus"
+	"-BT Addon: Governments Expanded Compatch"
 }
 name="-BT Addon: Heresy!"
 picture="thumbnail.png"

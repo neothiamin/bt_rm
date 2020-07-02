@@ -1,5 +1,5 @@
 #################################
-# Events for the Cathar Heresy
+# Events related to the Cathar Heresy
 #
 # made for the Beyond Typus addon "Heresy!"
 #

@@ -91,7 +91,6 @@ heresy_heretic_relations_agenda_fail_mod = {
 #Waldensian Rebellion
 heresy_waldo_6a_modifier = {
 	local_missionary_strength = 0.02
-	local_unrest = 8
 }
 #Missionary Efforts Ceased
 heresy_waldo_6b_modifier = {

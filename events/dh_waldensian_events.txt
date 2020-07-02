@@ -1,5 +1,5 @@
 #################################
-# Events for the Waldensians
+# Events related to the Waldensians and the Waldensian Heresy
 #
 # made for the Beyond Typus addon "Heresy!"
 #
@@ -217,6 +217,10 @@ province_event = {
 			name = heresy_waldo_6a_modifier
 			duration = 3650
 		}
+		add_named_unrest = {
+			name = heresy_waldo_rebellion_unrest_mod
+			value = 8
+		}
 		owner = {			
 			every_neighbor_country = {
 				limit = {
@@ -273,6 +277,10 @@ province_event = {
 		add_province_modifier = {
 			name = heresy_waldo_6a_modifier
 			duration = 3650
+		}
+		add_named_unrest = {
+			name = heresy_waldo_rebellion_unrest_mod
+			value = 8
 		}
 	}
 
