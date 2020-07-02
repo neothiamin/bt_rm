@@ -417,12 +417,15 @@ province_event = {
 	}
 
 	immediate = {
-		set_province_flag = dh_cathar_bishopric
+		hidden_effect = {			
+			set_province_flag = dh_cathar_bishopric
+		}
 	}
 
 	#Splendid!
 	option = {
 		name = dh_albi.5.a
+		custom_tooltip = dh_albi.5.a.tt
 		add_province_triggered_modifier = cathar_bishopric
 	}
 }

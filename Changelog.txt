@@ -9,6 +9,9 @@
 	* This modifier is applied when Centers of Reformation spawn and is applied to all provinces neighboring the new Center of Reformation
 * Raised Center of Reformation conversion rates
 * Fixed some potential issues with Lollard province conversions
+* Provinces with cardinals are now less likely to be targeted by Centers of Reformation
+* The "Establishment of new Bishopric in (province)" event now has a tooltip indicating the addition of the Cathar Bishopric modifier
+* The Center of Reformation Possible tooltip is now more accurate
 
 - Lollard nations cannot convert back to Catholic, since England was often converting via event and then converting right back
 

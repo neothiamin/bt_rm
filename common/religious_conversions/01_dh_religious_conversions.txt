@@ -115,6 +115,10 @@ cathar_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
+		modifier = {
+			factor = 0.25
+			has_cardinal = yes
+		}
 		#This makes sense, I think. Of course France, especially Toulouse, was famous for its Cathars, but Cathar theology (according to some sources) may have started in the Rhineland.
 		modifier = {
 			factor = 1.5
@@ -269,6 +273,10 @@ waldensian_center_of_reformation = {
 			factor = 0.01
 			religion = fraticelli
 		}
+		modifier = {
+			factor = 0.25
+			has_cardinal = yes
+		}
 		#Commenting out for now for testing.
 		#modifier = {
 		#	factor = 3
@@ -338,6 +346,10 @@ lollard_center_of_reformation = {
 		modifier = {
 			factor = 0
 			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 0.25
+			has_cardinal = yes
 		}
 		modifier = {
 			factor = 0.6
