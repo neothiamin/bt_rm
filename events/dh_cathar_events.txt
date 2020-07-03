@@ -86,6 +86,7 @@ province_event = {
 			area = north_rhine_area
 			area = lower_rhineland_area
 			area = westphalia_area
+			area = north_westphalia_area
 			region = france_region
 			#region = low_countries_region
 		}
