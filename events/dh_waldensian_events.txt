@@ -511,7 +511,14 @@ country_event = {
 	#Changed back to MTTH
 
 	mean_time_to_happen = {
-		months = 180
+		months = 300
+		modifier = {
+			factor = 1.5
+			employed_advisor = {
+				religion = waldensian
+				type = theologian
+			}
+		}
 	}
 
 	#We ought to burn him at the stake, not invite him to court!
