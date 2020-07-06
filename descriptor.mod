@@ -3,7 +3,8 @@ tags={
 	"Religion"
 	"Alternative History"
 	"Beyond Typus"
-	"Bt"
+	"BT"
+	"Gameplay"
 }
 dependencies={
 	"Beyond Typus"

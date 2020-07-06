@@ -102,3 +102,8 @@ heresy_waldo_6b_modifier = {
 heresy_waldo_6d_modifier = {
 	local_unrest = -6
 }
+
+#Organized Preachers - Province Scope
+heresy_waldo_estate_church_organized_preaching_on_granted = {
+	min_local_autonomy = 10
+}

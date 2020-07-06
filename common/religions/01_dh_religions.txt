@@ -131,6 +131,11 @@ christian = {
 							amount = 3
 						}
 					}
+					NOT = {
+						any_owned_province = {
+							is_reformation_center = yes
+						}
+					}
 				}				
 				hidden_effect = {
 					random_owned_province = {
@@ -139,12 +144,14 @@ christian = {
 								RELIGION = cathar
 							}							
 							NOT = {
-								calc_true_if = {
-									all_province = {
-										religion = cathar
-										is_reformation_center = yes
+								owner = {									
+									calc_true_if = {
+										all_province = {
+											religion = cathar
+											is_reformation_center = yes
+										}
+										amount = 3
 									}
-									amount = 3
 								}
 							}
 						}
@@ -266,6 +273,11 @@ christian = {
 							amount = 3
 						}
 					}
+					NOT = {
+						any_owned_province = {
+							is_reformation_center = yes
+						}
+					}
 				}				
 				hidden_effect = {
 					random_owned_province = {
@@ -274,12 +286,14 @@ christian = {
 								RELIGION = waldensian
 							}														
 							NOT = {
-								calc_true_if = {
-									all_province = {
-										religion = waldensian
-										is_reformation_center = yes
+								owner = {
+									calc_true_if = {
+										all_province = {
+											religion = waldensian
+											is_reformation_center = yes
+										}
+										amount = 3
 									}
-									amount = 3
 								}
 							}
 						}
@@ -375,12 +389,14 @@ christian = {
 							RELIGION = lollard
 						}																				
 						NOT = {
-							calc_true_if = {
-								all_province = {
-									religion = lollard
-									is_reformation_center = yes
+							owner = {
+								calc_true_if = {							
+									all_province = {
+										religion = lollard
+										is_reformation_center = yes
+									}
+									amount = 3
 								}
-								amount = 3
 							}
 						}
 					}

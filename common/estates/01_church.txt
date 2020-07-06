@@ -1,5 +1,4 @@
-estate_church =
-{
+estate_church = {
 	icon = 1
 
 	# If true, country will get estate
@@ -143,7 +142,7 @@ estate_church =
 		trigger = {
 			religion = waldensian
 		}
-		influence = -10
+		influence = -5
 	}
 
 	loyalty_modifier = {
@@ -263,7 +262,7 @@ estate_church =
 		estate_church_monopoly_of_slaves
 		estate_church_statutory_rights
 		#Heresy
-		
+		heresy_waldo_estate_church_organized_preaching
 	}
 
 	agendas = { #Now edited in separate files

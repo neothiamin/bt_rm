@@ -1,4 +1,6 @@
-1.3.1.2:
+1.3.2:
+
++++ Many thanks to Dub for playtesting an beta version of this release for me!
 
 + Added a new event for Catholic nations converting Waldensian provinces - "Conversion Troubles in (province)"
 + Added a new Clergy Agenda for Cathar and Waldensians - Seek Alliance with Spiritual Brethren

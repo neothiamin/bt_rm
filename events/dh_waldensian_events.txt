@@ -470,16 +470,15 @@ country_event = {
 				type = inquisitor
 			}
 		}		
-		#Probably don't need this, since the event is now fire by an on_action
-		#OR = {
-		#	NOT = {
-		#		has_country_flag = dh_waldo_4_flag
-		#	}
-		#	had_country_flag = {
-		#		flag = dh_waldo_4_flag
-		#		days = 5475
-		#	}
-		#}
+		OR = {
+			NOT = {
+				has_country_flag = dh_waldo_4_flag
+			}
+			had_country_flag = {
+				flag = dh_waldo_4_flag
+				days = 5475
+			}
+		}
 		any_owned_province = {
 			development = 10
 			religion = waldensian
@@ -539,17 +538,30 @@ country_event = {
 	#Take him in. Perhaps his example may inspire some of us to be more pious.
 	option = {
 		name = dh_waldo.4.b
-		add_papal_influence = -5
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+		}
+		else_if = {
+			limit = {
+				religion = cathar
+			}
+			add_prestige = -5
+		}
+
 		event_target:dh_waldo_4_t_target = {
 			add_province_modifier = {
 				name = dh_waldo_4_b_modifier
 				duration = 3650
 			}
 		}
+
 		define_advisor = {
 			type = theologian
 			religion = waldensian
-			discount = yes
+			#discount = yes
 			location = event_target:dh_waldo_4_t_target
 			female = no
 		}
@@ -567,6 +579,18 @@ country_event = {
 				#has_country_flag = dh_waldo_inquisition_declared
 			}
 		}
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+		}
+		else_if = {
+			limit = {
+				religion = cathar
+			}
+			add_prestige = -5
+		}
 		define_advisor = {
 			type = inquisitor
 			religion = waldensian
@@ -574,6 +598,7 @@ country_event = {
 			location = event_target:dh_waldo_4_t_target
 			female = no
 		}
+		
 		event_target:dh_waldo_4_t_target = {
 			random = {
 				chance = 50
