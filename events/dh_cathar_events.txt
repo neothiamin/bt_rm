@@ -338,6 +338,7 @@ country_event = {
 				type = cathar_rebels
 				unrest = 4
 			}
+			change_religion = cathar
 			clr_province_flag = dh_albi_8_target
 		}
 		if = {

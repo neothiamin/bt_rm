@@ -1,58 +1,58 @@
 #Testing an overwrite from vanilla
-#It works!
-estate_church_enforced_one_faith = {
-	icon = privilege_recruit_inouisitor
-	max_absolutism = -5
-	loyalty = 0.1
-	is_valid = {
-		any_owned_province = {
-			NOT = { religion = root }
-		}
-	}
-	can_select = {
-		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
-		NOT = { has_estate_privilege = estate_dhimmi_tolerance }
-	}
-	penalties = {
-		tolerance_heathen = -2
-		tolerance_heretic = -2
-	}
-	benefits = {
-		global_missionary_strength = 0.01
-		tolerance_own = 1
-	}
-	cooldown_years = 20
-	on_cooldown_expires = {
-		remove_estate_privilege = estate_church_enforced_one_faith
-	}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 2
-			religion = catholic
-			num_of_owned_provinces_with = {
-				value = 5
-				OR = {
-					religion = waldensian
-					religion = cathar
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				any_owned_province = {
-					tolerance_to_this = 0
-				}
-			}
-		}
-	}
-}
+#It works! But I'm not using it for now.
+#estate_church_enforced_one_faith = {
+#	icon = privilege_recruit_inouisitor
+#	max_absolutism = -5
+#	loyalty = 0.1
+#	is_valid = {
+#		any_owned_province = {
+#			NOT = { religion = root }
+#		}
+#	}
+#	can_select = {
+#		NOT = { has_estate_privilege = #estate_burghers_enforced_interfaith_dialogue }
+#		NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+#	}
+#	penalties = {
+#		tolerance_heathen = -2
+#		tolerance_heretic = -2
+#	}
+#	benefits = {
+#		global_missionary_strength = 0.01
+#		tolerance_own = 1
+#	}
+#	cooldown_years = 20
+#	on_cooldown_expires = {
+#		remove_estate_privilege = estate_church_enforced_one_faith
+#	}
+#	ai_will_do = {
+#		factor = 5
+#		modifier = {
+#			factor = 2
+#			religion = catholic
+#			num_of_owned_provinces_with = {
+#				value = 5
+#				OR = {
+#					religion = waldensian
+#					religion = cathar
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			OR = {
+#				any_owned_province = {
+#					tolerance_to_this = 0
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Organized Preaching
 heresy_waldo_estate_church_organized_preaching = {
 	icon = privilege_recruit_minister
-	influence = 15
+	influence = 0.1
 	loyalty = 0.05
 	max_absolutism = -5
 	is_valid = {
@@ -63,7 +63,7 @@ heresy_waldo_estate_church_organized_preaching = {
 		any_owned_province = {
 			religion = waldensian
 			OR = {
-				has_building = church
+				has_building = temple
 				has_building = cathedral
 			}
 			NOT = {
@@ -72,18 +72,19 @@ heresy_waldo_estate_church_organized_preaching = {
 		}
 	}
 	on_granted = {
-		#define_advisor = {
-		#	type = theologian
-		#	religion = waldensian
-		#	discount = yes
-		#}
 		custom_tooltip = heresy_waldo_estate_church_organized_preaching_grant.tt
-		hidden_effect = {
+		hidden_effect = {		
+			define_advisor = {
+				type = theologian
+				religion = waldensian
+				discount = yes
+				skill = 1
+			}
 			every_owned_province = {
 				limit = {
 					religion = waldensian
 					OR = {
-						has_building = church
+						has_building = temple
 						has_building = cathedral
 					}
 					NOT = {
@@ -123,7 +124,7 @@ heresy_waldo_estate_church_organized_preaching = {
 		global_unrest = -1
 	}
 	modifier_by_land_ownership = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.25
 	}
 	cooldown_years = 10
 	ai_will_do = {
@@ -135,3 +136,5 @@ heresy_waldo_estate_church_organized_preaching = {
 heresy_waldo_estate_church_tripartite_leadership = {
 
 }
+
+#

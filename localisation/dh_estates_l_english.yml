@@ -4,7 +4,7 @@
 
  heresy_waldo_estate_church_organized_preaching: "Organizational Reform"
  heresy_waldo_estate_church_organized_preaching_desc: "Organization in the Waldensian faith varies from place to place. Granting the preachers more autonomy will increase the amount of tax we collect in our lands, but it will also weaken our hold on religious congregations."
- heresy_waldo_estate_church_organized_preaching_grant.tt: "Every §YWaldensian§! owned province with either a §YChurch§! or a §YCathedral§! will gain §R+10%§! minimum local autonomy until this privilege is revoked."
+ heresy_waldo_estate_church_organized_preaching_grant.tt: "Gain a §G50% cost§! skill §Y1 Waldensian Theologian§!. Every §YWaldensian§! owned province with a §YChurch§! or §YCathedral§! gains §R+10%§! minimum local autonomy until this privilege is revoked."
  heresy_waldo_estate_church_organized_preaching_revoke.tt: "Every §YWaldensian§! owned province with the §Y\"Organized Preachers\"§! modifier loses the modifier."
 
  heresy_heretic_relations_agenda_complete_mod: "United in Faith"
