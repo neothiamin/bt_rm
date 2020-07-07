@@ -144,8 +144,10 @@ cathar_center_of_reformation = {
 			NOT = {
 				calc_true_if = {
 					amount = 50
-					all_province = {
-						religion = cathar
+					owner = {						
+						all_province = {
+							religion = cathar
+						}
 					}
 				}
 			}
@@ -156,6 +158,10 @@ cathar_center_of_reformation = {
 		modifier = {
 			factor = 1.5
 			has_province_modifier = heresy_neg_50_conv_resist
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = forced_conversion
 		}
 	}
 }
@@ -296,6 +302,10 @@ waldensian_center_of_reformation = {
 			factor = 1.5
 			has_province_modifier = heresy_neg_50_conv_resist
 		}
+		modifier = {
+			factor = 0
+			has_province_modifier = forced_conversion
+		}
 	}
 }
 
@@ -420,6 +430,10 @@ lollard_center_of_reformation = {
 		modifier = {
 			factor = 1.5
 			has_province_modifier = heresy_neg_50_conv_resist
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = forced_conversion
 		}
 	}
 }

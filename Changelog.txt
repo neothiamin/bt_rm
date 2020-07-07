@@ -4,6 +4,9 @@
 
 + Added a new event for Catholic nations converting Waldensian provinces - "Conversion Troubles in (province)"
 + Added a new Clergy Agenda for Cathar and Waldensians - Seek Alliance with Spiritual Brethren
++ Added a new Clergy estate privilege for Waldensians - Organizational Reform
+	- At the cost of 10 Clergy influence and -15 Clergy loyalty upon granting, you gain (influence * 0.5)% global tax modifier and -1 global unrest, as well as a half-cost skill 1 Waldensian Theologian
+	- This privilege cannot be revoked for 10 years after being granted
 + Added the new North Wesphalia area to the list of areas eligible for secondary Cathar Centers of Reformation
 + New color for Coptic
 
@@ -14,7 +17,8 @@
 * Fixed some potential issues with Lollard province conversions
 * Provinces with cardinals are now less likely to be targeted by Centers of Reformation
 * The "Establishment of new Bishopric in (province)" event now has a tooltip indicating the addition of the Cathar Bishopric modifier
-* The Center of Reformation Possible tooltip is now more accurate
+* Cathar and Waldensian rebels' "Forced Conversion" province-scope modifier now lasts 5 years instead of 2 when applied
+* Provinces with the "Forced Conversion" modifier will now not be targeted by Waldensian, Cathar, or Lollard Centers of Reformation
 
 - Lollard nations cannot convert back to Catholic, since England was often converting via event and then converting right back
 

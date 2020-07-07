@@ -146,7 +146,7 @@ waldensian_rebels = {
 				change_religion = waldensian
 				add_province_modifier = {
 					name = "forced_conversion"
-					duration = 730
+					duration = 1825
 				}
 			}
 		}

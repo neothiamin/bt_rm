@@ -57,74 +57,64 @@ heresy_waldo_estate_church_organized_preaching = {
 	max_absolutism = -5
 	is_valid = {
 		religion = waldensian
-		adm_tech = 4
 	}
 	can_select = {
-		any_owned_province = {
-			religion = waldensian
-			OR = {
-				has_building = temple
-				has_building = cathedral
-			}
-			NOT = {
-				is_capital = yes
-			}
-		}
+		#any_owned_province = {
+		#	religion = waldensian
+		#	OR = {
+		#		has_building = temple
+		#		has_building = cathedral
+		#	}
+		#	NOT = {
+		#		is_capital = yes
+		#	}
+		#}
 	}
 	on_granted = {
 		custom_tooltip = heresy_waldo_estate_church_organized_preaching_grant.tt
-		hidden_effect = {		
+		hidden_effect = {			
 			define_advisor = {
 				type = theologian
 				religion = waldensian
 				discount = yes
 				skill = 1
 			}
-			every_owned_province = {
-				limit = {
-					religion = waldensian
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-					NOT = {
-						is_capital = yes
-					}
-				}
-				add_province_modifier = {
-					name = heresy_waldo_estate_church_organized_preaching_on_granted
-					duration = -1
-				}
-			}
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -15
 		}
 	}
 	on_revoked = {
-		custom_tooltip = heresy_waldo_estate_church_organized_preaching_revoke.tt
-		hidden_effect = {			
-			every_owned_province = {
-				limit = {
-					has_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
-				}
-				remove_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
-			}
-		}
+		#custom_tooltip = heresy_waldo_estate_church_organized_preaching_revoke.tt
+		#hidden_effect = {			
+		#	every_owned_province = {
+		#		limit = {
+		#			has_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
+		#		}
+		#		remove_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
+		#	}
+		#}
 	}
 	on_invalid = {	
-		custom_tooltip = heresy_waldo_estate_church_organized_preaching_revoke.tt
-		hidden_effect = {			
-			every_owned_province = {
-				limit = {
-					has_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
-				}
-				remove_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
-			}
-		}
+		#custom_tooltip = heresy_waldo_estate_church_organized_preaching_revoke.tt
+		#hidden_effect = {			
+		#	every_owned_province = {
+		#		limit = {
+		#			has_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
+		#		}
+		#		remove_province_modifier = heresy_waldo_estate_church_organized_preaching_on_granted
+		#	}
+		#}
 	}
 	benefits = {
 		global_unrest = -1
 	}
+	penalties = {
+		#global_autonomy = 0.03
+	}
 	modifier_by_land_ownership = {
-		global_tax_modifier = 0.25
+		global_tax_modifier = 0.5
 	}
 	cooldown_years = 10
 	ai_will_do = {
