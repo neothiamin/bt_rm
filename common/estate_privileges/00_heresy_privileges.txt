@@ -53,7 +53,7 @@
 heresy_waldo_estate_church_organized_preaching = {
 	icon = privilege_recruit_minister
 	influence = 0.1
-	loyalty = 0.05
+	loyalty = -0.05
 	max_absolutism = -5
 	is_valid = {
 		religion = waldensian
@@ -123,8 +123,48 @@ heresy_waldo_estate_church_organized_preaching = {
 }
 
 #Tripartite Leadership
-heresy_waldo_estate_church_tripartite_leadership = {
-
-}
-
+#heresy_waldo_estate_church_tripartite_leadership = {
 #
+#}
+
+#Bible Translation Rights
+heresy_lollard_estate_church_bible_translation = {
+	icon = privilege_lollard_book
+	influence = 0.1
+	loyalty = 0.05
+	max_absolutism = -5
+	is_valid = {
+		religion = lollard
+	}
+	on_granted = {
+		add_years_of_income = -0.5
+	}
+	modifier_by_land_ownership = {
+		institution_spread_from_true_faith = 1
+		global_tax_modifier = -0.25
+	}
+	on_revoked = {
+		adm_power_cost = 50
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			is_lacking_institutions = no
+		}
+		modifier = {
+			factor = 2
+			is_lacking_institutions = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {				
+				years_of_income = 1.5
+			}
+		}
+		modifier = {
+			factor = 2
+			years_of_income = 2
+		}
+	}
+}

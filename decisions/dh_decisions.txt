@@ -197,6 +197,7 @@ country_decisions = {
 
 	dh_commission_new_bible_translation = {
 		potential = {
+			always = no
 			religion = lollard
 			OR = {
 				NOT = {

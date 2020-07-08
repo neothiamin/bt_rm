@@ -1,0 +1,10 @@
+spriteTypes = {    					
+	spriteType = {
+		name = "privilege_book"
+		texturefile = "gfx/interface/privileges/privilege_book.dds"
+	}
+	spriteType = {
+		name = "privilege_lollard_book"
+		texturefile = "gfx/interface/privileges/privilege_lollard_book.dds"
+	}
+}

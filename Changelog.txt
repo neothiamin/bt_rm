@@ -5,8 +5,13 @@
 + Added a new event for Catholic nations converting Waldensian provinces - "Conversion Troubles in (province)"
 + Added a new Clergy Agenda for Cathar and Waldensians - Seek Alliance with Spiritual Brethren
 + Added a new Clergy estate privilege for Waldensians - Organizational Reform
-	- At the cost of 10 Clergy influence and -15 Clergy loyalty upon granting, you gain (influence * 0.5)% global tax modifier and -1 global unrest, as well as a half-cost skill 1 Waldensian Theologian
+	- At the cost of 10 Clergy influence and an immediate -15% Clergy loyalty upon granting, you gain (influence * 0.5)% global tax modifier and -1 global unrest, as well as a half-cost skill 1 Waldensian Theologian
 	- This privilege cannot be revoked for 10 years after being granted
++ Added a new Clergy estate privilege for Lollards - Grant Bible Translation Exclusivity
+	- This is meant to replace the "Commission Bible Translation" decision for Lollards. As such, that decision has been disabled.
+	- This privilege costs 6 months of your income (total income, not net income!) and grants Institution Spread in True Faith Provinces equal to your clergy's land share as well as a malus to Global Tax Modifier (-25% at 100% land share)
+	- When this privilege is revoked, you lose 50 Administrative Power, which is affected by the All Power Costs modifier
+	- This privilege also grants 10% Clergy influence and +5% Clergy loyalty equilibrium, and when absolutism is enabled it reduces max absolutism by 5
 + Added the new North Wesphalia area to the list of areas eligible for secondary Cathar Centers of Reformation
 + New color for Coptic
 

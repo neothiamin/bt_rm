@@ -263,6 +263,7 @@ estate_church = {
 		estate_church_statutory_rights
 		#Heresy
 		heresy_waldo_estate_church_organized_preaching
+		heresy_lollard_estate_church_bible_translation
 	}
 
 	agendas = { #Now edited in separate files

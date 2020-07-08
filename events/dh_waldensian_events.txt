@@ -25,11 +25,22 @@ province_event = {
 		religion = catholic
 		had_global_flag = {
 			flag = dh_waldo_religion_enabled
-			days = 1095
+			days = 1095 #3 years
 		}
-		#development = 8
-		NOT = {
-			development = 20
+		if = {
+			limit = {
+				any_province = {
+					NOT = {
+						development = 20
+					}
+					dh_can_have_heresy_cor_trigger = {
+						RELIGION = waldensian
+					}	
+				}
+			}			
+			NOT = {
+				development = 20
+			}
 		}
 		is_reformation_center = no
 		dh_can_have_heresy_cor_trigger = {
