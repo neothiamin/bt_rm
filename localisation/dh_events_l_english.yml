@@ -42,6 +42,12 @@
  dh_albi.9.a:0 "Oh, the beauty of the langue d'oc..."
  dh_albi.9.b:0 "We will have no merrymen nor Cathars in our court!"
 
+ dh_albi.10.t: "Florence, Cathar Center of Tuscany"
+ dh_albi.10.desc: "In the 13th century, Florence was the center of Tuscan Catharism, and indeed one of the larger Cathar centers in all of Italy. Cathars of the time established a bishopric, had a stable line of bishop succession, and became increasingly active in Florentine politics.\nThe continued presence of Cathars in Florence, despite attempts at conversion through inquisition, was a cause of much bad blood between the Florentine government and the Holy See. Some inquisitors even accused the city of harboring heretics before the papal curia, such as the Florentine inquisitor Pietro da l'Aquila in the 1340s. Now, with Catharism on the resurgence, more and more Cathars are being found in Florence. Their numbers are not known, but it seems that on every other street corner one may find the Cathar cross hung in the window of a business or residence."
+ dh_albi.10.a: "See what accommodation is possible. We have bigger problems at the moment."
+ dh_albi.10.b: "Rally a corps of missionaries to seek out the heretics. We will have no Cathars in our midst."
+
+
  #Cathar Modifiers
  dh_den_of_heresy_2:0 "Den of Heresy"
  dh_den_of_heresy_3:0 "Conversion Efforts"
@@ -63,6 +69,17 @@
 
  dh_albi_9_b_mod:0 "Troubadour Tantrums"
  desc_dh_albi_9_b_mod:0 "A famed Troubadour from this province was recently turned away on religious grounds."
+
+ dh_albi_10_florence_accomodate: "Cathar Accommodation"
+ #desc_dh_albi_10_florence_accomodate: "REPLACE_ME"
+
+ dh_albi_10_florentine_heretics: "Active Inquisition"
+ #desc_dh_albi_10_florentine_heretics: "REPLACE_ME"
+
+ dh_albi_10_florentine_heretics_country: "Stood Against Cathars"
+ #desc_dh_albi_10_florentine_heretics_country: "REPLACE_ME"
+
+ dh_harboring_cathars: "Cathar Inaction"
 
  #Fraticelli Events
  dh_fratelli.1.t:0 "The Fraticelli"

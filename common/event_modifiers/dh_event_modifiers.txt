@@ -107,3 +107,21 @@ heresy_waldo_6d_modifier = {
 heresy_waldo_estate_church_organized_preaching_on_granted = {
 	min_local_autonomy = 10
 }
+
+#Cathar Accomodation
+dh_albi_10_florence_accomodate = {
+	local_tax_modifier = -0.1
+	local_autonomy = 0.02
+}
+
+#Active Inquisition
+dh_albi_10_florentine_heretics = {
+	local_unrest = 6
+	local_tax_modifier = 0.1
+	province_trade_power_modifier = 0.2
+}
+
+#Stood Against Cathars
+dh_albi_10_florentine_heretics_country = {
+	papal_influence = 1
+}

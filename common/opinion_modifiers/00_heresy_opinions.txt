@@ -3,3 +3,9 @@ heresy_waldo_6a_opinion_modifier = {
 	opinion = -25
 	yearly_decay = 5
 }
+
+#Harboring Cathars
+dh_harboring_cathars = {
+	opinion = -50
+	yearly_decay = 5
+}
