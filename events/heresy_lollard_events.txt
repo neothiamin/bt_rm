@@ -1,0 +1,116 @@
+#################################
+# Events related to the Lollard Heresy
+#
+# made for the Beyond Typus addon "Heresy!"
+#
+# by neothiamin
+#################################
+
+namespace = heresy_lollard
+
+#Local Leader accused of Abuse of Assets
+country_event = {
+	id = heresy_lollard.1
+	title = heresy_lollard.1.t
+	desc = heresy_lollard.1.desc
+	picture = PRAYING_eventPicture
+
+	trigger = {
+		religion = lollard
+		has_estate = estate_nobles
+		has_estate = estate_church
+		estate_territory = {
+			estate = estate_church
+			territory = 5
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				religion = lollard
+			}
+			save_event_target_as = heresy_lollard.1_prov
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180 #15 years
+	}
+
+	#Side with the [Root.GetNobilityOrFallbackName].
+	option = {
+		name = heresy_lollard.1.a
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 2
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+
+	#Side with the [Root.GetClergyName].
+	option = {
+		name = heresy_lollard.1.b
+		change_estate_land_share = {
+			estate = estate_church
+			share = 2
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	}
+
+	#Seize the land for the crown.
+	option = {
+		name = heresy_lollard.1.c		
+		trigger = {
+			government = monarchy
+		}
+		add_years_of_estate_land_income = 0.5
+		change_estate_land_share = {
+			estate = estate_church
+			share = -2
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+	}
+
+	#Seize the land for the state.
+	option = {
+		name = heresy_lollard.1.d	
+		trigger = {
+			government = republic
+		}	
+		add_years_of_estate_land_income = 0.5
+		change_estate_land_share = {
+			estate = estate_church
+			share = -2
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+	}
+}
