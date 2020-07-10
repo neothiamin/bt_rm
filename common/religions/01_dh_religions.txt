@@ -41,6 +41,9 @@ christian = {
 		}
 	}
 
+	hussite = {
+		color = { 234 117 82 }
+	}
 	##NEW
 	cathar = {
 		color = { 64 196 255 } #40C4FF
@@ -66,7 +69,7 @@ christian = {
 		}
 		#hre_heretic_religion = yes
 		
-		heretic = { BOGOMILIST HUSSITE SOCINIAN }
+		heretic = { BOGOMILIST SOCINIAN }
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		aspects = {
@@ -196,7 +199,7 @@ christian = {
 			dh_conv_to_waldo = yes
 		}
 		
-		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }
+		heretic = { BOGOMILIST SOCINIAN }
 
 		allowed_center_conversion = {
 			catholic
@@ -226,7 +229,7 @@ christian = {
 		#hre_heretic_religion = yes
 		fervor = yes
 		
-		heretic = { BOGOMILIST HUSSITE LOLLARD SOCINIAN }
+		heretic = { BOGOMILIST SOCINIAN }
 
 		will_get_center = {
 			any_owned_province = {

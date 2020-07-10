@@ -80,15 +80,17 @@ country_event = {
 			limit = {
 				has_global_flag = dh_lollard_religion_enabled
 			}
-			enable_religion = lollard
-			random_owned_province = {
-				limit = {
-					has_province_flag = lollards
-				}
-				change_religion = lollard
-				add_reform_center = lollard
-				dh_add_neighbor_conv_weakness = yes
+			hidden_effect = {				
+				enable_religion = lollard
+				random_owned_province = {
+					limit = {
+						has_province_flag = lollards
+					}
+					change_religion = lollard
+					add_reform_center = lollard
+					dh_add_neighbor_conv_weakness = yes
 
+				}
 			}
 		}
 	}
@@ -125,6 +127,10 @@ country_event = {
 				}
 				change_religion = lollard
 				clr_province_flag = lollards
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 			}
 			random_owned_province = {
 				limit = {
@@ -132,6 +138,10 @@ country_event = {
 				}
 				change_religion = lollard				
 				clr_province_flag = lollards
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 			}
 		}
 	}
@@ -220,24 +230,10 @@ country_event = {
 					}
 				}
 				change_religion = lollard
-			}
-			random_owned_province = {
-				limit = {
-					has_province_flag = lollards
-					NOT = {
-						religion = lollard
-					}
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
 				}
-				change_religion = lollard	
-			}
-			random_owned_province = {
-				limit = {
-					has_province_flag = lollards
-					NOT = {
-						religion = lollard
-					}
-				}
-				change_religion = lollard
 			}
 			random_owned_province = {
 				limit = {
@@ -247,6 +243,10 @@ country_event = {
 					}
 				}
 				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}	
 			}
 			random_owned_province = {
 				limit = {
@@ -256,6 +256,10 @@ country_event = {
 					}
 				}
 				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 			}
 			random_owned_province = {
 				limit = {
@@ -265,6 +269,10 @@ country_event = {
 					}
 				}
 				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 			}
 			random_owned_province = {
 				limit = {
@@ -274,6 +282,36 @@ country_event = {
 					}
 				}
 				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_province_flag = lollards
+					NOT = {
+						religion = lollard
+					}
+				}
+				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_province_flag = lollards
+					NOT = {
+						religion = lollard
+					}
+				}
+				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 			}
 		}
 		hidden_effect = {
@@ -326,6 +364,10 @@ country_event = {
 				add_reform_center = lollard
 				clr_province_flag = lollards
 				dh_add_neighbor_conv_weakness = yes
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 			}
 		}
 		else = {
@@ -337,6 +379,10 @@ country_event = {
 					}
 				}			
 				change_religion = lollard
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 				clr_province_flag = lollards
 			}
 		}
@@ -348,6 +394,10 @@ country_event = {
 				}
 			}			
 			change_religion = lollard
+			add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 9125
+			}
 			clr_province_flag = lollards
 		}
 	}
