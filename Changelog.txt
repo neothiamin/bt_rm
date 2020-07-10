@@ -1,7 +1,12 @@
 1.3.2.1:
 
++ New event - "Lollardy in Academia"
+
 * Changed Hussites' color
 * Added the "Religious Zeal" modifier to provinces converted to Lollard in the "The Lollard Heresy" event
+* Lollard rebels should actually revolt now, similar to Cathar or Waldensian rebels
+* Refined some Heresy rebel army composition weighting stuff
+* England will no longer have the "Opposing the Lollards" or the "Tolerates Lollards" modifiers if they convert to Lollard after the initial Lollard Heresy event
 
 1.3.2:
 

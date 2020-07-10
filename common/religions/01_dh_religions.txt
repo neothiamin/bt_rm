@@ -379,6 +379,8 @@ christian = {
 		
 		on_convert = {		
 			dh_conv_to_lollard = yes
+			remove_country_modifier = eng_tolerates_lollards
+			remove_country_modifier = eng_opposes_lollards
 			if = {
 				limit = {
 					any_owned_province = {

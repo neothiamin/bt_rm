@@ -17,9 +17,9 @@ waldensian_rebels = {
 	general = yes
 	smart = yes
 	
-	artillery = 0.1
-	infantry = 0.8
-	cavalry = 0.1
+	artillery = 0.05 #was 0.1
+	infantry = 0.9 #was 0.8
+	cavalry = 0.05 #was 0.1
 	
 	morale = 1.1
 

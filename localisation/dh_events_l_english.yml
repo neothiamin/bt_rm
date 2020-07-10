@@ -146,3 +146,9 @@
  heresy_lollard.1.b: "Side with the [Root.GetClergyName]."
  heresy_lollard.1.c: "Seize the assets for the crown."
  heresy_lollard.1.d: "Seize the assets for the state."
+
+ heresy_lollard.2.t: "Lollardy in Academia"
+ heresy_lollard.2.desc: "Lollardy was born out of the academic tradition as the brainchild of University of Oxford professor John Wycliffe. As Lollardy spreads, more and more middle- and upper-class citizens are converting to the Lollard tradition. This, naturally, means that more university students and lecturers are converting and preaching this doctrine as part of their lectures. Recently, an intellectual in [heresy_lollard_2_prov.GetName] has been overheard by pious [Root.Religion.GetName]s and reported to the local inquisitors."
+ heresy_lollard.2.a: "This shall not stand. Have the heretic arrested, and their tenure revoked!"
+ heresy_lollard.2.b: "If they can teach the trivium and quadrivium, what difference does it make?"
+ heresy_lollard.2.c: "I don't know, it makes sense to me..."

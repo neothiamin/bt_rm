@@ -114,3 +114,142 @@ country_event = {
 		}
 	}
 }
+
+#Lollardy in Academia
+country_event = {
+	id = heresy_lollard.2
+	title = heresy_lollard.2.t
+	desc = heresy_lollard.2.desc
+	picture = PRAYING_eventPicture
+
+	trigger = {
+		NOT = {
+			religion = lollard
+		}
+		religion_group = christian
+		is_religion_enabled = lollard
+		any_owned_province = {
+			religion = lollard
+		}
+		any_owned_province = {
+			OR = {
+				trade_goods = bt_trade_good_books
+				trade_goods = paper
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					religion = lollard
+					OR = {
+						trade_goods = bt_trade_good_books
+						trade_goods = paper
+					}
+				}
+				save_event_target_as = heresy_lollard_2_prov
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180 #15 years
+	}
+
+	#Send an educated theologian to debate the heretic.
+	option = {
+		name = heresy_lollard.2.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				employed_advisor = {
+					type = theologian
+					religion = ROOT
+				}
+			}
+		}		
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 5
+		}
+		add_prestige = 5
+		event_target:heresy_lollard_2_prov = {
+			random = {
+				chance = 50
+				spawn_rebels = {
+					size = 1
+					type = lollard_rebels
+					win = yes
+				}
+			}
+		}
+	}
+
+	#If they can teach the trivium and quadrivium, their faith doesn't matter.
+	option = {
+		name = heresy_lollard.2.b
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -5
+		}
+		add_prestige = -5
+	}
+
+	#Well, their teachings seem reasonable to me...
+	option = {
+		name = heresy_lollard.2.c
+		if = {
+			limit = {
+				any_owned_province = {
+					NOT = {
+						religion = lollard
+					}
+				}
+			}			
+			random_owned_province = {
+				limit = {
+					NOT = {
+						religion = lollard
+					}
+				}
+				change_religion = lollard
+			}
+		}
+		change_innovativeness = 1
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+		}
+		if = {
+			limit = {
+				government = monarchy
+			}
+			add_legitimacy = -5
+		}
+		if = {
+			limit = {
+				government = republic
+			}
+			add_republican_tradition = -3
+		}
+		if = {
+			limit = {
+				government = theocracy
+			}
+			add_devotion = -5
+		}
+		else = {
+			add_prestige = -5
+		}
+	}
+	
+}

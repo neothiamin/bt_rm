@@ -158,6 +158,10 @@ cathar_center_of_reformation = {
 		modifier = {
 			factor = 1.5
 			has_province_modifier = heresy_neg_50_conv_resist
+			any_neighbor_province = {
+				is_reformation_center = yes
+				religion = cathar
+			}
 		}
 		modifier = {
 			factor = 0
@@ -301,6 +305,10 @@ waldensian_center_of_reformation = {
 		modifier = {
 			factor = 1.5
 			has_province_modifier = heresy_neg_50_conv_resist
+			any_neighbor_province = {
+				is_reformation_center = yes
+				religion = waldensian
+			}
 		}
 		modifier = {
 			factor = 0
@@ -315,7 +323,7 @@ lollard_center_of_reformation = {
 
 	map_icon = GFX_religious_conversion_center_protestant
 
-	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	max_distance = 100.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 3	#A bit faster than vanilla. Lollard only gets one CoR (save for conversions) so I think giving it faster conversion speed makes sense, especially with BT 13's new Britain/Ireland.
 
 	target_province_weights = {
@@ -420,6 +428,10 @@ lollard_center_of_reformation = {
 			religion = coptic
 		}		
 		modifier = {
+			factor = 1.5
+			region = ROOT
+		}
+		modifier = {
 			factor = 0.01
 			religion = orthodox
 		}
@@ -430,6 +442,10 @@ lollard_center_of_reformation = {
 		modifier = {
 			factor = 1.5
 			has_province_modifier = heresy_neg_50_conv_resist
+			any_neighbor_province = {
+				is_reformation_center = yes
+				religion = lollard
+			}
 		}
 		modifier = {
 			factor = 0
