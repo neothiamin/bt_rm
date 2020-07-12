@@ -415,3 +415,15 @@ christian = {
 		date = 1445.1.1
 	}
 }
+
+muslim = {
+
+	alevi = {
+		icon = 61
+		heretic = {	}
+		color = { 140 250 225 }
+		allowed_conversion = {
+			sunni
+		}
+	}
+}
