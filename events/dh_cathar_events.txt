@@ -32,7 +32,7 @@ province_event = {
 				flag = dh_cathar_religion_enabled
 				days = 2920	#8 years
 			}
-			reform_desire = 0.3
+			reform_desire = 0.25
 		}
 		development = 12
 		is_reformation_center = no
@@ -78,7 +78,7 @@ province_event = {
 	
 	trigger = {
 		religion_years = {
-			cathar = 2
+			cathar = 4
 		}
 		is_religion_enabled = cathar
 		religion = catholic
@@ -202,7 +202,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 300
 	}
 
 	immediate = {		
@@ -409,7 +409,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 180
 	}
 
 	immediate = {
@@ -572,7 +572,7 @@ country_event = {
 			religion = cathar
 			continent = europe
 			is_reformation_center = no
-			development = 16
+			development = 8
 		}
 		religion = catholic
 		capital_scope = {

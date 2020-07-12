@@ -429,7 +429,7 @@ lollard_center_of_reformation = {
 		}		
 		modifier = {
 			factor = 1.5
-			region = ROOT
+			region = FROM
 		}
 		modifier = {
 			factor = 0.01

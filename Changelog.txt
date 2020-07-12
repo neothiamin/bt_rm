@@ -7,6 +7,7 @@
 * Lollard rebels should actually revolt now, similar to Cathar or Waldensian rebels
 * Refined some Heresy rebel army composition weighting stuff
 * England will no longer have the "Opposing the Lollards" or the "Tolerates Lollards" modifiers if they convert to Lollard after the initial Lollard Heresy event
+* The "Florence, Cathar Center of Tuscany" event will no longer fire if Firenze is under siege
 
 1.3.2:
 

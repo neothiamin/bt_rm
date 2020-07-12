@@ -35,7 +35,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 180 #15 years
+		months = 240 #20 years
 	}
 
 	#Side with the [Root.GetNobilityOrFallbackName].
@@ -155,7 +155,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 180 #15 years
+		months = 240 #20 years
 	}
 
 	#Send an educated theologian to debate the heretic.
