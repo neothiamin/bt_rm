@@ -403,6 +403,9 @@ province_event = {
 			cathar = 4
 		}
 		religion = catholic
+		NOT = {
+			has_siege = yes
+		}
 	}
 
 	mean_time_to_happen = {
