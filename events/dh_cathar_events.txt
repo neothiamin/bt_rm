@@ -179,7 +179,6 @@ province_event = {
 #}
 
 #Revivalists in Lombardy (Milan)
-#Check notes for details and reasoning
 country_event = {
 	id = dh_albi.8
 	title = dh_albi.8.t

@@ -2,6 +2,7 @@
 
 + New event - "Lollardy in Academia"
 
+* General mean-time-to-happen adjustments to many events
 * Changed Hussites' color
 * Added the "Religious Zeal" modifier to provinces converted to Lollard in the "The Lollard Heresy" event
 * Lollard rebels should actually revolt now, similar to Cathar or Waldensian rebels
