@@ -110,7 +110,7 @@ heresy_waldo_estate_church_organized_preaching_on_granted = {
 
 #Cathar Accomodation
 dh_albi_10_florence_accomodate = {
-	local_tax_modifier = -0.1
+	local_tax_modifier = -0.2
 	local_autonomy = 0.02
 }
 

@@ -296,9 +296,7 @@ country_event = {
 		hidden_effect = {			
 			every_owned_province = {
 				limit = {
-					OR = {
-						region = italy_region
-					}
+					region = italy_region
 					NOT = {
 						is_reformation_center = yes
 					}
@@ -631,7 +629,7 @@ country_event = {
 			factor = 30
 			modifier = {
 				factor = 3
-				event_target:dh_albi_9_target = {
+				event_target:dh_albi_4_target = {
 					NOT = {
 						tolerance_to_this = -2
 					}					
@@ -639,7 +637,7 @@ country_event = {
 			}
 		}		
 		add_prestige = 5
-		event_target:dh_albi_9_target = {			
+		event_target:dh_albi_4_target = {			
 			add_unrest = 6
 			random = {
 				chance = 50
@@ -657,19 +655,19 @@ country_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				event_target:dh_albi_9_target = {
+				event_target:dh_albi_4_target = {
 					tolerance_to_this = 0					
 				}
 				factor = 2
 			}
 			modifier = {
 				factor = 2
-				event_target:dh_albi_9_target = {
+				event_target:dh_albi_4_target = {
 					tolerance_to_this = 2					
 				}
 			}
 		}
-		event_target:dh_albi_9_target = {			
+		event_target:dh_albi_4_target = {			
 			add_province_modifier = {
 				name = dh_den_of_heresy_2
 				duration = 5475
@@ -691,13 +689,13 @@ country_event = {
 			}
 		}
 		trigger = {
-			event_target:dh_albi_9_target = {
+			event_target:dh_albi_4_target = {
 				owner = {
 					has_estate = estate_church
 				}				
 			}
 		}
-		event_target:dh_albi_9_target = {
+		event_target:dh_albi_4_target = {
 			random = {
 				chance = 25
 				spawn_rebels = {
@@ -724,7 +722,7 @@ country_event = {
 			}
 		}
 		highlight = yes
-		event_target:dh_albi_9_target = {
+		event_target:dh_albi_4_target = {
 			change_religion = catholic
 			random_list = {
 				90 = {
