@@ -88,6 +88,10 @@ country_event = {
 					}
 					change_religion = lollard
 					add_reform_center = lollard
+					add_permanent_province_modifier = {
+						name = religious_zeal_at_conv
+						duration = 9125
+					}
 					dh_add_neighbor_conv_weakness = yes
 				}
 			}
@@ -361,6 +365,10 @@ country_event = {
 				}			
 				change_religion = lollard
 				add_reform_center = lollard
+				add_permanent_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 9125
+				}
 				clr_province_flag = lollards
 				dh_add_neighbor_conv_weakness = yes
 				add_province_modifier = {

@@ -3,6 +3,7 @@
 + New event - "Lollardy in Academia"
 
 * General mean-time-to-happen adjustments to many events
+* Heresy Centers of Reformation now get the "Religious Zeal" modifier for 25 years when they spawn
 * Changed Hussites' color
 * Added the "Religious Zeal" modifier to provinces converted to Lollard in the "The Lollard Heresy" event
 * Lollard rebels should actually revolt now, similar to Cathar or Waldensian rebels
