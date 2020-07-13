@@ -587,7 +587,10 @@ country_event = {
 			is_reformation_center = no
 			development = 8
 		}
-		religion = catholic
+		OR = {
+			religion = waldensian
+			religion = catholic
+		}
 		capital_scope = {
 			superregion = europe_superregion
 		}
@@ -637,6 +640,12 @@ country_event = {
 			}
 		}		
 		add_prestige = 5
+		if = {
+			limit = {
+				religion = catholic
+			}			
+			add_papal_influence = 5
+		}
 		event_target:dh_albi_4_target = {			
 			add_unrest = 6
 			random = {
