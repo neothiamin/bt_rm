@@ -89,6 +89,12 @@ dh_waldo_spread_area = {
 		area = west_burgundy_area 		#Franche-Comté
 		area = upper_rhineland_area
 	}
+	NOT = {
+		AND = {
+			owned_by = PAP
+			province_id = 202 #Avignon
+		}
+	}
 }
 
 #################################
