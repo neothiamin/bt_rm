@@ -125,3 +125,24 @@ dh_albi_10_florentine_heretics = {
 dh_albi_10_florentine_heretics_country = {
 	papal_influence = 1
 }
+
+#Tepid Inquisition
+dh_albi_tepid_inquisition = {
+	tolerance_heretic = 1
+	global_tax_modifier = -0.1
+	tolerance_own = -2
+}
+
+#Stability Against Heresy
+dh_albi_11_stability_in_the_face_of_heresy = {
+	stability_cost_modifier = -0.1
+	tolerance_heretic = -2
+	global_heretic_missionary_strength = 0.025
+}
+
+#Balancing Church and Empire
+dh_albi_11_balancing_heresy_with_emperor = {
+	tolerance_heretic = 1
+	tolerance_own = -2
+	stability_cost_modifier = 0.1
+}

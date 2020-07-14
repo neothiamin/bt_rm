@@ -1,6 +1,7 @@
-1.3.2.1:
+1.3.3:
 
 + New event - "Lollardy in Academia"
++ New event - "Guelphs, Ghibellines, and Heresy"
 
 * General mean-time-to-happen adjustments to many events
 * Heresy Centers of Reformation now get the "Religious Zeal" modifier for 25 years when they spawn
@@ -17,7 +18,7 @@
 
 1.3.2:
 
-+++ Many thanks to Dub for playtesting an beta version of this release for me!
++++ Many thanks to Dub for playtesting a beta version of this release for me!
 
 + Added a new event for Catholic nations converting Waldensian provinces
 + Added a new Cathar-related event for the owner of Firenze/Florence

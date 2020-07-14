@@ -34,7 +34,7 @@
  dh_albi.8.t:0 "Revivalists in Lombardy"
  dh_albi.8.desc:0 "With the recent Cathar resurgence in Europe, Cathars are popping up in swarms all around Europe. Though most seem to consider southern France to be the ancestral homeland of the Cathars, many seem to forget the role that Lombardy played in the 14th-century Autier Revival of Catharism. Indeed, the legacy of the brothers Autier and their flight from France to Lombardy to seek support for their revival has been forgotten by Catholics, Cathars, and Christians of all creeds and codes.\n\nHowever, now it seems that the Cathar tradition in Lombardy is impossible to ignore, as a prominent network of devout Cathars and safehouses has been discovered all across our lands. If we were to leave them be, the presence of a prominent \"heretical\" sect may prove to be an issue."
  dh_albi.8.a:0 "Cast them out!"
- dh_waldo_8_b_tt:0 "Every non-§YCenter of Reformation§! province in the §YItaly§! region owned by §YMilan§! has a §R40%§! chance to become §YCathar.§!"
+ dh_waldo_8_b_tt:0 "Every non-§YCenter of Reformation§! province in the §YItaly§! region owned by §YMilan§! has a §R40%§! chance to become §YCathar§!. All provinces that are converted will gain §RReligious Zeal§! for §Y25§! years, making conversion nearly impossible."
  dh_albi.8.b:0 "Accept them as brothers in faith."
 
  dh_albi.9.t:0 "Traveling Troubadours"
@@ -47,6 +47,13 @@
  dh_albi.10.a: "See what accommodation is possible. We have bigger problems at the moment."
  dh_albi.10.b: "Rally a corps of missionaries to seek out the heretics. We will have no Cathars in our midst."
 
+ dh_albi.11.t: "Guelphs, Ghibellines, and Heresy"
+ dh_albi.11.desc_guelph: "The Guelph-Ghibelline conflict that we, and all Italian cities and principalities, are embroiled in is at its core a matter of the extent of Imperial power in Italy. The Emperor's attempts at overreach threaten not only the proud Italian tradition of the comuni, but also the power of the Holy Father in Rome, with whom the Emperor has historically come into conflict. Now, with the resurgence of heretical movements such as [dh_albi_11_target.Religion.GetName]ism, the Emperor and [Emperor.Monarch.GetHerHis] supporters stand in a position more prime than ever before to whittle away at the Papacy's power in Italy.\n\nThe Pope, [PAP.Monarch.GetName], realizes this, naturally, and he has instructed us to stamp out heresy by any means necessary in our provinces."
+ dh_albi.11.desc_ghibelline: "The Guelph-Ghibelline conflict that we, and all Italian cities and principalities, are embroiled in is at its core a matter of the extent of Imperial power in Italy. As part of the Empire, Italian city-states and principalities are subject to the Emperor's laws and decrees, despite what the leaders and citizens of some comuni believe. Unfortunately, the conflict has spread beyond its original scope, and now permeates nearly all aspects of government, religion, and daily life in Italy, and is notably being perceived by some to be a Papal-Imperial conflict, or even a Good Catholic-Imperial conflict.\n\nNow, though, there exist groups of people who wish to see Papal authority diminished, such as the [dh_albi_11_target.Religion.GetName]s of [dh_albi_11_target.GetName]. While their heresy is undoubtedly a sign of support for [Root.GetName] and [Root.GetAdjective] loyalty to the Empire, the Emperor is still concerned that these heretics may seek to topple our government, or at the very least establish a ruler favorable to their faith. These concerns have led the Emperor to implore us to handle the heretics, one way or another, for the sake of stability in the Empire."
+ dh_albi.11.a: "The Holy Father's will be done."
+ dh_albi.11.b: "Inform his Holiness that we are doing the best we can."
+ dh_albi.11.c: "The stability of our realm, and of the Empire, is of the utmost importance."
+ dh_albi.11.d: "The balancing of matters of church and state is not an easy task. Surely [Emperor.Monarch.GetHerHis] Highness understands that."
 
  #Cathar Modifiers
  dh_den_of_heresy_2:0 "Den of Heresy"
@@ -80,6 +87,19 @@
  #desc_dh_albi_10_florentine_heretics_country: "REPLACE_ME"
 
  dh_harboring_cathars: "Cathar Inaction"
+
+ dh_albi_tepid_inquisition: "Tepid Inquisition"
+ desc_dh_albi_tepid_inquisition: "We have taken a tepid stance against heresy in our realm, much to the Pope's dismay, upsetting pious Catholics in our realm."
+
+ dh_albi_11_accepted_pope_help: "Papacy-sponsored Inquisition"
+ dh_albi_11_stability_in_the_face_of_heresy: "Stability Against Heresy"
+ desc_dh_albi_11_stability_in_the_face_of_heresy: "We have bowed to the whims of the Emperor, prioritizing religious stability in our realm."
+
+ dh_albi_11_emperor_stability_something: "Stability Above All"
+ dh_albi_11_emperor_refused: "Emperor's Wishes Refused"
+
+ dh_albi_11_balancing_heresy_with_emperor: "Balancing Faith and Empire"
+ desc_dh_albi_11_balancing_heresy_with_emperor: "We are attempting to maintain a balance between the prosperity of our realm and the wishes of the Emperor."
 
  #Fraticelli Events
  dh_fratelli.1.t:0 "The Fraticelli"

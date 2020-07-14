@@ -9,3 +9,21 @@ dh_harboring_cathars = {
 	opinion = -50
 	yearly_decay = 5
 }
+
+#Papacy-sponsored Inquisition
+dh_albi_11_accepted_pope_help = {
+	opinion = 25
+	yearly_decay = 2.5
+}
+
+#Stability Above All
+dh_albi_11_emperor_stability_something = {
+	opinion = 25
+	yearly_decay = 2.5
+}
+
+#Emperor's Wishes Refused
+dh_albi_11_emperor_refused = {
+	opinion = -50
+	yearly_decay = 2.5
+}

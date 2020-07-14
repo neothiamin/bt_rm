@@ -933,3 +933,196 @@ country_event = {
 		add_prestige = 5
 	}
 }
+
+#Guelphs, Ghibellines, and Heresy
+country_event = {
+	id = dh_albi.11
+	title = dh_albi.11.t
+	desc = {
+		trigger = {
+			has_country_modifier = bt_guelph_nation
+		}
+		desc = dh_albi.11.desc_guelph
+	}
+	desc = {
+		trigger = {
+			has_country_modifier = bt_ghibelline_nation
+		}
+		desc = dh_albi.11.desc_ghibelline
+	}
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	#goto = dh_albi_11_target
+
+	trigger = {
+		OR = {
+			has_country_modifier = bt_guelph_nation
+			has_country_modifier = bt_ghibelline_nation
+		}
+		religion = catholic
+		capital_scope = {
+			region = italy_region
+		}
+		any_owned_province = {
+			OR = {
+				religion = cathar
+				religion = waldensian
+			}
+			region = italy_region
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {			
+			random_owned_province = {
+				limit = {				
+					OR = {
+						religion = cathar
+						religion = waldensian
+					}
+					region = italy_region
+				}
+				save_event_target_as = dh_albi_11_target
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180 #15 years
+	}
+
+	#The Holy Father's will be done.
+	option = {
+		name = dh_albi.11.a
+		goto = dh_albi_11_target
+		trigger = {
+			has_country_modifier = bt_guelph_nation
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = PAP
+					value = 100
+				}
+			}
+		}
+		define_advisor = {
+			type = inquisitor
+			religion = catholic
+			location = 118
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = dh_albi_11_accepted_pope_help
+		}
+		event_target:dh_albi_11_target = {
+			trigger_switch = {
+				on_trigger = religion
+				waldensian = {
+					spawn_rebels = {
+						size = 2
+						type = waldensian_rebels
+					}
+				}
+				cathar = {
+					spawn_rebels = {
+						size = 2
+						type = cathar_rebels
+					}
+				}
+			}
+		}
+		every_owned_province = {
+			limit = {			
+				OR = {
+					religion = cathar
+					religion = waldensian
+				}
+				region = italy_region
+			}
+			add_named_unrest = {
+				name = dh_albi_11_inquisition
+				value = 8
+			}
+		}
+	}
+
+	#Inform his Holiness that we are doing the best we can.
+	option = {
+		name = dh_albi.11.b
+		trigger = {
+			has_country_modifier = bt_guelph_nation
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 3
+				NOT = {
+					reverse_has_opinion = {
+						who = PAP
+						value = 50
+					}
+				}
+			}
+		}
+		add_papal_influence = -10
+		add_country_modifier = {
+			name = dh_albi_tepid_inquisition
+			duration = 3650 #10 years
+		}
+	}
+
+	#The stability of our realm, and of the Empire, is of the utmost importance.
+	option = {
+		name = dh_albi.11.c
+		trigger = {
+			has_country_modifier = bt_ghibelline_nation
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 4
+				alliance_with = emperor
+			}
+		}
+		add_stability = -1
+		add_country_modifier = {
+			name = dh_albi_11_stability_in_the_face_of_heresy
+			duration = 3650
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = dh_albi_11_emperor_stability_something
+		}
+	}
+
+	#The balancing of matters of church and state is not an easy task. Surely [Emperor.Monarch.GetHerHis] Highness understands that.
+	option = {
+		name = dh_albi.11.d
+		trigger = {
+			has_country_modifier = bt_ghibelline_nation
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = emperor
+						value = 50
+					}
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = dh_albi_11_emperor_refused
+		}
+		add_country_modifier = {
+			name = dh_albi_11_balancing_heresy_with_emperor
+			duration = 3650
+		}
+	}
+
+}
