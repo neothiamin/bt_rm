@@ -1017,6 +1017,7 @@ country_event = {
 			religion = catholic
 			culture = 118
 			location = event_target:dh_albi_11_target
+			skill = 2
 			discount = yes
 		}
 		reverse_add_opinion = {
