@@ -1010,7 +1010,9 @@ country_event = {
 		define_advisor = {
 			type = inquisitor
 			religion = catholic
-			location = 118
+			culture = 118
+			location = dh_albi_11_target
+			discount = yes
 		}
 		reverse_add_opinion = {
 			who = PAP
