@@ -958,6 +958,11 @@ country_event = {
 			has_country_modifier = bt_guelph_nation
 			has_country_modifier = bt_ghibelline_nation
 		}
+		NOT = {
+			has_country_modifier = dh_albi_11_balancing_heresy_with_emperor
+			has_country_modifier = dh_albi_11_stability_in_the_face_of_heresy
+			has_country_modifier = dh_albi_tepid_inquisition
+		}
 		religion = catholic
 		capital_scope = {
 			region = italy_region
@@ -987,7 +992,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 180 #15 years
+		months = 240 #20 years
 	}
 
 	#The Holy Father's will be done.
@@ -1011,7 +1016,7 @@ country_event = {
 			type = inquisitor
 			religion = catholic
 			culture = 118
-			location = event_target:oopsdh_albi_11_target
+			location = event_target:dh_albi_11_target
 			discount = yes
 		}
 		reverse_add_opinion = {
