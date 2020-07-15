@@ -1011,7 +1011,7 @@ country_event = {
 			type = inquisitor
 			religion = catholic
 			culture = 118
-			location = dh_albi_11_target
+			location = event_target:oopsdh_albi_11_target
 			discount = yes
 		}
 		reverse_add_opinion = {
