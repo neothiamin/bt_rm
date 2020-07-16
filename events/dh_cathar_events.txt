@@ -729,6 +729,11 @@ country_event = {
 				has_idea = inquisition
 				ruler_has_personality = zealot_personality
 			}
+			event_target:dh_albi_4_target = {
+				NOT = {
+					is_reformation_center = yes
+				}
+			}
 		}
 		highlight = yes
 		event_target:dh_albi_4_target = {
