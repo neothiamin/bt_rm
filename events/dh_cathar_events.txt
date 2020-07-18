@@ -789,8 +789,8 @@ country_event = {
 			continent = europe
 		}
 		OR = {
-			years_of_income = 1
-			monthly_income = 20
+			#years_of_income = 1
+			#monthly_income = 20
 			has_idea_group = economic_ideas
 			ruler_has_personality = greedy_personality
 		}

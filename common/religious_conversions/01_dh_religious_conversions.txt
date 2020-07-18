@@ -427,10 +427,10 @@ lollard_center_of_reformation = {
 			factor = 0.01
 			religion = coptic
 		}		
-		modifier = {
-			factor = 1.5
-			region = FROM
-		}
+		#modifier = {
+		#	factor = 1.5
+		#	region = FROM
+		#}
 		modifier = {
 			factor = 0.01
 			religion = orthodox
