@@ -1,4 +1,6 @@
-vNext:
+v1.3.3.2:
+
++ Added localization for French, Spanish, and German to prevent localization keys being displayed in place of localized text. The text is identical to the English localization because I do not speak French, Spanish, or German. If you would like to contribute translations for these languages, please reach out to me!
 
 * You can no longer send in the inquisitors to a Center of Reformation province in the "Den of Heresy" event
 * Fixed a small localization error
