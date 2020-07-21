@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_spanish:
  heresy_heretic_relations_agenda: "Seek Alliance with Spiritual Brethren"
  heresy_heretic_relations_agenda_desc: "It is no secret that papists and malicious heathens wish to quash us and stamp out our faith. The [Root.GetClergyName] in our state say that if we [Root.Religion.GetName]s are to survive, we must stand together."
 
