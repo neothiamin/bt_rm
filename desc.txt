@@ -32,4 +32,7 @@ Heresy is incompatible with any mods that do the following:
 The exception to items 1 and 2 is the mod Pagan Wrath, which was made to be compatible with Heresy out-of-the-proverbial-box. Compatibility with other mods that do any of the items listed above is not guaranteed.
 The exception to item 6 is Dub's Byzantine Resurgence, which I have added compatibility for.
 
+[b]Other Notes[/b]
+I have added localization for French, Spanish, and German to prevent localization keys being displayed in place of localized text. The text is identical to the English localization because I do not speak French, Spanish, or German. If you would like to contribute translations for these languages, please reach out to me!
+
 Enjoy!

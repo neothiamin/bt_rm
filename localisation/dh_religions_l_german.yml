@@ -1,0 +1,37 @@
+﻿l_english:
+ cathar:0 "Cathar"
+ fraticelli:0 "Fraticelli"
+ waldensian:0 "Waldensian"
+ lollard:0 "Lollard"
+ alevi: "Alevi"
+
+ PAPIST:0 "Papist"
+ 
+ cathar_religion_desc:0 "Catharism is a dualist sect which arose in the early years of the 11th century and which found great success in southern France and northern Italy until the 14th century. Catharism, from the Greek \"katharoi\" meaning \"pure ones,\" identified two diametrically opposed forces or deities: the \"good\" God, depicted in the New Testament, who created the spirit; and the \"evil\" God, depicted in the Old Testament, who created all matter and was often associated with Satan. Due to the connection between material possession and the Devil, many Cathars adopted an ascetic lifestyle. Cathars were also unique due to their tolerance of women, including the ability for a woman to perform the \"consolamentum,\" one of the sacraments integral to Cathar theology. Cathars' beliefs were considered heretical by the Catholic Church, which declared the Albigensian Crusade against the Cathars in 1208, ultimately leading to the eradication of the sect by the mid-1300s."
+ fraticelli_religion_desc:0 ""
+ waldensian_religion_desc:0 "Founded in the late 12th century, Waldensians are followers of the teachings of Peter Vaudès, a spiritual leader from Lyon, France. Waldensians are anti-clerical, and advocate a return to vows of poverty coupled with the practice of lay preaching, or preaching by people not designated as members of the clergy. Waldensians, unlike other contemporary movements like the Cathars, survived for centuries after the initial foundation of their belief system, and are considered to be one of the primary forerunners of the Protestant Reformation."
+ lollard_religion_desc:0 ""
+ alevi_religion_desc: ""
+
+ cathar_center_of_reformation:0 "Center of Reformation"
+ CATHAR_ASPECTS_LONG:0 "Aspects of Faith"
+ CATHAR_ASPECTS_SHORT:0 "aspects"
+
+ cathar_bishoprics_aspect:0 "Localized Dioceses"
+ desc_cathar_bishoprics_aspect:0 "The Cathar tradition, unlike that of the Catholics, does not have a bureaucracy that reaches to Hell and back in length and complicatedness; rather, Cathars rely more on each other than on any bishop or archbishop or pope etc. However, there is always a need for some small-scale organization in any faith. By establishing localized dioceses we can maintain the local fraternity of good Cathars while at the same time keeping the flock organized."
+ cathar_marriage_aspect:0 "Loosen Marriage Restrictions"
+ desc_cathar_marriage_aspect:0 "Integral to the position of Perfect is a vow of chastity. However, many have pointed out that this vow shares possibly too many similarities with the Catholic vows of celibacy. By allowing Perfects to marry, we can ensure that each and every Perfect is both more relatable and has a better instinct of how to care for the Believers which they administer."
+ cathar_fortresses_aspect:0 "Cathar Fortresses"
+ desc_cathar_fortresses_aspect:0 "For a faith such as ours that is met by opposition on all sides, the importance of strong forts to protect our people and our faith is clear. By establishing state-sanctioned fortress construction operations and making use of local hills or mountains, we can ensure the faithful have a place to seek refuge."
+ cathar_allow_weaving_aspect:0 "Promote Weaving"
+ desc_cathar_allow_weaving_aspect:0 "While others may consider weaving to be heretical or magical (and thus devilish), we more level-headed folk understand the need for woven goods. By promoting the weaving of goods, we can make our people richer and our cities larger as we capitalize on a trade forbidden to the Catholics."
+ cathar_disallow_burning_aspect:0 "Forbid Immolation"
+ desc_cathar_disallow_burning_aspect:0 "In the early days of Catharism, Good Christians would be given two options when approached by Catholic inquisitors: convert, or burn. The legacy of those martyrs burned at the pyre still lives on in our faith, and in their honor we will forbid the immolation of any corpses save those which carry disease."
+ cathar_living_icons_aspect:0 "Living Icons"
+ desc_cathar_living_icons_aspect:0 ""
+ cathar_flock_to_the_cross_aspect:0 "Flock to the Cross"
+ desc_cathar_flock_to_the_cross_aspect:0 ""
+
+ waldensian_center_of_reformation:0 "Center of Reformation"
+ lollard_center_of_reformation:0 "Center of Reformation"
+ alevi_center_of_reformation: ""

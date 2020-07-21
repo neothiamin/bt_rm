@@ -1,0 +1,20 @@
+﻿l_english:
+ heresy_heretic_relations_agenda: "Seek Alliance with Spiritual Brethren"
+ heresy_heretic_relations_agenda_desc: "It is no secret that papists and malicious heathens wish to quash us and stamp out our faith. The [Root.GetClergyName] in our state say that if we [Root.Religion.GetName]s are to survive, we must stand together."
+
+ heresy_waldo_estate_church_organized_preaching: "Organizational Reform"
+ heresy_waldo_estate_church_organized_preaching_desc: "Organization in the Waldensian faith varies from place to place. Granting the preachers more autonomy will increase the amount of tax we collect in our lands, but it will also weaken our hold on religious congregations."
+ heresy_waldo_estate_church_organized_preaching_grant.tt: "Gain a §Ghalf-cost§! skill §Y1 Waldensian Theologian§!."
+ heresy_waldo_estate_church_organized_preaching_revoke.tt: "Every §YWaldensian§! owned province with the §Y\"Organized Preachers\"§! modifier loses the modifier."
+
+ heresy_heretic_relations_agenda_complete_mod: "United in Faith"
+ desc_heresy_heretic_relations_agenda_complete_mod: "Through faith and diplomacy we have fostered good relations with a fellow [Root.Religion.GetName] nation."
+
+ heresy_heretic_relations_agenda_fail_mod: "Petty Squabbling"
+ desc_heresy_heretic_relations_agenda_fail_mod: "We have failed to foster better relations with one of our friends in faith, and as such our diplomatic corps is displeased with us."
+
+ heresy_waldo_estate_church_organized_preaching_on_granted: "Organized Preachers"
+ desc_heresy_waldo_estate_church_organized_preaching_on_granted: "The Waldensian preachers in this province have been granted more leniency in their habits and methodology."
+
+ heresy_lollard_estate_church_bible_translation: "Grant Bible Translation Exclusivity"
+ heresy_lollard_estate_church_bible_translation_desc: "Historically, the [Root.Monarch.GetTitle] would dictate when and by whom a new translation of the Holy Bible would be produced. Granting this decision-making power to the Clergy, however, would improve the spread of the Good News and new ideas in our lands, but the clergy would, naturally, take a portion of our taxes in return."

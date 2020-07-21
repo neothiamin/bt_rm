@@ -1,0 +1,174 @@
+﻿l_english:
+
+ #Cathar Events
+ dh_albi.1.t:0 "Cathar Resurgence"
+ dh_albi.1.desc:0 "It would appear that the Cathars, also known as Albigensians, are back at it again. Despite the Albigensian Crusade waged o so long ago, the general societal disdain towards them, the acknowledgement of their issues with the Church, generous syncretism, slight appeasement....\n\nAnyways, the Cathars are back, and this time they seem more stubborn than ever."
+ dh_albi.1.a:0 "Not again..."
+
+ dh_albi.2.t:0 "Cathar Center"
+ dh_albi.2.desc:0 "A group of devout Cathars has begun spreading their faith in [Root.GetName]! Their flock grows by the day."
+ dh_albi.2.a:0 "Blast!"
+
+ dh_albi.3.t:0 "Mass Conversions in Toulouse"
+ dh_albi.3.desc:0 "Toulouse has historically been the epicenter of the Cathar menace. The Albigensian Crusade, waged in the early years of the 13th century, took place almost entirely within the southern part of our realm, and dragged on for years and years. The memories of the Crusade are still fresh in the minds of the Occitan people, who are yet often called \"Cathars\" by others regardless of their actual faith. It is no surprise then that when the Cathar Resurgence began, many Occitans flocked to the banner of Catharism. A wave of mass conversion is taking place currently in Toulouse, and it does not seem like it will end any time soon."
+ dh_albi.3.a:0 "No!"
+ dh_mass_conversions_in_toulouse.tt:0 "Mass conversions take place in and around §YToulouse§!."
+ 
+ dh_albi.4.t:0 "Den of Heresy"
+ dh_albi.4.desc:0 "Practicers of minority religions tend to gather together in secluded or isolated places. Alleyways, a member's home, places where no one wants to go, etc. However, the Cathars in [Root.GetName] have recently been gathering and performing their rites and rituals in a rather public place - a local inn! Naturally, the faithful in [Root.GetName] are rather upset about this, and are demanding the Crown do something about the heretics in their midst."
+ dh_albi.4.a:0 "Stamp this out!"
+ dh_albi.4.b:0 "Let the people gather where they like."
+ dh_albi.4.c:0 "The Church will handle this."
+ dh_albi.4.d:0 "Send in the Inquisitors!"
+ 
+ dh_albi.5.t:0 "New Bishopric in [Root.GetName]"
+ dh_albi.5.desc:0 "My [Root.Owner.Monarch.GetTitle]! Our piety has been recognized and, after the occurrence of a Council in [Root.Owner.Capital.GetCapitalName], a new Bishopric has been established in [Root.GetName]!"
+ dh_albi.5.a:0 "Splendid!"
+ dh_albi.5.a.tt:0 "[Root.GetName] will be the site of a new §YCathar Bishopric§!."
+
+ dh_albi.6.t:0 "Accusations of Greed"
+ dh_albi.6.desc:0 "One of the key tenets of Cathar belief is the rejection of all things borne of the material world, which is evil. Many Cathars practice devout asceticism as a rule, and believe that those who cling to their possessions are sinful. Unfortunately, it seems that now the lens of criticism has been focused on [Root.Monarch.GetName], and many devotees are accusing [Root.Monarch.GetHerHim] of being greedy."
+ dh_albi.6.a:0 "Preposterous!"
+ dh_albi.6.b:0 "We must cast away material possessions if we are to be saved."
+
+ dh_albi.8.t:0 "Revivalists in Lombardy"
+ dh_albi.8.desc:0 "With the recent Cathar resurgence in Europe, Cathars are popping up in swarms all around Europe. Though most seem to consider southern France to be the ancestral homeland of the Cathars, many seem to forget the role that Lombardy played in the 14th-century Autier Revival of Catharism. Indeed, the legacy of the brothers Autier and their flight from France to Lombardy to seek support for their revival has been forgotten by Catholics, Cathars, and Christians of all creeds and codes.\n\nHowever, now it seems that the Cathar tradition in Lombardy is impossible to ignore, as a prominent network of devout Cathars and safehouses has been discovered all across our lands. If we were to leave them be, the presence of a prominent \"heretical\" sect may prove to be an issue."
+ dh_albi.8.a:0 "Cast them out!"
+ dh_waldo_8_b_tt:0 "Every non-§YCenter of Reformation§! province in the §YItaly§! region owned by §YMilan§! has a §R40%§! chance to become §YCathar§!. All provinces that are converted will gain §RReligious Zeal§! for §Y25§! years, making conversion nearly impossible."
+ dh_albi.8.b:0 "Accept them as brothers in faith."
+
+ dh_albi.9.t:0 "Traveling Troubadours"
+ dh_albi.9.desc:0 "Integral to the cultures of the south of France is the tradition of the troubadours. Composers, poets, and lyricists all at once, the troubadour tradition spread or inspired similar traditions in Germany, Italy, Iberia, and northern France, and the music made by the troubadours of old are adored by some and loathed by others. This loathing is especially projected by some of the more orthodox Catholics in the many realms of Europe, who see troubadour art as Cathar indoctrination in musical form, and consider troubadours to be clandestine Cathar heretics.\n\nRecently, a troubadour from [dh_albi_9_target.GetName] has become very famous in their home region, and has traveled with a band of their fellows to the royal court at [Root.Capital.GetCapitalName] and are offering their services to us. Naturally, the possibility of them being heretics has some of our clergy worried..."
+ dh_albi.9.a:0 "Oh, the beauty of the langue d'oc..."
+ dh_albi.9.b:0 "We will have no merrymen nor Cathars in our court!"
+
+ dh_albi.10.t: "Florence, Cathar Center of Tuscany"
+ dh_albi.10.desc: "In the 13th century, Florence was the center of Tuscan Catharism, and indeed one of the larger Cathar centers in all of Italy. Cathars of the time established a bishopric, had a stable line of bishop succession, and became increasingly active in Florentine politics.\nThe continued presence of Cathars in Florence, despite attempts at conversion through inquisition, was a cause of much bad blood between the Florentine government and the Holy See. Some inquisitors even accused the city of harboring heretics before the papal curia, such as the Florentine inquisitor Pietro da l'Aquila in the 1340s. Now, with Catharism on the resurgence, more and more Cathars are being found in Florence. Their numbers are not known, but it seems that on every other street corner one may find the Cathar cross hung in the window of a business or residence."
+ dh_albi.10.a: "See what accommodation is possible. We have bigger problems at the moment."
+ dh_albi.10.b: "Rally a corps of missionaries to seek out the heretics. We will have no Cathars in our midst."
+
+ dh_albi.11.t: "Guelphs, Ghibellines, and Heresy"
+ dh_albi.11.desc_guelph: "The Guelph-Ghibelline conflict that we, and all Italian cities and principalities, are embroiled in is at its core a matter of the extent of Imperial power in Italy. The Emperor's attempts at overreach threaten not only the proud Italian tradition of the comuni, but also the power of the Holy Father in Rome, with whom the Emperor has historically come into conflict. Now, with the resurgence of heretical movements such as [dh_albi_11_target.Religion.GetName]ism, the Emperor and [Emperor.Monarch.GetHerHis] supporters stand in a position more prime than ever before to whittle away at the Papacy's power in Italy.\n\nThe Pope, [PAP.Monarch.GetName], realizes this, naturally, and he has instructed us to stamp out heresy by any means necessary in our provinces."
+ dh_albi.11.desc_ghibelline: "The Guelph-Ghibelline conflict that we, and all Italian cities and principalities, are embroiled in is at its core a matter of the extent of Imperial power in Italy. As part of the Empire, Italian city-states and principalities are subject to the Emperor's laws and decrees, despite what the leaders and citizens of some comuni believe. Unfortunately, the conflict has spread beyond its original scope, and now permeates nearly all aspects of government, religion, and daily life in Italy, and is notably being perceived by some to be a Papal-Imperial conflict, or even a Good Catholic-Imperial conflict.\n\nNow, though, there exist groups of people who wish to see Papal authority diminished, such as the [dh_albi_11_target.Religion.GetName]s of [dh_albi_11_target.GetName]. While their heresy is undoubtedly a sign of support for [Root.GetName] and [Root.GetAdjective] loyalty to the Empire, the Emperor is still concerned that these heretics may seek to topple our government, or at the very least establish a ruler favorable to their faith. These concerns have led the Emperor to implore us to handle the heretics, one way or another, for the sake of stability in the Empire."
+ dh_albi.11.a: "The Holy Father's will be done."
+ dh_albi.11.b: "Inform his Holiness that we are doing the best we can."
+ dh_albi.11.c: "The stability of our realm, and of the Empire, is of the utmost importance."
+ dh_albi.11.d: "The balancing of matters of church and state is not an easy task. Surely [Emperor.Monarch.GetHerHis] Highness understands that."
+
+ #Cathar Modifiers
+ dh_den_of_heresy_2:0 "Den of Heresy"
+ dh_den_of_heresy_3:0 "Conversion Efforts"
+ dh_den_of_heresy_4:0 "Inquisition"
+ desc_dh_den_of_heresy_2:0 "This province is a hotbed for heresy."
+ desc_dh_den_of_heresy_3:0 "Conversion efforts are taking place in this province."
+ desc_dh_den_of_heresy_4:0 "Anti-Cathar Inquisitors have been dispatched to this province."
+
+ cathar_bishopric:0 "Cathar Bishopric"
+ desc_cathar_bishopric:0 "This province has been declared as the headquarters of a Cathar Bishopric."
+
+ heresy_neg_50_conv_resist:0 "Heretical Susceptibility"
+ desc_heresy_neg_50_conv_resist:0 "The populace of this province is particularly sentimental to heresy, and will more eagerly convert to heretical sects."
+ 
+ dh_albi_6_a_mod:0 "Embraced Greed"
+ desc_dh_albi_6_a_mod:0 "We have embraced our love of coin, upsetting the faithful in our lands."
+ dh_albi_6_b_mod:0 "Asceticism"
+ desc_dh_albi_6_b_mod:0 "We have cast away our material possessions, resulting in lower income."
+
+ dh_albi_9_b_mod:0 "Troubadour Tantrums"
+ desc_dh_albi_9_b_mod:0 "A famed Troubadour from this province was recently turned away on religious grounds."
+
+ dh_albi_10_florence_accomodate: "Cathar Accommodation"
+ #desc_dh_albi_10_florence_accomodate: "REPLACE_ME"
+
+ dh_albi_10_florentine_heretics: "Active Inquisition"
+ #desc_dh_albi_10_florentine_heretics: "REPLACE_ME"
+
+ dh_albi_10_florentine_heretics_country: "Stood Against Cathars"
+ #desc_dh_albi_10_florentine_heretics_country: "REPLACE_ME"
+
+ dh_harboring_cathars: "Cathar Inaction"
+
+ dh_albi_tepid_inquisition: "Tepid Inquisition"
+ desc_dh_albi_tepid_inquisition: "We have taken a tepid stance against heresy in our realm, much to the Pope's dismay, upsetting pious Catholics in our realm."
+
+ dh_albi_11_accepted_pope_help: "Papacy-sponsored Inquisition"
+ dh_albi_11_stability_in_the_face_of_heresy: "Stability Against Heresy"
+ desc_dh_albi_11_stability_in_the_face_of_heresy: "We have bowed to the whims of the Emperor, prioritizing religious stability in our realm."
+
+ dh_albi_11_emperor_stability_something: "Stability Above All"
+ dh_albi_11_emperor_refused: "Emperor's Wishes Refused"
+
+ dh_albi_11_balancing_heresy_with_emperor: "Balancing Faith and Empire"
+ desc_dh_albi_11_balancing_heresy_with_emperor: "We are attempting to maintain a balance between the prosperity of our realm and the wishes of the Emperor."
+
+ #Fraticelli Events
+ dh_fratelli.1.t:0 "The Fraticelli"
+ dh_fratelli.1.desc:0 "The Fraticelli, or \"Little Brothers,\" strict followers of the teachings of St. Francis of Assisi, have begun preaching in [Root.GetName]!"
+ dh_fratelli.1.a:0 "Stomp them out!"
+
+ #Waldensian Events
+ dh_waldo.1.t:0 "Waldensian Mission Discovered in [Root.GetName]"
+ dh_waldo.1.desc:0 "The Waldensians, also known as the \"Poor of Lyons\" or \"Poor Men,\" have existed in some form or another for centuries. Recently, though, state inquisitors have discovered a sizeable congregation of Waldensians in [Root.GetName]. As part of their faith, Waldensians are dedicated missionaries, and will spread their faith wherever they believe they will find converts."
+ dh_waldo.1.a:0 "Surely they will keep to themselves, right?"
+
+ dh_waldo.2.t:0 "Waldensians from the Woodwork"
+ dh_waldo.2.desc:0 "Evidently, the discovery of the Waldensian mission in [dh_waldo_spawn_prov.GetName] has inspired the underground Waldensian community in [Root.GetName] to start preaching in public! Laymen dressed in robes and hoods are stood at every other street corner in [Root.Capital.GetName], preaching about God knows what."
+ dh_waldo.2.a:0 "They're everywhere!"
+
+ dh_waldo.3.t:0 "Popularity Among the Poor"
+ dh_waldo.3.desc:0 "Waldensians are notorious for their advocacy of lay preaching, or the ability for non-clergymen to give sermons and perform ceremonial rites. Waldensians are also notorious for their love of the poor. Naturally, when these two characteristics mix, events undesirable to a pious Catholic nation like ours may occur.\n\nLately, the Waldensian community in [Root.GetName] have been utilizing the... \"humility,\" let's say, of the local populace in regards to their material possessions as fodder for their sermons, and many locals have taken to believing them. If we let this lay preaching continue on unabated, this trend may spread to our other lands."
+ dh_waldo.3.a:0 "Let them practice in peace."
+ dh_waldo.3.b:0 "Crack down on it!"
+ dh_waldo.3.c:0 "These Waldensians may have a point. Help to alleviate the poverty of these people."
+
+ dh_waldo.4.t:0 "Prominent Lay Preacher"
+ dh_waldo.4.desc:0 "Those who follow the Waldensian tradition have always been strong advocated of lay preaching. All around Europe one may find Waldensian men and women preaching their heresy on street corners and in marketplaces. Recently, a lay preacher from [dh_waldo_4_t_target.GetName] has amassed quite a bit of renown among his peers and flock as both a skilled wordsmith and a devout follower. Locals say his mastery of the Holy Bible (or, whatever the Waldensians read) is unmatched, and some in our court have suggested we take him in as a sign of good will towards the Waldensian communities in our realm."
+ dh_waldo.4.a:0 "We ought to burn him at the stake, not invite him to court!"
+ dh_waldo.4.b:0 "Perhaps his unabashed heresy will inspire us righteous Christians to be more pious."
+ dh_waldo.4.c:0 "As a preacher, he has no merit. As an inquisitor, though..."
+
+ dh_waldo.6.t: "Conversion Troubles in [Root.GetName]"
+ dh_waldo.6.desc: "The existence of the Waldensian community in [Root.GetName] is no secret. For some time we have turned a blind eye to their congregations, allowing them to do... whatever it is they do... in peace. However, as any good Catholic nation would do, we have recently begun efforts to shepherd them back to the light and grant them salvation in the eyes of God.\n\nThat said, conversion is often a task easier said than done. The Waldensian community in [Root.GetName] has gotten wise to the inquisitors' presence, and they're starting to get upset at our repeated attempts to save their souls from damnation."
+ dh_waldo.6.a: "And why should we care? They're heretics!"
+ dh_waldo.6.b: "Perhaps we ought to let them be, for a while at least."
+ dh_waldo.6.c: "Their heresy is against the rules of this realm. They have no defense."
+ dh_waldo.6.d: "Surely we can come to an agreement over a nice drink! Do... do Waldensians drink?"
+
+
+ #Waldensian Modifiers
+ dh_waldo_3_a_modifier:0 "Lay Preaching"
+ desc_dh_waldo_3_a_modifier:0 "Waldensian lay preachers have been allowed to give their sermons in public in [Root.Capital.GetName]."
+ dh_waldo_3_b_modifier:0 "Crackdown on Lay Preaching"
+ desc_dh_waldo_3_b_modifier:0 "There is an active inquisition against lay preachers in [Root.GetName]."
+
+ dh_waldo_4_a_modifier:0 "Spurned Lay Preacher"
+ desc_dh_waldo_4_a_modifier:0 "This province is the home of a lay preacher who was scorned by the [Root.Owner.Monarch.GetTitle]."
+ dh_waldo_4_a_modifier_2:0 "Rejected Lay Preacher"
+ desc_dh_waldo_4_a_modifier_2:0 "Our rejection of a Waldensian preacher gives our missionaries a new sense of fervor!"
+ dh_waldo_4_b_modifier:0 "Patronized Lay Preacher"
+ desc_dh_waldo_4_b_modifier:0 "The inhabitants of this province are overjoyed that a local lay preacher has been patronized by the [Root.Owner.Monarch.GetTitle]"
+
+ heresy_waldo_6a_modifier: "Waldensian Rebellion"
+ desc_heresy_waldo_6a_modifier: "The Waldensians in this province have risen in rebellion against us!"
+ heresy_waldo_6a_opinion_modifier: "Oppressed Spiritual Brethren"
+ heresy_waldo_6b_modifier: "Missionary Efforts Ceased"
+ desc_heresy_waldo_6b_modifier: "The Waldensian inhabitants of this province have been granted the right to practice in peace."
+ heresy_waldo_6d_modifier: "Conversion Compromise"
+ desc_heresy_waldo_6d_modifier: "Negotiations between the [Owner.Monarch.GetTitle] and the Waldensians of [Root.GetName] have improved the relationship between heretic and state in this province."
+ heresy_waldo_rebellion_unrest_mod: "Waldensian Dissent"
+
+ #Lollard Events
+ dh_flavor_eng.9100c:0 "Take up the Lollard cross! Down with the papists!"
+
+ heresy_lollard.1.t: "Local Clergyman accused of Abuse of Assets"
+ heresy_lollard.1.desc: "The \"possession\" of ecclesiastical assets by the [Root.GetClergyName] is not possession at all, in fact. God has entrusted the [Root.GetClergyName] with the care and custody of these assets, and they are to be used to praise Him. However, recently, an influential noble from [heresy_lollard.1_prov.GetName] has accused the local clergy of abusing their privileges. The details are muddy, but he assures us that something nefarious is taking place. He suggests that these assets should be declared forfeit and granted to the [Root.GetNobilityOrFallbackName], who, of course, will take care of them piously."
+ heresy_lollard.1.a: "Side with the [Root.GetNobilityOrFallbackName]."
+ heresy_lollard.1.b: "Side with the [Root.GetClergyName]."
+ heresy_lollard.1.c: "Seize the assets for the crown."
+ heresy_lollard.1.d: "Seize the assets for the state."
+
+ heresy_lollard.2.t: "Lollardy in Academia"
+ heresy_lollard.2.desc: "Lollardy was born out of the academic tradition as the brainchild of University of Oxford professor John Wycliffe. As Lollardy spreads, more and more middle- and upper-class citizens are converting to the Lollard tradition. This, naturally, means that more university students and lecturers are converting and preaching this doctrine as part of their lectures. Recently, an intellectual in [heresy_lollard_2_prov.GetName] has been overheard by pious [Root.Religion.GetName]s and reported to the local inquisitors."
+ heresy_lollard.2.a: "This shall not stand. Have the heretic arrested, and their tenure revoked!"
+ heresy_lollard.2.b: "If they can teach the trivium and quadrivium, what difference does it make?"
+ heresy_lollard.2.c: "I don't know, it makes sense to me..."
