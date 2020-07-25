@@ -675,3 +675,202 @@ country_event = {
 		clr_country_flag = heresy_colonists_to_apulia_in_progress
 	}
 }
+
+#################################
+# Protestant Reformation Events
+#################################
+
+#Contact with Reformers
+country_event = {
+	id = dh_waldo.7
+	title = dh_waldo.7.t
+	desc = dh_waldo.7.desc
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		religion = waldensian
+		is_religion_enabled = protestant
+		capital_scope = {
+			continent = europe
+		}
+		any_known_country = {
+			religion = protestant
+			has_opinion = {
+				who = ROOT
+				value = 25
+			}
+		}
+	}
+
+	major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 240 #20 Years
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				continent = europe
+				any_neighbor_province = {
+					religion = protestant
+					is_reformation_center = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_ally = {
+				religion = protestant
+				capital_scope = {
+					continent = europe
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_owned_province = {
+				continent = europe
+				religion = protestant
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_owned_province = {
+				continent = europe
+				religion = protestant
+				tolerance_to_this = 0
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = waldensian_contact_happened
+			random_known_country = {
+				limit = {
+					religion = protestant
+					has_opinion = {
+						who = ROOT
+						value = 25
+					}
+				}
+				save_global_event_target_as = heresy_waldensian_protestant_country
+			}
+		}
+	}
+
+	#Reach out to these new reformers.
+	option = {
+		name = dh_waldo.7.a
+		custom_tooltip = heresy_waldo_7_a.tt
+		hidden_effect = {			
+			event_target:heresy_waldensian_protestant_country = {
+				country_event = {
+					id = dh_waldo.8
+					days = 45
+				}
+			}
+		}
+	}
+
+	#Their ideas are nothing new.
+	option = {
+		name = dh_waldo.7.b
+	}
+}
+
+#Missive from the Waldensians of [From.GetName]
+country_event = {
+	id = dh_waldo.8
+	title = dh_waldo.8.t
+	desc = dh_waldo.8.desc
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	#Invite them to a meeting at [Root.Capital.GetCapitalName] to discuss our faiths.
+	option = {
+		name = dh_waldo.8.a
+		FROM = {
+			country_event = {
+				id = dh_waldo.9
+				days = 30
+			}
+		}
+	}
+
+	#While the Waldensians paved the way for our movement, it is time to leave them behind.
+	option = {
+		name = dh_waldo.8.b
+		FROM = {
+			country_event = {
+				id = dh_waldo.10
+				days = 30
+			}
+		}
+	}
+}
+
+#Response from [From.GetName]
+country_event = {
+	id = dh_waldo.9
+	title = dh_waldo.9.t
+	desc = dh_waldo.9.desc
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	#Let us join our new brothers in faith!
+	option = {
+		name = dh_waldo.9.a
+		change_religion = protestant
+		if = {
+			limit = {
+				any_owned_province = {
+					religion = waldensian
+					is_reformation_center = yes
+				}
+			}
+			every_owned_province = {
+				limit = {					
+					religion = waldensian
+					is_reformation_center = yes
+				}
+				remove_reform_center = waldensian
+			}
+		}
+		custom_tooltip = other_waldensians_may_convert_to_protestant.tt
+		hidden_effect = {
+			set_global_flag = waldensians_join_reformation
+		}
+	}
+
+	#On second thought, perhaps not.
+	option = {
+		name = dh_waldo.9.b
+		add_prestige = 5
+	}
+}
+
+#Response from [From.GetName] v2
+country_event = {
+	id = dh_waldo.10
+	title = dh_waldo.9.t
+	desc = dh_waldo.10.desc
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	#A pity...
+	option = {
+		name = dh_waldo.10.a
+		add_prestige = -5
+		event_target:heresy_waldensian_protestant_country = {
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = heresy_rejected_waldensian_reform
+			}
+		}
+	}
+}

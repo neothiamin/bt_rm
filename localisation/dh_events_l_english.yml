@@ -134,6 +134,28 @@
  dh_waldo.6.c: "Their heresy is against the rules of this realm. They have no defense."
  dh_waldo.6.d: "Surely we can come to an agreement over a nice drink! Do... do Waldensians drink?"
 
+ dh_waldo.7.t: "Contact with Reformers"
+ dh_waldo.7.desc: "REPLACE_ME"
+ dh_waldo.7.a: "Reach out to these new reformers."
+ heresy_waldo_7_a.tt: "We will seek an audience with prominent reformers in §Y[heresy_waldensian_protestant_country.GetName]§!."
+ dh_waldo.7.b: "Their ideas are nothing new."
+
+ dh_waldo.8.t: "Missive from the Waldensians of [From.GetName]"
+ dh_waldo.8.desc: "REPLACE_ME"
+ dh_waldo.8.a: "Invite them to a meeting at [Root.Capital.GetCapitalName] to discuss our faiths and seek brotherhood."
+ dh_waldo.8.b: "While the Waldensians paved the way for our movement, it is time to leave them behind."
+
+ dh_waldo.9.t: "Response from [From.GetName]"
+ dh_waldo.9.desc: "REPLACE_ME"
+ dh_waldo.9.a: "Let us join our new brothers in faith!"
+ other_waldensians_may_convert_to_protestant.tt: "Other Waldensian nations may follow our lead and convert to §BProtestantism§!."
+ dh_waldo.9.b: "On second thought, perhaps we are better alone..."
+
+ dh_waldo.10.desc: "REPLACE_ME"
+ dh_waldo.10.a: "A pity."
+
+ heresy_rejected_waldensian_reform: "Rejected Meeting"
+
 
  #Waldensian Modifiers
  dh_waldo_3_a_modifier:0 "Lay Preaching"

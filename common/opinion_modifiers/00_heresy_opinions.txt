@@ -27,3 +27,9 @@ dh_albi_11_emperor_refused = {
 	opinion = -50
 	yearly_decay = 2.5
 }
+
+#Rejected Request to Meet
+heresy_rejected_waldensian_reform = {
+	opinion = -50
+	yearly_decay = 2.5
+}
