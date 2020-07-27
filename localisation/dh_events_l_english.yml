@@ -135,23 +135,23 @@
  dh_waldo.6.d: "Surely we can come to an agreement over a nice drink! Do... do Waldensians drink?"
 
  dh_waldo.7.t: "Contact with Reformers"
- dh_waldo.7.desc: "REPLACE_ME"
+ dh_waldo.7.desc: "With the unexpected rise of a new reformist tradition, Protestantism, many in our realm are analyzing the beliefs published by these new \"Protestants\" and comparing them to our own beliefs. Shockingly, it seems we agree on much, specifically the priesthood of all believers and the infallibility of the Bible, or \"sola scriptura\". Some are suggesting we meet with some of these new reformers and discuss the intricacies of their - and our - faith."
  dh_waldo.7.a: "Reach out to these new reformers."
  heresy_waldo_7_a.tt: "We will seek an audience with prominent reformers in §Y[heresy_waldensian_protestant_country.GetName]§!."
  dh_waldo.7.b: "Their ideas are nothing new."
 
  dh_waldo.8.t: "Missive from the Waldensians of [From.GetName]"
- dh_waldo.8.desc: "REPLACE_ME"
+ dh_waldo.8.desc: "We as Protestants owe much to the Waldensian tradition. Indeed, Waldensianism is one of the longest-lasting and most prestigious reform movements in Western Christianity. Recently, a group of Waldensians from [From.GetName] have arrived at our court and are seeking an audience with some of our most famed theologians."
  dh_waldo.8.a: "Invite them to a meeting at [Root.Capital.GetCapitalName] to discuss our faiths and seek brotherhood."
  dh_waldo.8.b: "While the Waldensians paved the way for our movement, it is time to leave them behind."
 
  dh_waldo.9.t: "Response from [From.GetName]"
- dh_waldo.9.desc: "REPLACE_ME"
+ dh_waldo.9.desc: "Gracious news, my [Root.Monarch.GetTitle]! Our mission to [From.GetName] was a resounding success, and our representatives have returned with texts in both Latin and the vernacular [Root.Culture.GetName]. It seems that these Protestants are offering us membership in their new fellowship!"
  dh_waldo.9.a: "Let us join our new brothers in faith!"
  other_waldensians_may_convert_to_protestant.tt: "Other Waldensian nations may follow our lead and convert to §BProtestantism§!."
  dh_waldo.9.b: "On second thought, perhaps we are better alone..."
 
- dh_waldo.10.desc: "REPLACE_ME"
+ dh_waldo.10.desc: "My [Root.Monarch.GetTitle], our representatives from [From.GetName] have returned with dour news. It seems that these \"Protestants\" want nothing to do with us and our Waldensian traditions."
  dh_waldo.10.a: "A pity."
 
  heresy_rejected_waldensian_reform: "Rejected Meeting"

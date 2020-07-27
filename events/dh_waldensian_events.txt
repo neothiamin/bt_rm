@@ -700,6 +700,9 @@ country_event = {
 				value = 25
 			}
 		}
+		NOT = {
+			has_global_flag = waldensians_join_reformation
+		}
 	}
 
 	major = yes
@@ -707,9 +710,9 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 240 #20 Years
+		months = 400
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			any_owned_province = {
 				continent = europe
 				any_neighbor_province = {
@@ -719,7 +722,7 @@ country_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			any_ally = {
 				religion = protestant
 				capital_scope = {
@@ -742,11 +745,22 @@ country_event = {
 				tolerance_to_this = 0
 			}
 		}
+		modifier = {
+			factor = 0.75
+			culture_group = germanic 
+		}
+		modifier = {
+			factor = 0.75
+			tag = SAV #Martin Luther wrote to the Duke of Savoy in 1523 to urge him to protect the Waldensians in Piedmont
+		}
+		modifier = {
+			factor = 0.75
+			primary_culture = czech #Most of Luther's writings re: Waldensians were in reference to those in Bohemia
+		}
 	}
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = waldensian_contact_happened
 			random_known_country = {
 				limit = {
 					religion = protestant
@@ -763,6 +777,7 @@ country_event = {
 	#Reach out to these new reformers.
 	option = {
 		name = dh_waldo.7.a
+		dip_power_cost = 25
 		custom_tooltip = heresy_waldo_7_a.tt
 		hidden_effect = {			
 			event_target:heresy_waldensian_protestant_country = {
@@ -777,6 +792,7 @@ country_event = {
 	#Their ideas are nothing new.
 	option = {
 		name = dh_waldo.7.b
+		add_adm_power = 25
 	}
 }
 
@@ -792,10 +808,12 @@ country_event = {
 	#Invite them to a meeting at [Root.Capital.GetCapitalName] to discuss our faiths.
 	option = {
 		name = dh_waldo.8.a
-		FROM = {
-			country_event = {
-				id = dh_waldo.9
-				days = 30
+		hidden_effect = {			
+			FROM = {
+				country_event = {
+					id = dh_waldo.10
+					days = 30
+				}
 			}
 		}
 	}
@@ -803,10 +821,12 @@ country_event = {
 	#While the Waldensians paved the way for our movement, it is time to leave them behind.
 	option = {
 		name = dh_waldo.8.b
-		FROM = {
-			country_event = {
-				id = dh_waldo.10
-				days = 30
+		hidden_effect = {			
+			FROM = {
+				country_event = {
+					id = dh_waldo.10
+					days = 30
+				}
 			}
 		}
 	}
@@ -844,12 +864,13 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = waldensians_join_reformation
 		}
+		add_stability_or_adm_power = yes
 	}
 
 	#On second thought, perhaps not.
 	option = {
 		name = dh_waldo.9.b
-		add_prestige = 5
+		add_prestige = 10
 	}
 }
 
