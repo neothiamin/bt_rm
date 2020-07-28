@@ -428,14 +428,26 @@ christian = {
 	}
 }
 
-#muslim = {
-#
-#	alevi = {
-#		icon = 61
-#		heretic = {	}
-#		color = { 140 250 225 }
-#		allowed_conversion = {
-#			sunni
-#		}
-#	}
-#}
+muslim = {
+
+	alevi = {
+		icon = 61
+		#heretic = {	}
+		color = { 140 250 225 }
+		#allowed_conversion = {
+		#	shiite
+		#}
+		country = {
+			institution_spread_from_true_faith = 0.25 #Alevis are known to look to other, non-traditional religious books and scriptures, such as the Buyruks
+			global_missionary_strength = -0.02 #"Journalist Patrick Kingsley states that for some self-described Alevi, their religion is "simply a cultural identity, rather than a form of worship"" - Wikipedia in concert with https://www.nytimes.com/2017/07/22/world/europe/alevi-minority-turkey-recep-tayyip-erdogan.html?_r=0
+		}
+		province = {
+			local_missionary_strength = -0.02 #"Journalist Patrick Kingsley states that for some self-described Alevi, their religion is "simply a cultural identity, rather than a form of worship"" - Wikipedia in concert with https://www.nytimes.com/2017/07/22/world/europe/alevi-minority-turkey-recep-tayyip-erdogan.html?_r=0
+		}
+		country_as_secondary = {
+			num_accepted_cultures = 1 #"The Alevi faith, on the other hand, is a relatively unstructured interpretation of Islam, open to both genders and, historically, even to non-Muslims" from https://globalpublicsquare.blogs.cnn.com/2012/04/17/are-syrian-alawites-and-turkish-alevis-the-same/
+		}
+		#date = 1445.1.1
+	}
+
+}
