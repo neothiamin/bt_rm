@@ -51,36 +51,6 @@ cathar_center_of_reformation = {
 			factor = 0
 			NOT = { continent = FROM }
 		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 1
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 2
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 3
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 4
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 5
-			}
-		}
 		#Whyyy!? Converted nations get bonuses anyways, and this effectively discourages spreading outside of Cathar nations, which is, you know, the opposite of what should happen.
 		#modifier = {
 		#	factor = 1.25
@@ -218,36 +188,6 @@ waldensian_center_of_reformation = {
 			factor = 0
 			NOT = { continent = FROM }
 		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 1
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 2
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 3
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 4
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 5
-			}
-		}
 		#This seems like a counter-intuitive bonus. Waldensian nations already get big buffs to conversion speed on conversion, so they probably don't need the help of the CoR.
 		#modifier = {
 		#	factor = 1.25
@@ -368,37 +308,7 @@ lollard_center_of_reformation = {
 		modifier = {
 			factor = 0.25
 			has_cardinal = yes
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 1
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 2
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 3
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 4
-			}
-		}
-		modifier = {
-			factor = 0.6
-			owner = {
-				num_of_cardinals = 5
-			}
-		}
+		}		
 		#Like Waldensians, Lollard nations (mostly just England) get big buffs to conversion speed on conversion.
 		#modifier = {
 		#	factor = 1.25

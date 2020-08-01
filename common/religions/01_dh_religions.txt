@@ -369,7 +369,7 @@ christian = {
 		}
 		hre_heretic_religion = yes
 		
-		#fervor = yes
+		fervor = yes
 
 		will_get_center = {
 			any_owned_province = {
