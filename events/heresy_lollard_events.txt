@@ -130,11 +130,10 @@ country_event = {
 		is_religion_enabled = lollard
 		any_owned_province = {
 			religion = lollard
-		}
-		any_owned_province = {
 			OR = {
 				trade_goods = bt_trade_good_books
 				trade_goods = paper
+				has_building = university
 			}
 		}
 	}
@@ -147,6 +146,7 @@ country_event = {
 					OR = {
 						trade_goods = bt_trade_good_books
 						trade_goods = paper
+						has_building = university
 					}
 				}
 				save_event_target_as = heresy_lollard_2_prov

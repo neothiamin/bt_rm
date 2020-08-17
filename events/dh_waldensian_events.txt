@@ -688,6 +688,7 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
+		always = no
 		religion = waldensian
 		is_religion_enabled = protestant
 		capital_scope = {

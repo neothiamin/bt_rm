@@ -1,0 +1,3 @@
+#heresy_lollard_promote_intellectualism = {
+#	sprite = 
+#}
