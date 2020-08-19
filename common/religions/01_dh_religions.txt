@@ -451,3 +451,15 @@ muslim = {
 	}
 
 }
+
+eastern_christian = {
+
+	nestorian = {
+		icon = 31
+		color = { 219 92 106 }
+		date = 1444.1.1
+		heretic = { CATHOLIC }
+	}
+
+	crusade_name = CRUSADE
+}

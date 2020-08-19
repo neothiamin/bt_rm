@@ -1,5 +1,8 @@
 v1.3.3.3:
 
+* Cathar Centers of Reformation can now spawn up to 50 years after the initial resurgence event rather than only up to 25 years
+* Fixed an issue with the "Den of Heresy" event province selection causing the event to fire without an eligible province
+* Cleaned up the trigger in Lollardy in Academia. This event should no longer fire without an eligible province to spawn rebels in
 
 v1.3.3.2:
 
@@ -41,7 +44,7 @@ v1.3.3.2:
 + Added a new Clergy Agenda for Cathar and Waldensians - Seek Alliance with Spiritual Brethren
 + Added a new Clergy estate privilege for Waldensians - Organizational Reform
 + Added a new Clergy estate privilege for Lollards - Grant Bible Translation Exclusivity
-+ Added the new North Wesphalia area to the list of areas eligible for secondary Cathar Centers of Reformation
++ Added the new North Westphalia area to the list of areas eligible for secondary Cathar Centers of Reformation
 + New color for Coptic
 
 * Removed Heresy events from on_actions and returned them to their mean-time-to-happen roots
