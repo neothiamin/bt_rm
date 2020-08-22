@@ -122,7 +122,7 @@
  dh_waldo.3.c:0 "These Waldensians may have a point. Help to alleviate the poverty of these people."
 
  dh_waldo.4.t:0 "Prominent Lay Preacher"
- dh_waldo.4.desc:0 "Those who follow the Waldensian tradition have always been strong advocated of lay preaching. All around Europe one may find Waldensian men and women preaching their heresy on street corners and in marketplaces. Recently, a lay preacher from [dh_waldo_4_t_target.GetName] has amassed quite a bit of renown among his peers and flock as both a skilled wordsmith and a devout follower. Locals say his mastery of the Holy Bible (or, whatever the Waldensians read) is unmatched, and some in our court have suggested we take him in as a sign of good will towards the Waldensian communities in our realm."
+ dh_waldo.4.desc:0 "Those who follow the Waldensian tradition have always been strong advocates of lay preaching. All around Europe one may find Waldensian men and women preaching their heresy on street corners and in marketplaces. Recently, a lay preacher from [dh_waldo_4_t_target.GetName] has amassed quite a bit of renown among his peers and flock as both a skilled wordsmith and a devout follower. Locals say his mastery of the Holy Bible (or, whatever the Waldensians read) is unmatched, and some in our court have suggested we take him in as a sign of good will towards the Waldensian communities in our realm."
  dh_waldo.4.a:0 "We ought to burn him at the stake, not invite him to court!"
  dh_waldo.4.b:0 "Perhaps his unabashed heresy will inspire us righteous Christians to be more pious."
  dh_waldo.4.c:0 "As a preacher, he has no merit. As an inquisitor, though..."
