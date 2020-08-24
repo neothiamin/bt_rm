@@ -44,6 +44,7 @@ christian = {
 	hussite = {
 		color = { 234 117 82 }
 	}
+
 	##NEW
 	cathar = {
 		color = { 64 196 255 } #40C4FF
@@ -456,8 +457,8 @@ eastern_christian = {
 
 	nestorian = {
 		icon = 31
-		color = { 219 92 106 }
-		date = 1445.1.1
+		color = { 216 114 162 }
+		date = 1444.1.1
 		heretic = { CATHOLIC }
 	}
 
