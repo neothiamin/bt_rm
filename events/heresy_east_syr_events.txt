@@ -1,0 +1,9 @@
+#################################
+# Events related to the East Syriac faith
+#
+# made for the Beyond Typus addon "Heresy!"
+#
+# by neothiamin
+#################################
+
+namespace = heresy_east_syr

@@ -290,3 +290,17 @@ dh_can_have_heresy_cor_trigger = {
 		}
 	}
 }
+
+#Province scope
+heresy_can_have_eastern_heresy_cor_trigger = {
+	continent = asia
+	is_reformation_center = no
+	is_island = no
+	expelling_minorities = no
+	NOT = {
+		num_of_centers_of_reformation = {
+			religion = $RELIGION$
+			count = 3
+		}
+	}
+}

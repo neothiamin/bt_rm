@@ -195,7 +195,9 @@ province_event = {
 	trigger = {
 		religion = waldensian
 		owner = {
-			religion = catholic
+			NOT = {
+				religion = waldensian
+			}
 		}
 		has_construction = missionary
 		NOT = {

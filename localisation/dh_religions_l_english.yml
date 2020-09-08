@@ -6,7 +6,7 @@
  waldensian:0 "Waldensian"
  lollard:0 "Lollard"
  alevi: "Alevi"
- nestorian: "East Syriac"
+ nestorian: "Nestorian"
 
  PAPIST:0 "Papist"
  CATHOLIC: "Catholic"
@@ -16,7 +16,7 @@
  waldensian_religion_desc:0 "Founded in the late 12th century, Waldensians are followers of the teachings of Peter Vaudès, a spiritual leader from Lyon, France. Waldensians are anti-clerical, and advocate a return to vows of poverty coupled with the practice of lay preaching, or preaching by people not designated as members of the clergy. Waldensians, unlike other contemporary movements like the Cathars, survived for centuries after the initial foundation of their belief system, and are considered to be one of the primary forerunners of the Protestant Reformation."
  lollard_religion_desc:0 ""
  alevi_religion_desc: ""
- nestorian_religion_desc: "The Church of the East, known also - inaccurately - as the \"Nestorian\" Church, is a Christian church following the East Syriac rite and established circa 410 CE at the Council of Seleucia-Ctesiphon. In its early days, the Church of the East was the national church of the Sassanian Empire, the last Persian empire prior to the arrival of Islam to Persia, and existed in full communion with the \"Great Church\" of the Roman Empire. Following the Council of Ephesus in 431, the Church of the East sided with Nestorius, Patriarch of Constantinople after his condemnation by the Council, leading to the severing of the Church of the East from the rest of Christendom. The Church of the East was weakened severely in the 14th century, when its followers faced fierce persecution, and by 1552 the Church was a shadow of its former self."
+ nestorian_religion_desc: "The Church of the East, known more commonly as the Nestorian Church, is a Christian church following the East Syriac rite and established circa 410 CE at the Council of Seleucia-Ctesiphon. In its early days, the Church of the East was the national church of the Sassanian Empire, the last Persian empire prior to the arrival of Islam to Persia, and existed in full communion with the \"Great Church\" of the Roman Empire. Following the Council of Ephesus in 431, the Church of the East sided with Nestorius, Patriarch of Constantinople after his condemnation by the Council, leading to the severing of the Church of the East from the rest of Christendom. The Church of the East was weakened severely in the 14th century, when its followers faced fierce persecution, and by 1552 the Church was a shadow of its former self."
 
  cathar_center_of_reformation:0 "Center of Reformation"
  CATHAR_ASPECTS_LONG:0 "Aspects of Faith"

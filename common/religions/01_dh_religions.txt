@@ -70,7 +70,7 @@ christian = {
 		}
 		#hre_heretic_religion = yes
 		
-		heretic = { BOGOMILIST SOCINIAN }
+		#heretic = { BOGOMILIST SOCINIAN } #Useless because heretic rebels only spawn for Catholics
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		aspects = {
@@ -110,6 +110,11 @@ christian = {
 					amount = 3
 				}
 			}
+			NOT = {
+				any_owned_province = {
+					is_reformation_center = yes
+				}
+			}
 		}
 
 		on_convert = {
@@ -147,15 +152,13 @@ christian = {
 							dh_can_have_heresy_cor_trigger = {
 								RELIGION = cathar
 							}							
-							NOT = {
-								owner = {									
-									calc_true_if = {
-										all_province = {
-											religion = cathar
-											is_reformation_center = yes
-										}
-										amount = 3
+							NOT = {								
+								calc_true_if = {
+									all_province = {
+										religion = cathar
+										is_reformation_center = yes
 									}
+									amount = 3
 								}
 							}
 						}
@@ -204,7 +207,7 @@ christian = {
 			dh_conv_to_waldo = yes
 		}
 		
-		heretic = { BOGOMILIST SOCINIAN }
+		#heretic = { BOGOMILIST SOCINIAN } #Useless because heretic rebels only spawn for Catholics
 
 		allowed_center_conversion = {
 			catholic
@@ -234,7 +237,7 @@ christian = {
 		#hre_heretic_religion = yes
 		fervor = yes
 		
-		heretic = { BOGOMILIST SOCINIAN }
+		#heretic = { BOGOMILIST SOCINIAN } #Useless because heretic rebels only spawn for Catholics
 
 		will_get_center = {
 			any_owned_province = {
@@ -249,6 +252,11 @@ christian = {
 						is_reformation_center = yes
 					}
 					amount = 3
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					is_reformation_center = yes
 				}
 			}
 		}
@@ -294,14 +302,12 @@ christian = {
 								RELIGION = waldensian
 							}														
 							NOT = {
-								owner = {
-									calc_true_if = {
-										all_province = {
-											religion = waldensian
-											is_reformation_center = yes
-										}
-										amount = 3
+								calc_true_if = {
+									all_province = {
+										religion = waldensian
+										is_reformation_center = yes
 									}
+									amount = 3
 								}
 							}
 						}
@@ -375,6 +381,18 @@ christian = {
 		will_get_center = {
 			any_owned_province = {
 				region = british_isles_region
+				dh_can_have_heresy_cor_trigger = {
+					RELIGION = lollard
+				}
+			}																		
+			NOT = {
+				calc_true_if = {							
+					all_province = {
+						religion = lollard
+						is_reformation_center = yes
+					}
+					amount = 3
+				}
 			}
 		}
 
@@ -384,7 +402,7 @@ christian = {
 			waldensian
 		}
 		
-		heretic = { PAPIST }
+		#heretic = { PAPIST } #Useless because heretic rebels only spawn for Catholics
 		
 		on_convert = {		
 			dh_conv_to_lollard = yes
@@ -394,6 +412,9 @@ christian = {
 				limit = {
 					any_owned_province = {
 						region = british_isles_region
+						dh_can_have_heresy_cor_trigger = {
+							RELIGION = lollard
+						}
 					}
 				}				
 				random_owned_province = {
@@ -403,14 +424,12 @@ christian = {
 							RELIGION = lollard
 						}																				
 						NOT = {
-							owner = {
-								calc_true_if = {							
-									all_province = {
-										religion = lollard
-										is_reformation_center = yes
-									}
-									amount = 3
+							calc_true_if = {							
+								all_province = {
+									religion = lollard
+									is_reformation_center = yes
 								}
+								amount = 3
 							}
 						}
 					}
@@ -431,35 +450,39 @@ christian = {
 
 muslim = {
 
-	alevi = {
-		icon = 61
-		#heretic = {	}
-		color = { 140 250 225 }
-		#allowed_conversion = {
-		#	shiite
-		#}
-		country = {
-			institution_spread_from_true_faith = 0.25 #Alevis are known to look to other, non-traditional religious books and scriptures, such as the Buyruks
-			global_missionary_strength = -0.02 #"Journalist Patrick Kingsley states that for some self-described Alevi, their religion is "simply a cultural identity, rather than a form of worship"" - Wikipedia in concert with https://www.nytimes.com/2017/07/22/world/europe/alevi-minority-turkey-recep-tayyip-erdogan.html?_r=0
-		}
-		province = {
-			local_missionary_strength = -0.02 #"Journalist Patrick Kingsley states that for some self-described Alevi, their religion is "simply a cultural identity, rather than a form of worship"" - Wikipedia in concert with https://www.nytimes.com/2017/07/22/world/europe/alevi-minority-turkey-recep-tayyip-erdogan.html?_r=0
-		}
-		country_as_secondary = {
-			num_accepted_cultures = 1 #"The Alevi faith, on the other hand, is a relatively unstructured interpretation of Islam, open to both genders and, historically, even to non-Muslims" from https://globalpublicsquare.blogs.cnn.com/2012/04/17/are-syrian-alawites-and-turkish-alevis-the-same/
-		}
-		#date = 1445.1.1
-	}
+	#alevi = {
+	#	icon = 61
+	#	#heretic = {	}
+	#	color = { 140 250 225 }
+	#	#allowed_conversion = {
+	#	#	shiite
+	#	#}
+	#	country = {
+	#		institution_spread_from_true_faith = 0.25 #Alevis are known to look to other, non-traditional religious books and scriptures, such as the Buyruks
+	#		global_missionary_strength = -0.02 #"Journalist Patrick Kingsley states that for some self-described Alevi, their religion is "simply a cultural identity, rather than a form of worship"" - Wikipedia in concert with https://www.nytimes.com/2017/07/22/world/europe/alevi-minority-turkey-recep-tayyip-erdogan.html?_r=0
+	#	}
+	#	province = {
+	#		local_missionary_strength = -0.02 #"Journalist Patrick Kingsley states that for some self-described Alevi, their religion is "simply a cultural identity, rather than a form of worship"" - Wikipedia in concert with https://www.nytimes.com/2017/07/22/world/europe/alevi-minority-turkey-recep-tayyip-erdogan.html?_r=0
+	#	}
+	#	country_as_secondary = {
+	#		num_accepted_cultures = 1 #"The Alevi faith, on the other hand, is a relatively unstructured interpretation of Islam, open to both genders and, historically, even to non-Muslims" from https://globalpublicsquare.blogs.cnn.com/2012/04/17/are-syrian-alawites-and-turkish-alevis-the-same/
+	#	}
+	#	date = 1445.1.1
+	#}
 
 }
 
 eastern_christian = {
 
+	center_of_religion = 410 #Baghdad/Seleucia-Ctesiphon - site of the Council of Seleucia-Ctesiphon which established the Church of the East
+
 	nestorian = {
 		icon = 31
 		color = { 216 114 162 }
 		date = 1444.1.1
-		heretic = { CATHOLIC }
+		#heretic = { CATHOLIC } #Useless because heretic rebels only spawn for Catholics
+
+		misguided_heretic = yes
 	}
 
 	crusade_name = CRUSADE
