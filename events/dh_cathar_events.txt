@@ -706,7 +706,7 @@ country_event = {
 		}
 		event_target:dh_albi_4_target = {
 			random = {
-				chance = 25
+				chance = 75
 				spawn_rebels = {
 					size = 1
 					type = cathar_rebels
@@ -743,7 +743,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = cathar_rebels
-						win = yes
+						#win = yes
 					}
 					add_province_modifier = {
 						name = dh_den_of_heresy_4
