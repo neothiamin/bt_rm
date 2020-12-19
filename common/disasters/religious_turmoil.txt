@@ -10,7 +10,6 @@ religious_turmoil = {
 			religion = reformed
 		}
 		OR = {
-			is_religion_enabled = cathar
 			is_religion_enabled = protestant
 		}
 		NOT = { tag = FRA }
@@ -32,6 +31,8 @@ religious_turmoil = {
 				religion = protestant
 				religion = reformed
 				religion = cathar
+				religion = waldensian
+				religion = lollard
 			}
 		}
 	}
@@ -94,6 +95,9 @@ religious_turmoil = {
 								religion = catholic
 								religion = protestant
 								religion = reformed
+								religion = cathar
+								religion = waldensian
+								religion = lollard
 							}
 						}		
 					}

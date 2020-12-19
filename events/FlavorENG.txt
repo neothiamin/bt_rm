@@ -38,6 +38,10 @@ country_event = {
 		months = 60
 	}
 
+	major_trigger = {
+		has_global_flag = dh_lollard_religion_enabled
+	}
+
 	immediate = {
 		hidden_effect = {
 			set_global_flag = lollard_heresy

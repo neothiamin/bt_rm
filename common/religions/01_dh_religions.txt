@@ -1,7 +1,7 @@
 christian = {
 
 	catholic = {
-		color = { 248 206 229 }
+		color = { 237 206 223 }
 		icon = 1
 		allowed_conversion = {
 			reformed
@@ -445,7 +445,16 @@ christian = {
 		}
 		
 		date = 1445.1.1
+	}	
+
+	nestorian = {
+		icon = 31
+		color = { 219 92 106 }
+		date = 1445.1.1
+		heretic = { CATHOLIC }
 	}
+
+
 }
 
 muslim = {
@@ -467,23 +476,12 @@ muslim = {
 	#	country_as_secondary = {
 	#		num_accepted_cultures = 1 #"The Alevi faith, on the other hand, is a relatively unstructured interpretation of Islam, open to both genders and, historically, even to non-Muslims" from https://globalpublicsquare.blogs.cnn.com/2012/04/17/are-syrian-alawites-and-turkish-alevis-the-same/
 	#	}
-	#	date = 1445.1.1
+	#	#date = 1445.1.1
 	#}
 
 }
 
 eastern_christian = {
-
-	center_of_religion = 410 #Baghdad/Seleucia-Ctesiphon - site of the Council of Seleucia-Ctesiphon which established the Church of the East
-
-	nestorian = {
-		icon = 31
-		color = { 216 114 162 }
-		date = 1444.1.1
-		#heretic = { CATHOLIC } #Useless because heretic rebels only spawn for Catholics
-
-		misguided_heretic = yes
-	}
 
 	crusade_name = CRUSADE
 }
