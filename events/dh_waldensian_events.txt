@@ -74,6 +74,12 @@ province_event = {
 
 	major = yes
 
+	major_trigger = {
+		any_neighbor_country = {
+			tag = FROM
+		}
+	}
+
 	#Surely they will keep to themselves, yes?
 	option = {
 		name = dh_waldo.1.a
@@ -155,6 +161,14 @@ province_event = {
 				}
 			}
 			is_reformation_center = yes
+		}
+	}
+
+	major = yes
+
+	major_trigger = {
+		any_neighbor_country = {
+			tag = FROM
 		}
 	}
 

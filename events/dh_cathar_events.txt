@@ -52,6 +52,12 @@ province_event = {
 
 	major = yes
 
+	major_trigger = {
+		any_neighbor_country = {
+			tag = FROM
+		}
+	}
+
 	#Not again...
 	option = {
 		name = dh_albi.1.a
@@ -126,6 +132,14 @@ province_event = {
 		is_reformation_center = no
 		dh_can_have_heresy_cor_trigger = {
 			RELIGION = cathar
+		}
+	}
+
+	major = yes
+
+	major_trigger = {
+		any_neighbor_country = {
+			tag = FROM
 		}
 	}
 	
