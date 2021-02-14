@@ -6,6 +6,9 @@ v1.3.3.3:
 * Fixed incorrect localization for the "Prominent Lay Preacher" event's description
 * The "Traveling Troubadours" event now occurs less often
 * In the "Den of Heresy" event, letting the church handle the heretics now makes rebels rise up 75% of the time rather than 25% of the time, and the rebels spawned by sending in the inquisitors no longer take control of the province they spawn in immediately
+* Made minor corrections in Catharism's description
+* Finally wrote a description for Lollardy
+
 v1.3.3.2:
 
 + Added localization for French, Spanish, and German to prevent localization keys being displayed in place of localized text. The text is identical to the English localization because I do not speak French, Spanish, or German. If you would like to contribute translations for these languages, please reach out to me!
