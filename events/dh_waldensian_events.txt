@@ -371,9 +371,10 @@ country_event = {
 		capital_scope = {
 			continent = europe
 		}
-		NOT = {
-			religion = waldensian
-		}
+		#NOT = {
+		#	religion = waldensian
+		#}
+		religion_group = christian
 		any_owned_province = {
 			religion = waldensian			
 			continent = europe

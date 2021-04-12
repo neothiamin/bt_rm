@@ -161,7 +161,7 @@
  dh_flavor_eng.9100c:0 "Take up the Lollard cross! Down with the papists!"
 
  heresy_lollard.1.t: "Local Clergyman accused of Abuse of Assets"
- heresy_lollard.1.desc: "The \"possession\" of ecclesiastical assets by the [Root.GetClergyName] is not possession at all, in fact. God has entrusted the [Root.GetClergyName] with the care and custody of these assets, and they are to be used to praise Him. However, recently, an influential noble from [heresy_lollard.1_prov.GetName] has accused the local clergy of abusing their privileges. The details are muddy, but he assures us that something nefarious is taking place. He suggests that these assets should be declared forfeit and granted to the [Root.GetNobilityOrFallbackName], who, of course, will take care of them piously."
+ heresy_lollard.1.desc: "The \"possession\" of ecclesiastical assets by the [Root.GetClergyName] is not possession at all, in fact. God has entrusted the [Root.GetClergyName] with the care and custody of these assets, and they are to be used to praise Him. However, recently, an influential noble from [heresy_lollard_1_prov.GetName] has accused the local clergy of abusing their privileges. The details are muddy, but he assures us that something nefarious is taking place. He suggests that these assets should be declared forfeit and granted to the [Root.GetNobilityOrFallbackName], who, of course, will take care of them piously."
  heresy_lollard.1.a: "Side with the [Root.GetNobilityOrFallbackName]."
  heresy_lollard.1.b: "Side with the [Root.GetClergyName]."
  heresy_lollard.1.c: "Seize the assets for the crown."

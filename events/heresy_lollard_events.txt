@@ -30,7 +30,7 @@ country_event = {
 			limit = {
 				religion = lollard
 			}
-			save_event_target_as = heresy_lollard.1_prov
+			save_event_target_as = heresy_lollard_1_prov
 		}
 	}
 

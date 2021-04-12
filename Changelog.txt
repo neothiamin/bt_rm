@@ -1,3 +1,7 @@
+v1.3.3.4:
+* Restricted "Popularity Among the Poor" so that it can only fire for Christian nations, and adjusted the localization to match
+
+
 v1.3.3.3:
 
 * Cathar Centers of Reformation can now spawn up to 50 years after the initial resurgence event rather than only up to 25 years
