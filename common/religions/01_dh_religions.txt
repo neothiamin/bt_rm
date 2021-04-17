@@ -475,6 +475,25 @@ muslim = {
 	#	#date = 1445.1.1
 	#}
 
+	sunni = {
+		allowed_conversion = {
+			nestorian
+		}
+	}
+	shiite = {
+		allowed_conversion = {
+			nestorian
+		}
+	}
+
+}
+
+dharmic = {
+	hinduism = {
+		allowed_conversion = {
+			nestorian
+		}
+	}
 }
 
 eastern_christian = {

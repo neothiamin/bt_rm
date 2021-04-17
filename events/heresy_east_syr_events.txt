@@ -26,8 +26,6 @@ province_event = {
 
     immediate = {
         hidden_effect = {
-            enable_religion = nestorian
-            change_religion = nestorian
             save_global_event_target_as = heresy_east_syr_origin
         }
     }
@@ -45,9 +43,7 @@ province_event = {
     #Worrying news.
     option = {
         name = heresy_east_syr.1.a
-        tooltip = {            
-            enable_religion = nestorian
-            change_religion = nestorian
-        }
+        enable_religion = nestorian
+        change_religion = nestorian
     }
 }
