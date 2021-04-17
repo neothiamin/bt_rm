@@ -6,7 +6,7 @@
  waldensian:0 "Waldensian"
  lollard:0 "Lollard"
  alevi: "Alevi"
- nestorian: "East Syriac"
+ nestorian: "Nestorian"
 
  PAPIST:0 "Papist"
  CATHOLIC: "Catholic"
@@ -40,3 +40,4 @@
  waldensian_center_of_reformation:0 "Center of Reformation"
  lollard_center_of_reformation:0 "Center of Reformation"
  alevi_center_of_reformation: ""
+ heresy_east_syr_cor: "Center of Reformation"

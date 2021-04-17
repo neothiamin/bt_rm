@@ -97,6 +97,21 @@ dh_waldo_spread_area = {
 	}
 }
 
+heresy_nestorian_spawn_area = {
+	OR = {
+		area = iraq_arabi_area
+		area = basra_area
+		area = shahrizor_area
+		area = rakka_area
+		area = al_jazira_area
+		area = mardin_area
+		area = luristan_area
+		area = khuzestan_area
+		area = azerbaijan_area
+		area = tabriz_area
+	}
+}
+
 #################################
 # Additional Area triggers
 #################################

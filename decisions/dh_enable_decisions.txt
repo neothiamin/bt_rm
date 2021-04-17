@@ -1,5 +1,7 @@
 country_decisions = {
 
+	###Cathar
+
 	dh_enable_albi = {
 
 		potential = {
@@ -30,6 +32,8 @@ country_decisions = {
 		}
 
 	}
+
+	###Fraticelli
 
 	dh_enable_fratelli = {
 
@@ -86,6 +90,8 @@ country_decisions = {
 		}
 	}
 
+	###Waldensian
+
 	dh_enable_waldo = {
 
 		potential = {
@@ -140,6 +146,8 @@ country_decisions = {
 		}
 	}
 
+	###Lollard
+
 	dh_enable_lollard = {
 
 		potential = {
@@ -169,6 +177,37 @@ country_decisions = {
 		effect = {
 			custom_tooltip = dh_enable_lollard.tt
 			set_global_flag = dh_lollard_religion_enabled
+		}
+	}
+
+	#Nestorian / East Syriac
+
+	heresy_enable_east_syr = {
+
+		potential = {
+			ai = no
+			NOT = {
+				has_global_flag = heresy_east_syr_enabled
+			}
+			NOT = {
+				is_year = 1450
+			}
+		}
+
+		allow = {
+			ai = no
+			NOT = {
+				is_year = 1450
+			}
+		}
+
+		provinces_to_highlight = {
+			heresy_nestorian_spawn_area = yes
+		}
+
+		effect = {
+			custom_tooltip = heresy_enable_east_syr.tt
+			set_global_flag = heresy_east_syr_enabled
 		}
 	}
 

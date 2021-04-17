@@ -194,3 +194,8 @@
  heresy_lollard.2.a: "This shall not stand. Have the heretic arrested, and their tenure revoked!"
  heresy_lollard.2.b: "If they can teach the trivium and quadrivium, what difference does it make?"
  heresy_lollard.2.c: "I don't know, it makes sense to me..."
+
+ #Nestorian Events
+ heresy_east_syr.1.t: "Talkative Nestorian Minister"
+ heresy_east_syr.1.desc: "While the Church of the East has existed for a millennium, the past few centuries have not been kind to it. Recently, the Church of the East's members have been content to live in peace, paying their taxes and practicing the \"live and let live\" doctrine that most marginalized communities adopt out of necessity. However, one local minister in [Root.GetName] has recently become more... talkative. While his messages are not out of the ordinary for East Syriac rite practitioners, the vocality of this minister is worrying news, and may set a dangerous precedent for future Nestorian clergy members."
+ heresy_east_syr.1.a: "Worrying news indeed."

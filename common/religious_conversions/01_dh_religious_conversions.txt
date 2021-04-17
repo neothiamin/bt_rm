@@ -363,3 +363,38 @@ lollard_center_of_reformation = {
 		}
 	}
 }
+
+heresy_east_syr_cor = {
+
+	religion = nestorian
+
+	base_conversion_speed = 1.5 #A little less than vanilla. Will have to play with it.
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 250.0
+
+	target_province_weights = {
+		factor = 1
+
+		#These ones are kind of necessary
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}		
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+
+
+	}
+}

@@ -16,5 +16,9 @@
 			"path": "..\\..\\..\\..\\Games\\Steam Library\\steamapps\\workshop\\content\\236850\\1822390916"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*txt": "eu4"
+		}
+	}
 }

@@ -39,6 +39,10 @@ christian = {
 		color = {
 			160 143 168 #A08FA8
 		}
+
+		allowed_conversion = {
+			nestorian
+		}
 	}
 
 	hussite = {
@@ -447,14 +451,6 @@ christian = {
 		date = 1445.1.1
 	}	
 
-	nestorian = {
-		icon = 31
-		color = { 219 92 106 }
-		date = 1445.1.1
-		heretic = { CATHOLIC }
-	}
-
-
 }
 
 muslim = {
@@ -482,6 +478,21 @@ muslim = {
 }
 
 eastern_christian = {
+
+	center_of_religion = 410 #Baghdad - meant to represent Seleucia-Ctesiphon
+
+
+	nestorian = {
+		icon = 31
+		color = { 219 92 106 }
+		date = 1445.1.1
+		heretic = { CATHOLIC }
+
+		country = {
+			prestige_decay = -0.01
+			trade_range_modifier = 0.25
+		}
+	}
 
 	crusade_name = CRUSADE
 }

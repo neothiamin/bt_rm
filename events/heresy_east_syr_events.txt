@@ -7,3 +7,47 @@
 #################################
 
 namespace = heresy_east_syr
+
+#Talkative Nestorian Bishop
+province_event = {
+    id = heresy_east_syr.1
+    title = heresy_east_syr.1.t
+    desc = heresy_east_syr.1.desc
+    picture = RELIGIOUS_TURMOIL_eventPicture
+    goto = root
+
+    trigger = {
+        heresy_nestorian_spawn_area = yes
+        had_global_flag = {
+            flag = heresy_east_syr_enabled
+            days = 730
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            enable_religion = nestorian
+            change_religion = nestorian
+            save_global_event_target_as = heresy_east_syr_origin
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    major = yes
+
+    major_trigger = {
+        is_neighbor_of = FROM
+    }
+
+    #Worrying news.
+    option = {
+        name = heresy_east_syr.1.a
+        tooltip = {            
+            enable_religion = nestorian
+            change_religion = nestorian
+        }
+    }
+}
