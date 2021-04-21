@@ -26,6 +26,9 @@ christian = {
 
 	orthodox = {
 		color = { 127 23 52 }
+		allowed_conversion = {
+			nestorian
+		}
 	}
 
 	anglican = {
@@ -514,7 +517,7 @@ eastern_christian = {
 
 		allowed_center_conversion = {
 			sunni
-			shia
+			shiite
 			coptic
 			hinduism
 		}
@@ -527,7 +530,19 @@ eastern_christian = {
 				name = "conversion_zeal"
 				duration = 3650
 			}	
+
+			random_owned_province = {
+				add_reform_center = nestorian
+			}
 		}
+
+		will_get_center = {
+			any_owned_province = {				
+				heresy_can_have_eastern_heresy_cor_trigger = yes
+			}
+		}
+
+		
 	}
 
 	crusade_name = CRUSADE

@@ -368,7 +368,7 @@ heresy_east_syr_cor = {
 
 	religion = nestorian
 
-	base_conversion_speed = 1.5 #A little less than vanilla. Will have to play with it.
+	base_conversion_speed = 2 #A little less than vanilla. Will have to play with it.
 
 	map_icon = GFX_religious_conversion_center_protestant
 

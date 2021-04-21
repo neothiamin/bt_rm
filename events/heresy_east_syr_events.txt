@@ -22,6 +22,9 @@ province_event = {
             flag = heresy_east_syr_enabled
             days = 730
         }
+        NOT = {
+            is_religion_enabled = nestorian
+        }
     }
 
     immediate = {
@@ -34,6 +37,8 @@ province_event = {
         months = 30
     }
 
+    fire_only_once = yes
+
     major = yes
 
     major_trigger = {
@@ -45,5 +50,6 @@ province_event = {
         name = heresy_east_syr.1.a
         enable_religion = nestorian
         change_religion = nestorian
+        add_reform_center = nestorian
     }
 }
