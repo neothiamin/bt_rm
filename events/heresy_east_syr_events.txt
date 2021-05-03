@@ -42,7 +42,12 @@ province_event = {
     major = yes
 
     major_trigger = {
-        is_neighbor_of = FROM
+        OR = {
+            any_owned_province = {
+                heresy_nestorian_spawn_area = yes
+            }
+            is_neighbor_of = FROM
+        }
     }
 
     #Worrying news.

@@ -418,5 +418,10 @@ heresy_east_syr_cor = {
 			factor = 1.2
 			culture = syriac_culture
 		}
+
+		modifier = {
+			factor = 1.05
+			province_id = 1099 #Socotra
+		}
 	}
 }
