@@ -41,12 +41,12 @@ dh_waldo_3_b_modifier = {
 
 #Troubadour Tantrums
 dh_albi_9_b_mod = {
-	local_unrest = 8
+	local_unrest = 4
 }
 
 #Scoffed at Lay Preacher - prov
 dh_waldo_4_a_modifier = {
-	local_unrest = 6
+	local_unrest = 4
 	local_tax_modifier = -0.25
 }
 
