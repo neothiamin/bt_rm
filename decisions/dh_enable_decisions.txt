@@ -185,6 +185,7 @@ country_decisions = {
 	heresy_enable_east_syr = {
 
 		potential = {
+			always = no
 			ai = no
 			NOT = {
 				has_global_flag = heresy_east_syr_enabled
