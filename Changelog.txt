@@ -1,6 +1,11 @@
-v1.3.3.4:
-* Restricted "Popularity Among the Poor" so that it can only fire for Christian nations, and adjusted the localization to match
+1.3.5:
 
+* Nerfed Cathar Bishoprics because holy hell they were strong
+
+v1.3.4:
+
+* Restricted "Popularity Among the Poor" so that it can only fire for Christian nations, and adjusted the localization to match
+* Updated to BT 14/EU4 1.32
 
 v1.3.3.3:
 

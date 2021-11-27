@@ -32,7 +32,9 @@ province_event = {
 				flag = dh_cathar_religion_enabled
 				days = 2920	#8 years
 			}
-			reform_desire = 0.25
+			owner = {				
+				reform_desire = 0.25
+			}
 		}
 		development = 12
 		is_reformation_center = no

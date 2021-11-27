@@ -1,4 +1,4 @@
-version="1.4"
+version="1.3.5"
 tags={
 	"Religion"
 	"Alternative History"

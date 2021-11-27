@@ -120,6 +120,7 @@ christian = {
 			NOT = {
 				any_owned_province = {
 					is_reformation_center = yes
+					religion = cathar
 				}
 			}
 		}
@@ -264,6 +265,7 @@ christian = {
 			NOT = {
 				any_owned_province = {
 					is_reformation_center = yes
+					religion = waldensian
 				}
 			}
 		}

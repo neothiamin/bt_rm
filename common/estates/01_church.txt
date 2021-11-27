@@ -234,6 +234,48 @@ estate_church = {
 			religion = confucianism
 		}
 	}	
+	custom_name = {
+		desc = estate_kahuna
+		trigger = {
+			capital_scope = {
+				area = northern_polynesia_area
+			}
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_tohunga
+		trigger = {
+			primary_culture = maori
+			religion = animism
+		}
+	}		
+	custom_name = {
+		desc = estate_taula_otua
+		trigger = {
+			tag = TOG
+			religion = animism
+		}
+	}	
+	custom_name = {
+		desc = estate_taula_aitu
+		trigger = {
+			tag = SAM
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_bete
+		trigger = {
+			OR = {
+				tag = LGN # changed from LAI
+				tag = VIL
+				tag = VNL
+			}
+			religion = animism
+		}
+	}
 	#Heresy
 	custom_name = {
 		desc = heresy_cathar_perfect
@@ -261,6 +303,14 @@ estate_church = {
 		estate_church_monopoly_of_wine
 		estate_church_monopoly_of_slaves
 		estate_church_statutory_rights
+		estate_church_yakobs_churches
+		estate_church_one_faith_one_culture
+		estate_church_religious_diplomats
+		estate_church_heir_shrine
+		estate_church_embrace_singluar_cult
+		estate_church_flexible_cults
+		estate_church_scholar_connections
+		estate_church_integrated_school
 		#Heresy
 		heresy_waldo_estate_church_organized_preaching
 		heresy_lollard_estate_church_bible_translation

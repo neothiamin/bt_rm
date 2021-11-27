@@ -10,7 +10,7 @@ cathar_center_of_reformation = {
 
 	max_distance = 150.0 #Distance from CoR province. Vanilla CoRs are all 150, but Cathar CoRs are pretty much all in/near France, so the lower distance seems ok.
 
-	base_conversion_speed = 2 #Same as vanilla. Tested at 1.5 for a while and it was still very slow. Plus it rounded down to 1 visually. Blech.
+	base_conversion_speed = 3 #Faster than vanilla to account for the 2482348923 provinces in Germany with BT 14
 
 	target_province_weights = {
 		factor = 2
@@ -147,7 +147,7 @@ waldensian_center_of_reformation = {
 	map_icon = GFX_religious_conversion_center_protestant
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
-	base_conversion_speed = 2 	#Identical to vanilla. I tested it at 1 for a while and conversion was sooo sloowwww
+	base_conversion_speed = 3 	#Faster than vanilla to account for the 2482348923 provinces in Germany with BT 14
 
 	target_province_weights = {
 		factor = 2

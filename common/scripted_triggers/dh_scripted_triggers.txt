@@ -285,6 +285,12 @@ dh_can_have_heresy_cor_trigger = {
 		religion = catholic
 		religion = $RELIGION$
 	}
+	owner = {
+		OR = {			
+			religion = catholic
+			religion = $RELIGION$
+		}
+	}
 	NOT = { province_id = 118 }
 	#is_in_capital_area = yes
 	is_reformation_center = no
