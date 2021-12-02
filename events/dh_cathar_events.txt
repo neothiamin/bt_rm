@@ -804,7 +804,7 @@ country_event = {
 	#Changed back to MTTH
 
 	mean_time_to_happen = {
-		years = 10
+		years = 20
 	}
 	
 	trigger = {
@@ -843,7 +843,7 @@ country_event = {
 		name = dh_albi.6.a
 		add_country_modifier = {
 			name = dh_albi_6_a_mod
-			duration = 1825
+			duration = 3650
 		}
 	}
 
@@ -853,7 +853,7 @@ country_event = {
 		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = dh_albi_6_b_mod
-			duration = 3650
+			duration = 5475
 		}
 	}
 }

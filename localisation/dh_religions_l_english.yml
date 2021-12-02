@@ -19,8 +19,8 @@
  nestorian_religion_desc: "The Church of the East, known more commonly as the Nestorian Church, is a Christian church following the East Syriac rite and established circa 410 CE at the Council of Seleucia-Ctesiphon. In its early days, the Church of the East was the national church of the Sassanian Empire, the last Persian empire prior to the arrival of Islam to Persia, and existed in full communion with the \"Great Church\" of the Roman Empire. Following the Council of Ephesus in 431, the Church of the East sided with Nestorius, Patriarch of Constantinople after his condemnation by the Council, leading to the severing of the Church of the East from the rest of Christendom. The Church of the East was weakened severely in the 14th century, when its followers faced fierce persecution, and by 1552 the Church was a shadow of its former self."
 
  cathar_center_of_reformation:0 "Center of Reformation"
- CATHAR_ASPECTS_LONG:0 "Aspects of Faith"
- CATHAR_ASPECTS_SHORT:0 "aspects"
+ CATHAR_ASPECTS_LONG:0 "Aspect of Faith"
+ CATHAR_ASPECTS_SHORT:0 "aspect"
 
  cathar_bishoprics_aspect:0 "Localized Dioceses"
  desc_cathar_bishoprics_aspect:0 "The Cathar tradition, unlike that of the Catholics, does not have a bureaucracy that reaches to Hell and back in length and complicatedness; rather, Cathars rely more on each other than on any bishop or archbishop or pope etc. However, there is always a need for some small-scale organization in any faith. By establishing localized dioceses we can maintain the local fraternity of good Cathars while at the same time keeping the flock organized."
