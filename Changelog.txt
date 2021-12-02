@@ -3,6 +3,7 @@ v1.3.6:
 * Further reduced HRE Heretic Penalty
 * Increased MTTH for "Accusations of Greed" event
 * Corrected some localization grammar
+* Recolored BT's Apostolic religion
 
 v1.3.5:
 
