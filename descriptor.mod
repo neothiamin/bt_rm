@@ -8,7 +8,7 @@ tags={
 }
 dependencies={
 	"Beyond Typus"
-	"BT github"
+	"-BT Addon: Byzantine Resurgence"
 }
 name="-BT Addon: Heresy!"
 picture="thumbnail.png"
