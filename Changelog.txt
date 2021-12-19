@@ -4,6 +4,9 @@ v1.3.6:
 * Increased MTTH for "Accusations of Greed" event
 * Corrected some localization grammar
 * Recolored BT's Apostolic religion
+* Readded some clergy privileges I accidentally left out
+* Fixed some CoR spawning triggers
+* Removed a reference to Idea Groups Expanded
 
 v1.3.5:
 

@@ -121,12 +121,6 @@ christian = {
 					amount = 3
 				}
 			}
-			NOT = {
-				any_owned_province = {
-					is_reformation_center = yes
-					religion = cathar
-				}
-			}
 		}
 
 		on_convert = {
@@ -544,7 +538,9 @@ eastern_christian = {
 
 		will_get_center = {
 			any_owned_province = {				
-				heresy_can_have_eastern_heresy_cor_trigger = yes
+				heresy_can_have_eastern_heresy_cor_trigger = {
+					RELIGION = nestorian
+				}
 			}
 		}
 

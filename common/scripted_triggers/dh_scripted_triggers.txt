@@ -9,7 +9,7 @@ dh_albi_spawn_area = {
 		area = pyrenees_area
 		area = languedoc_area
 		area = upper_guyenne_area
-		area = upper_gascony_area
+		area = upper_gascony
 		#area = limousin_area
 		area = west_languedoc_area
 		#area = provence_area
@@ -91,7 +91,7 @@ dh_waldo_spread_area = {
 		area = inner_austria_area 		#Styria
 		area = lower_swabia_area
 		area = upper_swabia_area
-		area = eastern_swabia_area
+		area = east_bavaria_area
 		area = west_burgundy_area 		#Franche-Comté
 		area = north_rhine_area			#Lower Rhineland
 		#area = alsace_area
@@ -303,6 +303,12 @@ dh_can_have_heresy_cor_trigger = {
 		}
 		owner = {
 			is_subject = yes
+		}
+		owner = {
+			any_owned_province = {
+				is_reformation_center = yes
+				religion = $RELIGION$
+			}
 		}
 	}
 	if = {
