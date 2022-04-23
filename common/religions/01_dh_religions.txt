@@ -27,7 +27,7 @@ christian = {
 	orthodox = {
 		color = { 127 23 52 }
 		allowed_conversion = {
-			nestorian
+			#nestorian
 		}
 	}
 
@@ -44,7 +44,7 @@ christian = {
 		}
 
 		allowed_conversion = {
-			nestorian
+			#nestorian
 		}
 	}
 
@@ -480,22 +480,41 @@ muslim = {
 
 	sunni = {
 		allowed_conversion = {
-			nestorian
+			#nestorian
 		}
 	}
 	shiite = {
 		allowed_conversion = {
-			nestorian
+			#nestorian
 		}
 	}
+	
+	druze = {
+		icon = 45
+	}
 
+	alawite = {
+		icon = 63
+	}
 }
 
 dharmic = {
 	hinduism = {
 		allowed_conversion = {
-			nestorian
+			#nestorian
 		}
+	}
+}
+
+zoroastrian_group = {
+	yazidi = {
+		icon = 48
+	}
+}
+
+mandaean_group = {
+	mandaean = {
+		icon = 62
 	}
 }
 
@@ -504,48 +523,48 @@ eastern_christian = {
 	center_of_religion = 410 #Baghdad - meant to represent Seleucia-Ctesiphon
 
 
-	nestorian = {
-		icon = 31
-		color = { 219 92 106 }
-		date = 1445.1.1
-		heretic = { CATHOLIC }
-
-		country = {
-			prestige_decay = -0.01
-			trade_range_modifier = 0.25
-		}
-
-		allowed_center_conversion = {
-			sunni
-			shiite
-			coptic
-			hinduism
-		}
-
-		on_convert = {
-			change_religion = nestorian
-			add_prestige = -100
-	
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}	
-
-			random_owned_province = {
-				add_reform_center = nestorian
-			}
-		}
-
-		will_get_center = {
-			any_owned_province = {				
-				heresy_can_have_eastern_heresy_cor_trigger = {
-					RELIGION = nestorian
-				}
-			}
-		}
-
-		
-	}
+	#nestorian = {
+	#	icon = 31
+	#	color = { 219 92 106 }
+	#	date = 1445.1.1
+	#	heretic = { CATHOLIC }
+#
+	#	country = {
+	#		prestige_decay = -0.01
+	#		trade_range_modifier = 0.25
+	#	}
+#
+	#	allowed_center_conversion = {
+	#		sunni
+	#		shiite
+	#		coptic
+	#		hinduism
+	#	}
+#
+	#	on_convert = {
+	#		change_religion = nestorian
+	#		add_prestige = -100
+	#
+	#		add_country_modifier = {
+	#			name = "conversion_zeal"
+	#			duration = 3650
+	#		}	
+#
+	#		random_owned_province = {
+	#			add_reform_center = nestorian
+	#		}
+	#	}
+#
+	#	will_get_center = {
+	#		any_owned_province = {				
+	#			heresy_can_have_eastern_heresy_cor_trigger = {
+	#				RELIGION = nestorian
+	#			}
+	#		}
+	#	}
+#
+	#	
+	#}
 
 	crusade_name = CRUSADE
 }

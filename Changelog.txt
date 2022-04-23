@@ -1,5 +1,7 @@
 v1.3.6:
 
++ Updated to BT 15/EU4 1.33
+
 * Further reduced HRE Heretic Penalty
 * Increased MTTH for "Accusations of Greed" event
 * Corrected some localization grammar
