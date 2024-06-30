@@ -1,3 +1,7 @@
+v1.4:
+
++ Updated to BT16/1.37.2
+
 v1.3.6:
 
 + Updated to BT 15/EU4 1.33

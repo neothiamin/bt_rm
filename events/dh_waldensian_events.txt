@@ -403,14 +403,14 @@ country_event = {
 		}
 	}
 
-	#is_triggered_only = yes #on_bi_yearly_pulse_4
+	is_triggered_only = yes #on_bi_yearly_pulse_4
 
 	#Changed to on_action
 	#Changed back to MTTH
 
-	mean_time_to_happen = {
-		months = 180
-	}
+	#mean_time_to_happen = {
+	#	months = 180
+	#}
 
 	#Let them practice in peace.
 	option = {
@@ -540,21 +540,21 @@ country_event = {
 		set_country_flag = dh_waldo_4_flag
 	}
 
-	#is_triggered_only = yes #on_bi_yearly_pulse_4
+	is_triggered_only = yes #on_bi_yearly_pulse_5
 
 	#Changed to on_action
 	#Changed back to MTTH
 
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 1.5
-			employed_advisor = {
-				religion = waldensian
-				type = theologian
-			}
-		}
-	}
+	#mean_time_to_happen = {
+	#	months = 300
+	#	modifier = {
+	#		factor = 1.5
+	#		employed_advisor = {
+	#			religion = waldensian
+	#			type = theologian
+	#		}
+	#	}
+	#}
 
 	#We ought to burn him at the stake, not invite him to court!
 	option = {

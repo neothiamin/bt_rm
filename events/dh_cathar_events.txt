@@ -635,19 +635,20 @@ country_event = {
 		}
 	}
 
-	#is_triggered_only = yes #on_bi_yearly_pulse_4
+	is_triggered_only = yes #on_bi_yearly_pulse_5
 
 	#Changed to on_action
 	#Changed back to MTTH
+	#Changed BACK to on_action
 
 
-	mean_time_to_happen = {
-		months = 150
-		modifier = {
-			factor = 2.5
-			is_year = 1530
-		}
-	}
+	#mean_time_to_happen = {
+	#	months = 150
+	#	modifier = {
+	#		factor = 2.5
+	#		is_year = 1530
+	#	}
+	#}
 
 	#Stamp this out!
 	option = {
@@ -798,14 +799,15 @@ country_event = {
 	desc = dh_albi.6.desc
 	picture = ANGRY_MOB_eventPicture
 
-	#is_triggered_only = yes #on_bi_yearly_pulse_4
+	is_triggered_only = yes #on_bi_yearly_pulse_5
 
 	#Changed to on_action
 	#Changed back to MTTH
+	# Changed BACK to on_action
 
-	mean_time_to_happen = {
-		years = 20
-	}
+	#mean_time_to_happen = {
+	#	years = 20
+	#}
 	
 	trigger = {
 		religion = cathar
@@ -908,15 +910,15 @@ country_event = {
 		set_country_flag = dh_albi_9_happened
 	}
 
-	#is_triggered_only = yes #on_bi_yearly_pulse_4
+	is_triggered_only = yes #on_bi_yearly_pulse_5
 
 	#Changed to on_action
 	#Changed back to MTTH
 
 
-	mean_time_to_happen = {
-		years = 25
-	}
+	#mean_time_to_happen = {
+	#	years = 25
+	#}
 
 	#Oh, the beauty of the langue d'oc...
 	option = {
@@ -1020,9 +1022,11 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		months = 240 #20 years
-	}
+	is_triggered_only = yes
+
+	#mean_time_to_happen = {
+	#	months = 240 #20 years
+	#}
 
 	#The Holy Father's will be done.
 	option = {

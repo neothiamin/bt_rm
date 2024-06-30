@@ -430,29 +430,29 @@ country_event = {
 				tag = ENG
 			}
 			AND = {
-		NOT = { is_year = 1500 }
-		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
+				NOT = { is_year = 1500 }
+				NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+				OR = {
+					AND = {
+						tag = ENG
+						NOT = { exists = GBR }
+					}
+					tag = GBR
+				}
+				primary_culture = english
+				NOT = {
+					france_region = {
+						owned_by = ROOT
+					}
+				}
+				FRA = {
+					exists = yes
+					NOT = { is_subject_of = ENG }
+					NOT = { is_subject_of = GBR }
+					NOT = { war_with = ENG }
+					NOT = { war_with = GBR }
+				}
 			}
-			tag = GBR
-		}
-		primary_culture = english
-		NOT = {
-			france_region = {
-				owned_by = ROOT
-			}
-		}
-		FRA = {
-			exists = yes
-			NOT = { is_subject_of = ENG }
-			NOT = { is_subject_of = GBR }
-			NOT = { war_with = ENG }
-			NOT = { war_with = GBR }
-		}
-	}
 		}
 	}
 	
@@ -474,7 +474,7 @@ country_event = {
 	
 	option = {			# We have lost our foothold in France
 		name = "flavor_eng.EVTOPTA9104"
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 100 }
 		add_stability_or_adm_power = yes
 		every_core_province = {
 			limit = {
@@ -482,6 +482,16 @@ country_event = {
 				NOT = { owned_by = ROOT }
 			}
 			remove_core = ROOT
+		}
+		british_isles_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = { 				#BT Change to help england and represent historical migrations
+				name = bt_english_loyalist_immigrants
+				duration = 10950
+				desc = bt_english_loyalist_immigrants_desc
+			}
 		}
 		FRA = {
 			add_opinion = {
@@ -492,7 +502,7 @@ country_event = {
 	}
 	option = {		# We will never give this up!
 		name = "flavor_eng.EVTOPTB9104"
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 0 }
 		add_stability = -1
 		FRA = {
 			add_opinion = {
@@ -519,8 +529,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 	}
 	
@@ -563,8 +575,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		is_at_war = no
 	}
@@ -613,8 +627,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_at_war = no
 	}
@@ -660,8 +677,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_at_war = no
 	}
@@ -721,8 +741,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		religion = catholic
 		is_female = no
@@ -779,8 +801,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -825,8 +850,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -876,8 +904,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		owns = 246		# Northumberland
 	}
@@ -929,8 +960,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		OR = {
 			religion = protestant
@@ -1019,8 +1052,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_year = 1540
 		NOT = {
@@ -1050,7 +1086,7 @@ country_event = {
 		#	name = the_muskovy_trade_company
 		#	duration = -1
 		#}
-		33 = {
+		33 = { # BT; 1652
 			add_trade_modifier = {
 				who = ROOT
 				duration = -1
@@ -1077,8 +1113,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 236 }
 		OR = {
@@ -1100,7 +1139,7 @@ country_event = {
 			define_advisor = {
 				type = spymaster
 				name = "Francis Walsingham"
-				culture = english
+				#culture = english
 				location = 235
 				skill = 3
 				discount = yes
@@ -1114,7 +1153,7 @@ country_event = {
 			define_advisor = {
 				type = spymaster
 				name = "Francis Walsingham"
-				culture = english
+				#culture = english
 				location = 236
 				skill = 3
 				discount = yes
@@ -1139,8 +1178,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		owns = 236		# London
 	}
@@ -1165,7 +1207,7 @@ country_event = {
 		define_advisor = {
 			type = treasurer
 			name = "Thomas Gresham"
-			culture = english
+			#culture = english
 			discount = yes
 			location = 236
 			skill = 3
@@ -1194,8 +1236,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		OR = {
 			owns = 246		# Northumberland
@@ -1265,40 +1309,6 @@ country_event = {
 				}
 			}
 		}
-		#Removing because England was dying all the time.
-		#if = {
-		#	limit = {
-		#		owns = 4368		# Durham
-		#	}
-		#	4368 = {
-		#		spawn_rebels = {
-		#			type = noble_rebels
-		#			size = 1
-		#		}
-		#	}
-		#}
-		#if = {
-		#	limit = {
-		#		owns = 4785		# Leeds
-		#	}
-		#	4785 = {
-		#		spawn_rebels = {
-		#			type = noble_rebels
-		#			size = 1
-		#		}
-		#	}
-		#}
-		#if = {
-		#	limit = {
-		#		owns = 4375		# Chester
-		#	}
-		#	4375 = {
-		#		spawn_rebels = {
-		#			type = noble_rebels
-		#			size = 1
-		#		}
-		#	}
-		#}
 		if = {
 			limit = { NOT = { has_country_modifier = narrowminded_modifier } }
 			add_country_modifier = {
@@ -1366,8 +1376,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		owns = 236		# London
 	}
@@ -1409,8 +1422,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -1455,8 +1471,10 @@ country_event = { #BT NOTE: Needs to be adapted to BT's Ireland viceroyalty some
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		OR = {
 			religion = protestant
@@ -1528,8 +1546,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		government = monarchy
 	}
@@ -1636,8 +1656,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		government = monarchy
 		has_country_flag = refusal_of_petition_of_rights
@@ -1739,8 +1761,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -1776,8 +1801,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		OR = {
 			religion = protestant
@@ -1831,8 +1859,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -1868,8 +1899,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		NOT = { dynasty = Stuart }
 	}
@@ -1894,12 +1927,13 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 3 # BT; 2
 					leader = "James"
 					leader_dynasty = "Stuart"
 				}
 			}
 		}
+		# BT; 4 else_if below added/modified
 		else_if = {
 			limit = {
 				kingdom_of_the_isles_area = { owned_by = ROOT }
@@ -1959,7 +1993,6 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					size = 3
-					leader = "James Stuart"
 					leader = "James"
 					leader_dynasty = "Stuart"
 				}
@@ -1983,8 +2016,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 284 }
 		OR = {
@@ -2009,7 +2045,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "Robert Walpole"
-				culture = english
+				#culture = english
 				discount = yes
 				location = 238
 				skill = 3
@@ -2023,7 +2059,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "Robert Walpole"
-				culture = english
+				#culture = english
 				discount = yes
 				location = 236
 				skill = 3
@@ -2048,8 +2084,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		exists = SPA
 		is_rival = SPA
@@ -2097,8 +2136,10 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
 		}
 		NOT = { dynasty = Stuart }
 	}
@@ -2123,12 +2164,13 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 3 # BT; 2
 					leader = "James"
 					leader_dynasty = "Stuart"
 				}
 			}
 		}
+		# BT; 4 else_if below added/modified
 		else_if = {
 			limit = {
 				kingdom_of_the_isles_area = { owned_by = ROOT }
@@ -2188,7 +2230,6 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					size = 3
-					leader = "James Stuart"
 					leader = "James"
 					leader_dynasty = "Stuart"
 				}
@@ -2213,8 +2254,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 293 }
 		owns = 236		# London
@@ -2232,7 +2276,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "W. Pitt the Elder"
-				culture = english
+				#culture = english
 				discount = yes
 				location = 236
 				skill = 3
@@ -2271,8 +2315,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 315 }
 		OR = {
@@ -2297,7 +2344,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "W. Pitt the Younger"
-				culture = english
+				#culture = english
 				discount = yes
 				location = 235
 				skill = 3
@@ -2311,7 +2358,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "W. Pitt the Younger"
-				culture = english
+				#culture = english
 				discount = yes
 				location = 236
 				skill = 3
@@ -2336,8 +2383,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_at_war = no
 		exists = POR
@@ -2353,6 +2403,13 @@ country_event = {
 				tag = GBR
 				british_isles_region = {
 					owned_by = GBR
+					has_port = yes
+				}
+			}
+			AND = {
+				tag = AVE
+				british_isles_region = {
+					owned_by = AVE
 					has_port = yes
 				}
 			}
@@ -2410,8 +2467,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		OR = {
 			religion = protestant
@@ -2538,8 +2598,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2574,10 +2637,13 @@ country_event = {
 		NOT = { is_year = 1790 }
 		OR = {
 			AND = {
-				tag = GBR
-				NOT = { exists = SCO }
+				tag = ENG
+				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
-			tag = SCO
+			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2616,10 +2682,13 @@ country_event = {
 		NOT = { is_year = 1776 }
 		OR = {
 			AND = {
-				tag = GBR
-				NOT = { exists = SCO }
+				tag = ENG
+				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
-			tag = SCO
+			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2660,8 +2729,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 	
@@ -2702,8 +2774,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2739,8 +2814,11 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = AVE }
 			}
 			tag = GBR
+			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2757,7 +2835,7 @@ country_event = {
 		define_advisor = {
 			name = "William Shakespeare" #The greatest writer of all   
 			location = 236 #London
-			culture = english
+			#culture = english
 			skill = 2
 			type = artist
 			discount = yes
@@ -2893,7 +2971,10 @@ country_event = {
 		4370 = {
 			owned_by = ROOT
 		}
-		mission_completed = eng_rb_universities
+		OR = {
+			mission_completed = eng_rb_universities
+			mission_completed = gbr_ave_renovate_universities
+		}
 	}
 	
 	immediate = {
@@ -3246,6 +3327,7 @@ country_event = {
 		OR = {
 			culture_group = british
 			culture_group = gaelic
+			primary_culture = anglois
 			primary_culture = anglosaxon
 		}
 		has_reform = revolutionary_republic_reform
@@ -3271,4 +3353,3 @@ country_event = {
 		}
 	}
 }
-	
