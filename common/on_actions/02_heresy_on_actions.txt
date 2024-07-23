@@ -1,12 +1,14 @@
 on_bi_yearly_pulse_5 = {
-	100 = dh_albi.4
-	100 = dh_albi.6
-	100 = dh_albi.9
-	100 = dh_albi.11
+	random_events = {
+		100 = dh_albi.4
+		100 = dh_albi.6
+		100 = dh_albi.9
+		100 = dh_albi.11
 
-	100 = dh_waldo.3
-	100 = dh_waldo.4
+		100 = dh_waldo.3
+		100 = dh_waldo.4
 
-	100 = heresy_lollard.1
-	100 = heresy_lollard.2
+		100 = heresy_lollard.1
+		100 = heresy_lollard.2
+	}
 }
